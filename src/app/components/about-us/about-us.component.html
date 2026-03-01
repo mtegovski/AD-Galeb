@@ -1,0 +1,92 @@
+﻿<main class="bg-[var(--light-background-color)] py-14 sm:py-20">
+  <div class="container mx-auto px-4 max-w-5xl space-y-8">
+    <section class="bg-white border border-[var(--light-border-color)] rounded-2xl p-7 sm:p-10">
+      <div class="inline-flex items-center bg-[var(--light-background-color)] text-[var(--primary-color)] px-4 py-2 rounded-full font-semibold text-sm mb-5">
+        <i class="fas fa-building mr-2"></i>
+        <span i18n="@@aboutPageBadge">За Нас</span>
+      </div>
+
+      <h1 class="font-[var(--font-family-heading)] text-4xl sm:text-5xl font-bold text-[var(--dark-text-color)] mb-5">
+        <span i18n="@@aboutPageTitleLine1">Приказната зад</span>
+        <span class="text-[var(--primary-color)]" i18n="@@aboutPageTitleLine2"> АД Галеб</span>
+      </h1>
+
+      <p class="text-lg text-[var(--gray-text-color)] leading-relaxed" i18n="@@aboutPageIntro">
+        Повеќе од 75 години обезбедуваме сигурен, редовен и удобен превоз за патниците од Охрид и цела Македонија.
+      </p>
+    </section>
+
+    <section class="grid gap-6 sm:grid-cols-3">
+      <article class="bg-white border border-[var(--light-border-color)] rounded-2xl p-6">
+        <h2 class="font-[var(--font-family-heading)] text-2xl font-bold text-[var(--dark-text-color)] mb-3" i18n="@@aboutWhoWeAreTitle">
+          Кои сме ние
+        </h2>
+        <p class="text-[var(--gray-text-color)] leading-relaxed" i18n="@@aboutWhoWeAreText">
+          АД Галеб е регионален превозник со традиција од 1948 година. Почнувајќи од Охрид, денес секојдневно поврзуваме градови низ државата и нудиме меѓународни релации.
+        </p>
+      </article>
+
+      <article class="bg-white border border-[var(--light-border-color)] rounded-2xl p-6">
+        <h2 class="font-[var(--font-family-heading)] text-2xl font-bold text-[var(--dark-text-color)] mb-3" i18n="@@aboutWhatWeDoTitle">
+          Што нудиме
+        </h2>
+        <p class="text-[var(--gray-text-color)] leading-relaxed" i18n="@@aboutWhatWeDoText">
+          Модерна флота, искусни возачи и фиксни возни редови. Фокусот ни е секое патување да биде безбедно, навремено и пријатно.
+        </p>
+      </article>
+
+      <article class="bg-white border border-[var(--light-border-color)] rounded-2xl p-6">
+        <h2 class="font-[var(--font-family-heading)] text-2xl font-bold text-[var(--dark-text-color)] mb-3" i18n="@@aboutMissionTitle">
+          Нашата мисија
+        </h2>
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-3" i18n="@@aboutMissionP1">
+          Да им овозможиме на патниците достапен и доверлив превоз, со јасни информации за релации, термини и цени.
+        </p>
+        <p class="text-[var(--gray-text-color)] leading-relaxed" i18n="@@aboutMissionP2">
+          Продолжуваме да инвестираме во квалитет на услуга и во подобро искуство за секој патник.
+        </p>
+      </article>
+    </section>
+
+    <section class="bg-white border border-[var(--light-border-color)] rounded-2xl p-7 sm:p-10">
+      <h2 class="font-[var(--font-family-heading)] text-3xl font-bold text-[var(--dark-text-color)] mb-6" i18n="@@whyGalebBadge">
+        Зошто Галеб
+      </h2>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-7">
+        <div class="rounded-xl bg-[var(--light-background-color)] p-4">
+          <p class="text-2xl font-bold text-[var(--primary-color)] mb-1">75+</p>
+          <p class="text-sm text-[var(--gray-text-color)]">
+            <span i18n="@@yearsOfHistoryLine1">Години</span>
+            <span i18n="@@yearsOfHistoryLine2"> историја</span>
+          </p>
+        </div>
+        <div class="rounded-xl bg-[var(--light-background-color)] p-4">
+          <p class="text-2xl font-bold text-[var(--primary-color)] mb-1">30+</p>
+          <p class="text-sm text-[var(--gray-text-color)]">
+            <span i18n="@@routesDailyLine1">Релации</span>
+            <span i18n="@@routesDailyLine2"> дневно</span>
+          </p>
+        </div>
+        <div class="rounded-xl bg-[var(--light-background-color)] p-4">
+          <p class="text-2xl font-bold text-[var(--primary-color)] mb-1">100%</p>
+          <p class="text-sm text-[var(--gray-text-color)]">
+            <span i18n="@@commitmentAndQualityLine1">Посветеност</span>
+            <span i18n="@@commitmentAndQualityLine2"> квалитет</span>
+          </p>
+        </div>
+        <div class="rounded-xl bg-[var(--light-background-color)] p-4">
+          <p class="text-2xl font-bold text-[var(--primary-color)] mb-1">1948</p>
+          <p class="text-sm text-[var(--gray-text-color)]" i18n="@@fromWhichYear">Од 1948 Година</p>
+        </div>
+      </div>
+
+      <a
+        routerLink="trips"
+        class="inline-flex items-center bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[var(--accent2-color)] transition-colors">
+        <span i18n="@@aboutMissionCta">Погледни релации</span>
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </section>
+  </div>
+</main>

@@ -1,0 +1,127 @@
+﻿<header id="global-header" class="code-section bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a routerLink="" class="flex items-center">
+        <img
+          [ngSrc]="'assets/galeb-logo-mk.avif'"
+          width="1011"
+          height="239"
+          alt="АД Галеб Logo"
+          class="h-28 py-2 w-auto">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <nav class="flex items-center space-x-8">
+          <a
+            routerLink="about"
+            class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
+            i18n="@@navAbout">
+            За Нас
+          </a>
+
+          <a
+            routerLink="trips"
+            class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
+            i18n="@@navRoutes">
+            Релации
+          </a>
+
+          <a
+            routerLink="contact"
+            class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
+            i18n="@@navContact">
+            Контакт
+          </a>
+        </nav>
+
+        <div class="flex items-center rounded-full bg-[var(--primary-color)]/10 p-1 text-xs font-semibold">
+          <button
+            type="button"
+            class="px-3 py-1.5 rounded-full transition-colors"
+            [ngClass]="currentLocale === 'mk' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
+            (click)="switchLocale('mk')"
+            aria-pressed="{{ currentLocale === 'mk' }}"
+            aria-label="Switch to Macedonian">
+            MK
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1.5 rounded-full transition-colors"
+            [ngClass]="currentLocale === 'en' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
+            (click)="switchLocale('en')"
+            aria-pressed="{{ currentLocale === 'en' }}"
+            aria-label="Switch to English">
+            EN
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button
+        type="button"
+        class="lg:hidden text-[var(--dark-text-color)] p-2"
+        (click)="toggleMobileMenu()"
+        [attr.aria-expanded]="isMobileMenuOpen"
+        aria-label="Отвори мени"
+        i18n-aria-label="@@navOpenMenuAria">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="lg:hidden pb-4" [class.hidden]="!isMobileMenuOpen">
+      <div class="flex flex-col space-y-3 pt-4 border-t border-[var(--light-border-color)] mt-2">
+        <a
+          routerLink="about"
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium py-2"
+          (click)="closeMobileMenu()"
+          i18n="@@navAbout">
+          За Нас
+        </a>
+
+        <a
+          routerLink="trips"
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium py-2"
+          (click)="closeMobileMenu()"
+          i18n="@@navRoutes">
+          Релации
+        </a>
+
+        <a
+          routerLink="contact"
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium py-2"
+          (click)="closeMobileMenu()"
+          i18n="@@navContact">
+          Контакт
+        </a>
+
+        <div class="pt-2">
+          <div class="flex items-center rounded-full bg-[var(--primary-color)]/10 p-1 text-xs font-semibold w-fit">
+            <button
+              type="button"
+              class="px-3 py-1.5 rounded-full transition-colors"
+              [ngClass]="currentLocale === 'mk' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
+              (click)="switchLocale('mk')"
+              aria-pressed="{{ currentLocale === 'mk' }}"
+              aria-label="Switch to Macedonian">
+              MK
+            </button>
+            <button
+              type="button"
+              class="px-3 py-1.5 rounded-full transition-colors"
+              [ngClass]="currentLocale === 'en' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
+              (click)="switchLocale('en')"
+              aria-pressed="{{ currentLocale === 'en' }}"
+              aria-label="Switch to English">
+              EN
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+

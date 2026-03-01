@@ -1,0 +1,151 @@
+﻿@if (form) {
+  <section class="code-section py-16 bg-gradient-to-br from-white to-[var(--light-background-color)] relative overflow-hidden">
+    <div class="absolute top-8 right-8 w-64 h-64 bg-[var(--primary-color)] rounded-full opacity-10 blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 bg-[var(--accent-color)] rounded-full opacity-10 blur-3xl"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center bg-white text-[var(--primary-color)] px-4 py-2 rounded-full font-semibold text-sm mb-5 shadow-md">
+          <i class="fas fa-route mr-2"></i>
+          <span i18n="@@tripPlannerBadge">Планер на патување</span>
+        </div>
+
+        <h1 class="font-[var(--font-family-heading)] text-3xl sm:text-4xl font-bold text-[var(--dark-text-color)] mb-4">
+          <span i18n="@@planRouteWith">Планирајте ја вашата рута со</span>
+          <span class="text-[var(--primary-color)]" i18n="@@clearSchedules"> јасни распореди</span>
+        </h1>
+
+        <p class="text-[var(--gray-text-color)] text-lg leading-relaxed" i18n="@@tripPlannerIntro">
+          Изберете поаѓање и дестинација за да ги видите достапните патувања, времиња и постојки.
+        </p>
+      </div>
+
+      <div class="mx-auto max-w-4xl">
+        <div class="bg-white/90 backdrop-blur rounded-2xl shadow-xl border border-[var(--light-border-color)] p-6 sm:p-8">
+          <form [formGroup]="form" class="grid gap-6 sm:grid-cols-2">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-semibold text-[var(--dark-text-color)] uppercase tracking-wide"
+                i18n="@@fromLabel">
+                Од
+              </label>
+
+              <div class="relative">
+                <select
+                  formControlName="fromCityId"
+                  class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
+                  @for (c of cities; track c.id) {
+                    <option [value]="c.id">{{ c.name }}</option>
+                  }
+                </select>
+                <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[var(--primary-color)]">
+                  <i class="fas fa-chevron-down text-sm"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label
+                class="text-sm font-semibold text-[var(--dark-text-color)] uppercase tracking-wide"
+                i18n="@@toLabel">
+                До
+              </label>
+
+              <div class="relative">
+                <select
+                  formControlName="toCityId"
+                  class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
+                  @for (c of cities; track c.id) {
+                    <option [value]="c.id">{{ c.name }}</option>
+                  }
+                </select>
+                <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[var(--primary-color)]">
+                  <i class="fas fa-chevron-down text-sm"></i>
+                </span>
+              </div>
+            </div>
+          </form>
+
+          @if (form.controls.fromCityId.value === form.controls.toCityId.value) {
+            <div
+              class="mt-6 rounded-xl border border-[var(--light-border-color)] bg-[var(--light-background-color)] px-4 py-3 text-sm text-[var(--dark-text-color)]"
+              i18n="@@chooseTwoDifferentCities">
+              Ве молиме изберете два различни града.
+            </div>
+          } @else {
+            @if (tripOptions.length === 0) {
+              <div
+                class="mt-6 rounded-xl border border-[var(--light-border-color)] bg-[var(--light-background-color)] px-4 py-3 text-sm text-[var(--dark-text-color)]"
+                i18n="@@noTripsFound">
+                Нема пронајдени патувања.
+              </div>
+            } @else {
+              <div class="mt-8 overflow-x-auto rounded-2xl border border-[var(--light-border-color)] bg-white shadow-lg">
+                <table class="min-w-full text-sm">
+                  <thead class="bg-[var(--light-background-color)] text-[var(--primary-color)] uppercase text-xs">
+                  <tr>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableDeparture">Поаѓање</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableArrival">Пристигнување</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableRoute">Релација</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableType">Тип</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableStops">Постојки</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableStopsCount"># Постојки</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableOneWay">Еднонасочна</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableReturn">Повратна</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableStudent">Студентска</th>
+                  </tr>
+                  </thead>
+
+                  <tbody class="divide-y divide-[var(--light-border-color)]">
+                    @for (trip of tripOptions; track trip.runId + '-' + trip.routeId) {
+                      <tr class="hover:bg-[var(--light-background-color)]/70 transition-colors">
+                        <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">{{ trip.departureTimeLocal }}</td>
+                        <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">{{ trip.arrivalTimeLocal }}</td>
+                        <td class="px-4 py-3 text-[var(--dark-text-color)]">{{ trip.routeName }}</td>
+
+                        <td class="px-4 py-3">
+                          @if (trip.isSubtrip) {
+                            <span
+                              class="inline-flex items-center rounded-full bg-[var(--light-background-color)] px-3 py-1 text-xs font-semibold text-[var(--primary-color)]"
+                              i18n="@@tripTypeSubtrip">
+                              Под-релација
+                            </span>
+                          } @else {
+                            <span
+                              class="inline-flex items-center rounded-full bg-[var(--primary-color)] px-3 py-1 text-xs font-semibold text-white"
+                              i18n="@@tripTypeDirect">
+                              Директно
+                            </span>
+                          }
+                        </td>
+
+                        <td class="px-4 py-3 text-[var(--gray-text-color)]">
+                          @for (stop of trip.stops; track stop; let last = $last) {
+                            {{ cityName(stop) }}@if (!last) { -> }
+                          }
+                        </td>
+
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.stops.length - 2 }}</td>
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.price.oneWayTicket }}</td>
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.price.returnTicket }}</td>
+
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
+                          @if (trip.price.studentTicket !== undefined) {
+                            {{ trip.price.studentTicket }}
+                          } @else {
+                            <span i18n="@@notAvailableSlash">/</span>
+                          }
+                        </td>
+                      </tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+}
+

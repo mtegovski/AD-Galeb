@@ -1,0 +1,114 @@
+<main class="bg-[var(--light-background-color)] py-14 sm:py-20">
+  <div class="container mx-auto px-4 max-w-5xl space-y-8">
+    <section class="bg-white border border-[var(--light-border-color)] rounded-2xl p-7 sm:p-10">
+      <div class="inline-flex items-center bg-[var(--light-background-color)] text-[var(--primary-color)] px-4 py-2 rounded-full font-semibold text-sm mb-5">
+        <i class="fas fa-envelope-open-text mr-2"></i>
+        <span i18n="@@contactPageBadge">Контакт</span>
+      </div>
+
+      <h1 class="font-[var(--font-family-heading)] text-4xl sm:text-5xl font-bold text-[var(--dark-text-color)] mb-5" i18n="@@contactPageTitle">
+        Контактирајте нѐ
+      </h1>
+
+      <p class="text-lg text-[var(--gray-text-color)] leading-relaxed" i18n="@@contactPageIntro">
+        За информации за линии, термини и цени, јавете се или пишете ни. Тимот на АД Галеб е тука да ви помогне.
+      </p>
+    </section>
+
+    <section class="grid gap-6 lg:grid-cols-2">
+      <article class="bg-white border border-[var(--light-border-color)] rounded-2xl p-7 sm:p-8">
+        <h2 class="font-[var(--font-family-heading)] text-3xl font-bold text-[var(--dark-text-color)] mb-6" i18n="@@footerContactInfo">
+          Контакт Инфо
+        </h2>
+
+        <ul class="space-y-6">
+          <li class="flex items-start">
+            <span class="w-10 h-10 rounded-full bg-[var(--light-background-color)] text-[var(--primary-color)] flex items-center justify-center mr-4 mt-0.5">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <div>
+              <p class="text-sm font-semibold text-[var(--dark-text-color)] mb-1" i18n="@@contactAddressLabel">Адреса</p>
+              <p class="text-[var(--gray-text-color)] leading-relaxed">
+                <span i18n="@@contactAddressLine1">Охрид, Северна Македонија</span><br>
+                <span i18n="@@contactAddressLine2">Автобуска станица АД Галеб</span>
+              </p>
+            </div>
+          </li>
+
+          <li class="flex items-start">
+            <span class="w-10 h-10 rounded-full bg-[var(--light-background-color)] text-[var(--primary-color)] flex items-center justify-center mr-4 mt-0.5">
+              <i class="fas fa-phone"></i>
+            </span>
+            <div>
+              <p class="text-sm font-semibold text-[var(--dark-text-color)] mb-1" i18n="@@contactPhonesLabel">Телефони</p>
+              <a href="tel:+38946261233" class="block text-[var(--gray-text-color)] hover:text-[var(--primary-color)] transition-colors" i18n="@@contactPhoneMain">
+                +389 46 261 233
+              </a>
+              <a href="tel:+38970261233" class="block text-[var(--gray-text-color)] hover:text-[var(--primary-color)] transition-colors" i18n="@@contactPhoneAlt">
+                +389 70 261 233
+              </a>
+            </div>
+          </li>
+
+          <li class="flex items-start">
+            <span class="w-10 h-10 rounded-full bg-[var(--light-background-color)] text-[var(--primary-color)] flex items-center justify-center mr-4 mt-0.5">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <div>
+              <p class="text-sm font-semibold text-[var(--dark-text-color)] mb-1" i18n="@@contactEmailsLabel">Е-пошта</p>
+              <a href="mailto:info@adgaleb.mk" class="block text-[var(--gray-text-color)] hover:text-[var(--primary-color)] transition-colors">
+                info@adgaleb.mk
+              </a>
+              <a href="mailto:rezervacii@adgaleb.mk" class="block text-[var(--gray-text-color)] hover:text-[var(--primary-color)] transition-colors">
+                rezervacii@adgaleb.mk
+              </a>
+            </div>
+          </li>
+
+          <li class="flex items-start">
+            <span class="w-10 h-10 rounded-full bg-[var(--light-background-color)] text-[var(--primary-color)] flex items-center justify-center mr-4 mt-0.5">
+              <i class="fas fa-clock"></i>
+            </span>
+            <div>
+              <p class="text-sm font-semibold text-[var(--dark-text-color)] mb-1" i18n="@@footerWorkingHours">Работно време</p>
+              <p class="text-[var(--gray-text-color)] leading-relaxed">
+                <span i18n="@@contactWorkingHoursWeekdays">Понеделник - Сабота: 07:00 - 20:00</span><br>
+                <span i18n="@@contactWorkingHoursSunday">Недела: 08:00 - 15:00</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <article class="bg-white border border-[var(--light-border-color)] rounded-2xl p-7 sm:p-8">
+        <h2 class="font-[var(--font-family-heading)] text-3xl font-bold text-[var(--dark-text-color)] mb-4" i18n="@@contactMapTitle">
+          Локација
+        </h2>
+
+        <p class="text-[var(--gray-text-color)] leading-relaxed mb-5" i18n="@@contactMapNote">
+          Погледнете ја нашата локација на Google Maps и добијте насоки до нас.
+        </p>
+
+        <div class="overflow-hidden rounded-xl border border-[var(--light-border-color)]">
+          <iframe
+            title="AD Galeb Location Map"
+            src="https://maps.google.com/maps?q=Autobuska%20Stanica%20Ohrid%2C%20North%20Macedonia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-[360px]"
+            style="border: 0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Autobuska%20Stanica%20Ohrid%2C%20North%20Macedonia"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center mt-5 text-[var(--primary-color)] font-semibold hover:text-[var(--accent2-color)] transition-colors"
+          i18n="@@contactOpenMaps">
+          Отвори во Google Maps
+        </a>
+      </article>
+    </section>
+  </div>
+</main>

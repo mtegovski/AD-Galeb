@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+:root {
+  --accent-color: #29b6f6;
+  --accent2-color: #0288d1;
+  --accent3-color: #0277bd;
+  --accent4-color: #01579b;
+  --primary-color: #1e88e5;
+  --dark-text-color: #212121;
+  --gray-text-color: #9e9e9e;
+  --button-padding-x: 16px;
+  --button-padding-y: 8px;
+  --font-family-body: "Open Sans", sans-serif;
+  --light-text-color: #ffffff;
+  --dark-border-color: #1b5e20;
+  --light-border-color: #e0e0e0;
+  --font-family-heading: "Roboto Condensed", sans-serif;
+  --button-rounded-radius: 8px;
+  --dark-background-color: #0d47a1;
+  --light-background-color: #e3f2fd;
+  --medium-background-color: #bbdefb;
+  --primary-button-text-color: #ffffff;
+  --secondary-button-bg-color: #ffffff;
+  --secondary-button-text-color: #1e88e5;
+  --primary-button-hover-bg-color: #1565c0;
+  --primary-button-hover-text-color: #ffffff;
+  --secondary-button-hover-bg-color: #e3f2fd;
+  --secondary-button-hover-text-color: #1e88e5;
+}
