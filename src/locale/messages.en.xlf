@@ -66,10 +66,7 @@
         <source>Погледни Релации</source>
         <target>View Routes</target>
       </trans-unit>
-      <trans-unit id="heroMicrocopy">
-        <source>Резервирајте онлајн или јавете се на тел. Билетите можете да ги земете и при влез.</source>
-        <target>Book online or call us. You can also buy tickets on boarding.</target>
-      </trans-unit>
+
       <trans-unit id="internationalLineBadge">
         <source>МЕЃУНАРОДНА ЛИНИЈА</source>
         <target>INTERNATIONAL LINE</target>
