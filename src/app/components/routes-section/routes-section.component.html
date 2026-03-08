@@ -13,8 +13,8 @@
 
       <h2
         class="font-[var(--font-family-heading)] text-4xl sm:text-5xl font-bold text-[var(--dark-text-color)] mb-6">
-        <span i18n="@@connectedWith">Поврзани Со</span>
-        <span class="text-[var(--primary-color)]" i18n="@@allMacedonia"> Цела Македонија</span>
+        <span i18n="@@connectedWith">Поврзани со</span>
+        <span class="text-[var(--primary-color)]" i18n="@@allMacedonia"> цела Македонија</span>
       </h2>
 
       <p class="text-lg text-[var(--gray-text-color)] leading-relaxed" i18n="@@routesSectionDescription">
@@ -24,11 +24,11 @@
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <app-relation-card [relation]="OhridRelation" />
       <app-relation-card [relation]="SkopjeRelation" />
-      <app-relation-card [relation]="SkopjeRelation" />
-      <app-relation-card [relation]="SkopjeRelation" />
-      <app-relation-card [relation]="SkopjeRelation" />
-      <app-relation-card [relation]="SkopjeRelation" />
+      <app-relation-card [relation]="BitolaRelation" />
+      <app-relation-card [relation]="KochaniRelation" />
+      <app-relation-card [relation]="NisRelation" />
       <app-relation-card [relation]="BelgradeRelation" />
     </div>
 

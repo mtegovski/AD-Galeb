@@ -1,4 +1,5 @@
-﻿import {CityId, Route, Run, TripOption} from '../components/trip-selector/trip-selector.models';
+﻿import { Route, Run, TripOption } from '../components/trip-selector/trip-selector.models';
+import {CITY_INFO_TRANSLATIONS, CITY_TRANSLATIONS, Locale} from '../data/trip-selector.data';
 
 export const toMinutes = (hhmm: string): number => {
   const [hh, mm] = hhmm.split(':').map(Number);
@@ -13,65 +14,87 @@ export const toHHMM = (mins: number): string => {
 };
 
 export const buildTripOptions = (params: {
-  fromCityId: CityId;
-  toCityId: CityId;
+  fromCityId: string;
+  toCityId: string;
   routes: Route[];
   runs: Run[];
 }): TripOption[] => {
   const { fromCityId, toCityId, routes, runs } = params;
 
+  // 1. Group runs by their Route ID for efficient lookup
   const runsByRoute = new Map<string, Run[]>();
   for (const run of runs) {
     runsByRoute.set(run.routeId, [...(runsByRoute.get(run.routeId) ?? []), run]);
   }
 
-  const options: TripOption[] = [];
+  // 2. This Map will store the "Best" trip for a specific Departure + Arrival time
+  // Key: "DepartureTime|ArrivalTime" (e.g., "21:30|04:30")
+  const bestOptionsMap = new Map<string, TripOption>();
 
   for (const route of routes) {
-    const fromIndex = route.stops.findIndex(s => s.cityId === fromCityId);
-    const toIndex = route.stops.findIndex(s => s.cityId === toCityId);
-    if (fromIndex < 0 || toIndex < 0 || fromIndex >= toIndex) continue;
+    const fromIdx = route.stops.findIndex(s => s.cityId === fromCityId);
+    const toIdx = route.stops.findIndex(s => s.cityId === toCityId);
 
-    const fromStop = route.stops[fromIndex];
-    const toStop = route.stops[toIndex];
+    // Basic route validation
+    if (fromIdx < 0 || toIdx < 0 || fromIdx >= toIdx) continue;
 
-    // ✅ These are the correct offsets to use:
-    // depart at FROM = departureOffsetMin
-    // arrive at TO   = arrivalOffsetMin
-    const departOffset = fromStop.departureOffsetMin;
-    const arriveOffset = toStop.arrivalOffsetMin;
+    const priceKey = `${fromCityId}-${toCityId}`;
+    const segmentPrice = route.prices[priceKey];
+    if (!segmentPrice) continue;
 
-    const segmentStops = route.stops.slice(fromIndex, toIndex + 1).map(s => s.cityId);
-    const intermediateStopsCount = Math.max(0, segmentStops.length - 2);
-    const durationMin = Math.max(0, arriveOffset - departOffset);
+    const fromStop = route.stops[fromIdx];
+    const toStop = route.stops[toIdx];
 
     for (const run of runsByRoute.get(route.id) ?? []) {
-      const runStart = toMinutes(run.departureTimeLocal);
+      const runStartMins = toMinutes(run.departureTimeLocal);
+      const departTime = toHHMM(runStartMins + fromStop.departureOffsetMin);
+      const arriveTime = toHHMM(runStartMins + toStop.arrivalOffsetMin);
+      const duration = toStop.arrivalOffsetMin - fromStop.departureOffsetMin;
 
-      const departureTimeLocal = toHHMM(runStart + departOffset);
-      const arrivalTimeLocal = toHHMM(runStart + arriveOffset);
-
-      const isSubtrip = !(fromIndex === 0 && toIndex === route.stops.length - 1);
-
-      options.push({
+      const currentTrip: TripOption = {
         runId: run.id,
         routeId: route.id,
         fromCityId,
         toCityId,
-        segmentStopIndices: { fromIndex, toIndex },
-        departureTimeLocal,
-        arrivalTimeLocal,
-        stops: segmentStops,
-        intermediateStopsCount,
-        durationMin,
-        isSubtrip,
+        segmentStopIndices: { fromIndex: fromIdx, toIndex: toIdx },
+        departureTimeLocal: departTime,
+        arrivalTimeLocal: arriveTime,
+        stops: route.stops.slice(fromIdx, toIdx + 1).map(s => s.cityId),
+        intermediateStopsCount: Math.max(0, (toIdx - fromIdx) - 1),
+        durationMin: duration,
+        isSubtrip: !(fromIdx === 0 && toIdx === route.stops.length - 1),
         routeName: route.name,
         runLabel: `${route.name} (${run.departureTimeLocal})`,
-        price: route.price,
-      });
+        price: segmentPrice,
+      };
+
+      // --- GENERIC LOGIC ---
+      // We identify a "service" by when it arrives.
+      // If two buses arrive at the same destination at the same time,
+      // the user will always prefer the one that left later (shorter duration).
+      const serviceKey = arriveTime;
+      const existing = bestOptionsMap.get(serviceKey);
+
+      if (!existing || currentTrip.durationMin < existing.durationMin) {
+        bestOptionsMap.set(serviceKey, currentTrip);
+      }
     }
   }
 
-  return options.sort((a, b) => a.departureTimeLocal.localeCompare(b.departureTimeLocal));
+  return Array.from(bestOptionsMap.values())
+    .sort((a, b) => a.departureTimeLocal.localeCompare(b.departureTimeLocal));
 };
+
+export const translateCity = (id: string, locale: Locale): string => {
+  return CITY_TRANSLATIONS[id]?.[locale] ?? id;
+}
+
+export const translateCityInfo = (id: string, locale: Locale): string => {
+  return CITY_INFO_TRANSLATIONS[id]?.[locale] ?? id;
+}
+
+export const translateRoute = (routeName: string, locale: Locale): string => {
+  const cities = routeName.split(" – ");
+  return CITY_TRANSLATIONS[cities[0]]?.[locale] + ' - ' + CITY_TRANSLATIONS[cities[1]]?.[locale];
+}
 

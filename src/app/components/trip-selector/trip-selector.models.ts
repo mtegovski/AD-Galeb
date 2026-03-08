@@ -16,9 +16,9 @@ export interface RouteStop {
 export interface Route {
   id: string;
   name: string;
-  /** Ordered list of stops (includes start + end) */
   stops: RouteStop[];
-  price: TicketPrice;
+  // Change this from a single TicketPrice to a dictionary/record
+  prices: Record<string, TicketPrice>;
 }
 
 export interface Run {

@@ -35,7 +35,7 @@
                   formControlName="fromCityId"
                   class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
                   @for (c of cities; track c.id) {
-                    <option [value]="c.id">{{ c.name }}</option>
+                    <option [value]="c.id">{{ translateCity(c.id, locale) }}</option>
                   }
                 </select>
                 <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[var(--primary-color)]">
@@ -56,7 +56,7 @@
                   formControlName="toCityId"
                   class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
                   @for (c of cities; track c.id) {
-                    <option [value]="c.id">{{ c.name }}</option>
+                    <option [value]="c.id">{{ translateCity(c.id, locale) }}</option>
                   }
                 </select>
                 <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[var(--primary-color)]">
@@ -101,7 +101,8 @@
                       <tr class="hover:bg-[var(--light-background-color)]/70 transition-colors">
                         <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">{{ trip.departureTimeLocal }}</td>
                         <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">{{ trip.arrivalTimeLocal }}</td>
-                        <td class="px-4 py-3 text-[var(--dark-text-color)]">{{ trip.routeName }}</td>
+                        <td class="px-4 py-3 text-[var(--dark-text-color)]">
+                          {{ translateRoute(trip.routeName, locale) }}</td>
 
                         <td class="px-4 py-3">
                           @if (trip.isSubtrip) {
@@ -121,7 +122,7 @@
 
                         <td class="px-4 py-3 text-[var(--gray-text-color)]">
                           @for (stop of trip.stops; track stop; let last = $last) {
-                            {{ cityName(stop) }}@if (!last) { -> }
+                            {{ cityName(stop) }}@if (!last) { - }
                           }
                         </td>
 

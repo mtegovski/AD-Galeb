@@ -2,29 +2,27 @@
   <div class="container mx-auto px-4">
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
 
-      <!-- Brand -->
       <div>
-        <a routerLink="" class="inline-block mb-6">
-          <img
-            [ngSrc]="'assets/galeb-logo-mk.avif'"
-            width="1011"
-            height="239"
-            alt="АД Галеб Logo"
-            class="h-28 py-2 w-auto">
-        </a>
-
         <p class="text-white text-opacity-80 mb-6 leading-relaxed" i18n="@@footerTagline">
           Доверлив превозник од 1948 година. Ве поврзуваме со секој дел на Македонија и пошироко.
         </p>
       </div>
 
-      <!-- Quick Links -->
       <div>
         <h3 class="font-[var(--font-family-heading)] text-xl font-bold mb-6" i18n="@@footerQuickLinks">
           Брзи Линкови
         </h3>
 
         <ul class="space-y-3">
+          <li>
+            <a
+              routerLink=""
+              class="text-white text-opacity-80 hover:text-[var(--accent-color)] transition-colors flex items-center group">
+              <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
+              <span i18n="@@footerHome">Дома</span>
+            </a>
+          </li>
+
           <li>
             <a
               routerLink="about"
@@ -42,10 +40,18 @@
               <span i18n="@@footerRoutes">Релации</span>
             </a>
           </li>
+
+          <li>
+            <a
+              routerLink="contact"
+              class="text-white text-opacity-80 hover:text-[var(--accent-color)] transition-colors flex items-center group">
+              <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
+              <span i18n="@@navContact">Контакт</span>
+            </a>
+          </li>
         </ul>
       </div>
 
-      <!-- Contact -->
       <div>
         <h3 class="font-[var(--font-family-heading)] text-xl font-bold mb-6" i18n="@@footerContactInfo">
           Контакт Инфо
@@ -55,36 +61,33 @@
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt text-[var(--accent-color)] mt-1 mr-3"></i>
             <span class="text-white text-opacity-80">
-              <span i18n="@@footerAddressLine1">Охрид</span><br>
-              <span i18n="@@footerAddressLine2">Северна Македонија</span>
+              <span i18n="@@footerAddressLine1">Питу Гули 4, Охрид 6000</span><br>
             </span>
           </li>
 
           <li class="flex items-start">
             <i class="fas fa-phone text-[var(--accent-color)] mt-1 mr-3"></i>
             <a class="text-white text-opacity-80 hover:text-[var(--accent-color)] transition-colors">
-              <!-- phone -->
+              <span>+389 46 260 339</span><br>
+              <span>+389 71 231 240</span>
             </a>
           </li>
 
           <li class="flex items-start">
             <i class="fas fa-envelope text-[var(--accent-color)] mt-1 mr-3"></i>
             <a class="text-white text-opacity-80 hover:text-[var(--accent-color)] transition-colors">
-              <!-- email -->
+              <span>info@galeb.mk</span>
             </a>
           </li>
 
           <li class="flex items-start">
             <i class="fas fa-clock text-[var(--accent-color)] mt-1 mr-3"></i>
-            <span class="text-white text-opacity-80" i18n="@@footerWorkingHours">
-              Работно време
-            </span>
+            <span class="text-white text-opacity-80" i18n="@@contactWorkingHoursWeekdays">Понеделник - Недела: 05:00 - 19:00</span>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- Bottom -->
     <div class="border-t border-white border-opacity-20 pt-8">
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
         <p class="text-white text-opacity-60 text-sm text-center sm:text-left">

@@ -1,5 +1,5 @@
 ﻿import { NgClass, NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import {Component, inject, LOCALE_ID} from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 type Locale = 'mk' | 'en';
@@ -17,6 +17,7 @@ const detectLocale = (parts: string[]): Locale =>
 })
 export class SiteHeaderComponent {
   isMobileMenuOpen = false;
+  locale = inject(LOCALE_ID);
 
   get currentLocale(): Locale {
     return detectLocale(splitPath(location.pathname));

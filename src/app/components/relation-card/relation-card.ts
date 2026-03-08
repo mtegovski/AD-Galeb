@@ -1,17 +1,11 @@
-import {Component, Input} from '@angular/core';
+import {Component, inject, Input, LOCALE_ID} from '@angular/core';
+import {translateCity, translateCityInfo} from '../../utils/trip-selector.util';
+import {Locale} from '../../data/trip-selector.data';
 
 export interface RouteOverview {
   destination: string;
   info: string;
-  length: string;
-  price: TicketPriceModel;
   isInternational: boolean;
-}
-
-interface TicketPriceModel {
-  oneWayTicket: number;
-  returnTicket: number;
-  studentTicket?: number;
 }
 
 @Component({
@@ -22,4 +16,7 @@ interface TicketPriceModel {
 
 export class RelationCard {
   @Input() relation: RouteOverview;
+  protected readonly translateCity = translateCity;
+  protected readonly translateCityInfo = translateCityInfo;
+  locale = inject(LOCALE_ID) as Locale;
 }

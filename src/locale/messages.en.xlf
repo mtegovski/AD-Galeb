@@ -92,16 +92,16 @@
         <target>Our Routes</target>
       </trans-unit>
       <trans-unit id="connectedWith">
-        <source>Поврзани Со</source>
-        <target>Connected With</target>
+        <source>Поврзани со</source>
+        <target>Connected with</target>
       </trans-unit>
       <trans-unit id="allMacedonia">
-        <source> Цела Македонија</source>
-        <target> All of Macedonia</target>
+        <source> цела Македонија</source>
+        <target> all of Macedonia</target>
       </trans-unit>
       <trans-unit id="routesSectionDescription">
-        <source>Од Охрид до секој главен град во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга.</source>
-        <target>From Ohrid to every major city in the country, plus international routes. Regular departures, comfortable vehicles, professional service.</target>
+        <source>Од Охрид до повеќе градови во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга.</source>
+        <target>From Ohrid to many cities in the country, plus international routes. Regular departures, comfortable vehicles, professional service.</target>
       </trans-unit>
       <trans-unit id="routesCtaAllRoutes">
         <source>Погледни сите релации, распоред и цени</source>
@@ -119,6 +119,10 @@
         <source>Брзи Линкови</source>
         <target>Quick Links</target>
       </trans-unit>
+      <trans-unit id="footerHome">
+        <source>Дома</source>
+        <target>Home</target>
+      </trans-unit>
       <trans-unit id="footerAbout">
         <source>За Нас</source>
         <target>About Us</target>
@@ -132,12 +136,8 @@
         <target>Contact Info</target>
       </trans-unit>
       <trans-unit id="footerAddressLine1">
-        <source>Охрид</source>
-        <target>Ohrid</target>
-      </trans-unit>
-      <trans-unit id="footerAddressLine2">
-        <source>Северна Македонија</source>
-        <target>North Macedonia</target>
+        <source>Питу Гули 4, Охрид 6000</source>
+        <target>Pitu Guli 4, Ohrid 6000</target>
       </trans-unit>
       <trans-unit id="footerWorkingHours">
         <source>Работно време</source>
@@ -364,37 +364,31 @@
         <target>Address</target>
       </trans-unit>
       <trans-unit id="contactAddressLine1">
-        <source>Охрид, Северна Македонија</source>
-        <target>Ohrid, North Macedonia</target>
+        <source>Питу Гули 4, Охрид 6000</source>
+        <target>Pitu Guli 4, Ohrid 6000</target>
       </trans-unit>
-      <trans-unit id="contactAddressLine2">
-        <source>Автобуска станица АД Галеб</source>
-        <target>AD Galeb Bus Station</target>
-      </trans-unit>
+
       <trans-unit id="contactPhonesLabel">
         <source>Телефони</source>
         <target>Phone Numbers</target>
       </trans-unit>
       <trans-unit id="contactPhoneMain">
-        <source>+389 46 261 233</source>
-        <target>+389 46 261 233</target>
+        <source>+389 46 260 339</source>
+        <target>+389 46 260 339</target>
       </trans-unit>
       <trans-unit id="contactPhoneAlt">
-        <source>+389 70 261 233</source>
-        <target>+389 70 261 233</target>
+        <source>+389 71 231 240</source>
+        <target>+389 71 231 240</target>
       </trans-unit>
       <trans-unit id="contactEmailsLabel">
         <source>Е-пошта</source>
         <target>Email</target>
       </trans-unit>
       <trans-unit id="contactWorkingHoursWeekdays">
-        <source>Понеделник - Сабота: 07:00 - 20:00</source>
-        <target>Monday - Saturday: 07:00 - 20:00</target>
+        <source>Понеделник - Недела: 05:00 - 19:00</source>
+        <target>Monday - Sunday: 05:00 - 19:00</target>
       </trans-unit>
-      <trans-unit id="contactWorkingHoursSunday">
-        <source>Недела: 08:00 - 15:00</source>
-        <target>Sunday: 08:00 - 15:00</target>
-      </trans-unit>
+
       <trans-unit id="contactMapTitle">
         <source>Локација</source>
         <target>Location</target>

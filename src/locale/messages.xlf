@@ -166,21 +166,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="connectedWith" datatype="html">
-        <source>Поврзани Со</source>
+        <source>Поврзани со</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
           <context context-type="linenumber">16,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="allMacedonia" datatype="html">
-        <source> Цела Македонија</source>
+        <source> Ццла Македонија</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
           <context context-type="linenumber">17,20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="routesSectionDescription" datatype="html">
-        <source> Од Охрид до секој главен град во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга. </source>
+        <source>Од Охрид до повеќе градови во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
           <context context-type="linenumber">21,26</context>
@@ -236,17 +236,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="footerAddressLine1" datatype="html">
-        <source>Охрид</source>
+        <source>Питу Гули 4, Охрид 6000</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
           <context context-type="linenumber">67,68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footerAddressLine2" datatype="html">
-        <source>Северна Македонија</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">68,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerWorkingHours" datatype="html">

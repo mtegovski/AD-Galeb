@@ -1,10 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import {Component, inject, LOCALE_ID, OnDestroy, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { CityId, TripOption } from './trip-selector.models';
-import {CITIES, ROUTES, RUNS} from '../../data/trip-selector.data';
-import {buildTripOptions} from '../../utils/trip-selector.util';
+import {CITIES, Locale, ROUTES, RUNS} from '../../data/trip-selector.data';
+import {buildTripOptions, translateCity, translateRoute} from '../../utils/trip-selector.util';
 
 type TripForm = FormGroup<{
   fromCityId: import('@angular/forms').FormControl<CityId>;
@@ -25,6 +25,7 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
 
   // Built in ngOnInit to avoid fb init issues
   form!: TripForm;
+  locale = inject(LOCALE_ID) as Locale;
 
   // Plain array bound in template
   tripOptions: TripOption[] = [];
@@ -68,6 +69,9 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
   }
 
   cityName(id: CityId): string {
-    return this.cities.find(c => c.id === id)?.name ?? id;
+    return translateCity(id, this.locale);
   }
+
+  protected readonly translateCity = translateCity;
+  protected readonly translateRoute = translateRoute;
 }

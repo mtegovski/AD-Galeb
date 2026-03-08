@@ -1,10 +1,13 @@
 ﻿<div
-  class="bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent2-color)] rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 text-white relative overflow-hidden">
+  class="bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent2-color)]
+         rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all transform
+         hover:-translate-y-2 text-white relative overflow-hidden h-56">
+
   <div class="absolute -bottom-18 right-0 w-32 h-35 bg-white opacity-10 rounded-full -mr-16 -mt-16"></div>
 
   <div class="flex items-start justify-between gap-3 mb-4">
     <h3 class="font-[var(--font-family-heading)] text-2xl font-bold">
-      {{ relation.destination }}
+      {{ translateCity(relation.destination, locale) }}
     </h3>
 
     <div class="min-h-6">
@@ -18,34 +21,7 @@
     </div>
   </div>
 
-  <p class="mb-4 text-white text-opacity-90">
-    {{ relation.info }}
+  <p class="mb-4 text-white text-opacity-90 line-clamp-3">
+    {{ translateCityInfo(relation.info, locale) }}
   </p>
-
-  <div class="flex items-center font-semibold">
-    <i class="fas fa-clock mr-2"></i>
-    <span i18n="@@approxDurationPrefix">~</span>
-    <span class="ml-1">{{ relation.length }}</span>
-  </div>
-
-  <div class="flex items-start font-semibold">
-    <i class="fas fa-ticket mr-2 mt-1"></i>
-    <div class="flex flex-col">
-      <span>
-        <span i18n="@@oneWayLabel">Еднонасочна:</span>
-        {{ relation.price.oneWayTicket }}
-      </span>
-      <span>
-        <span i18n="@@returnLabel">Повратна:</span>
-        {{ relation.price.returnTicket }}
-      </span>
-
-      @if (relation.price.studentTicket !== undefined) {
-        <span>
-          <span i18n="@@studentLabel">Студентска:</span>
-          {{ relation.price.studentTicket }}
-        </span>
-      }
-    </div>
-  </div>
 </div>
