@@ -208,7 +208,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="footerQuickLinks" datatype="html">
-        <source> Брзи Линкови </source>
+        <source> Брзи линкови </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
           <context context-type="linenumber">24,27</context>
@@ -229,7 +229,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="footerContactInfo" datatype="html">
-        <source> Контакт Инфо </source>
+        <source> Контакт инфо </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
           <context context-type="linenumber">60,63</context>

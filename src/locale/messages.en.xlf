@@ -89,7 +89,7 @@
       </trans-unit>
       <trans-unit id="ourRoutesBadge">
         <source>Нашите Релации</source>
-        <target>Our Routes</target>
+        <target>Our routes</target>
       </trans-unit>
       <trans-unit id="connectedWith">
         <source>Поврзани со</source>
@@ -116,7 +116,7 @@
         <target>A trusted carrier since 1948. We connect you with every part of Macedonia and beyond.</target>
       </trans-unit>
       <trans-unit id="footerQuickLinks">
-        <source>Брзи Линкови</source>
+        <source>Брзи линкови</source>
         <target>Quick Links</target>
       </trans-unit>
       <trans-unit id="footerHome">
@@ -132,8 +132,8 @@
         <target>Routes</target>
       </trans-unit>
       <trans-unit id="footerContactInfo">
-        <source>Контакт Инфо</source>
-        <target>Contact Info</target>
+        <source>Контакт инфо</source>
+        <target>Contact info</target>
       </trans-unit>
       <trans-unit id="footerAddressLine1">
         <source>Питу Гули 4, Охрид 6000</source>
@@ -165,7 +165,7 @@
       </trans-unit>
       <trans-unit id="tripPlannerBadge">
         <source>Планер на патување</source>
-        <target>Trip Planner</target>
+        <target>Trip planner</target>
       </trans-unit>
       <trans-unit id="planRouteWith">
         <source>Планирајте ја вашата рута со</source>
@@ -305,7 +305,7 @@
       </trans-unit>
       <trans-unit id="aboutPageTitleLine1">
         <source>Приказната зад</source>
-        <target>The Story Behind</target>
+        <target>The story behind</target>
       </trans-unit>
       <trans-unit id="aboutPageTitleLine2">
         <source> АД Галеб</source>
@@ -317,7 +317,7 @@
       </trans-unit>
       <trans-unit id="aboutWhoWeAreTitle">
         <source>Кои сме ние</source>
-        <target>Who We Are</target>
+        <target>Who we are</target>
       </trans-unit>
       <trans-unit id="aboutWhoWeAreText">
         <source>АД Галеб е регионален превозник со традиција од 1948 година. Почнувајќи од Охрид, денес секојдневно поврзуваме градови низ државата и нудиме меѓународни релации.</source>
@@ -333,7 +333,7 @@
       </trans-unit>
       <trans-unit id="aboutMissionTitle">
         <source>Нашата мисија</source>
-        <target>Our Mission</target>
+        <target>Our mission</target>
       </trans-unit>
       <trans-unit id="aboutMissionP1">
         <source>Да им овозможиме на патниците достапен и доверлив превоз, со јасни информации за релации, термини и цени.</source>
@@ -353,7 +353,7 @@
       </trans-unit>
       <trans-unit id="contactPageTitle">
         <source>Контактирајте нѐ</source>
-        <target>Contact Us</target>
+        <target>Contact us</target>
       </trans-unit>
       <trans-unit id="contactPageIntro">
         <source>За информации за линии, термини и цени, јавете се или пишете ни. Тимот на АД Галеб е тука да ви помогне.</source>
