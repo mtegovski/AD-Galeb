@@ -373,11 +373,11 @@ export const ROUTES: Route[] = [
       { cityId: 'TET', arrivalOffsetMin: 165, departureOffsetMin: 165 },
       { cityId: 'SKP', arrivalOffsetMin: 225, departureOffsetMin: 225 },
       { cityId: 'KUM', arrivalOffsetMin: 270, departureOffsetMin: 270 },
-      { cityId: 'VRA', arrivalOffsetMin: 270, departureOffsetMin: 270 },// TODO: vujce ke azurirat
-      { cityId: 'LES', arrivalOffsetMin: 270, departureOffsetMin: 270 },// TODO: vujce ke azurirat
-      { cityId: 'NIS', arrivalOffsetMin: 270, departureOffsetMin: 270 },// TODO: vujce ke azurirat
-      { cityId: 'JAG', arrivalOffsetMin: 270, departureOffsetMin: 270 },// TODO: vujce ke azurirat
-      { cityId: 'BEG', arrivalOffsetMin: 645, departureOffsetMin: 645 },// TODO: vujce ke azurirat
+      { cityId: 'VRA', arrivalOffsetMin: 335, departureOffsetMin: 335 },
+      { cityId: 'LES', arrivalOffsetMin: 375, departureOffsetMin: 375 },
+      { cityId: 'NIS', arrivalOffsetMin: 435, departureOffsetMin: 435 },
+      { cityId: 'JAG', arrivalOffsetMin: 545, departureOffsetMin: 545 },
+      { cityId: 'BEG', arrivalOffsetMin: 645, departureOffsetMin: 645 },
     ],
   },
   {
@@ -431,10 +431,10 @@ export const ROUTES: Route[] = [
       { cityId: 'VEL', arrivalOffsetMin: 285, departureOffsetMin: 285 },
       { cityId: 'SKP', arrivalOffsetMin: 360, departureOffsetMin: 360 },
       { cityId: 'KUM', arrivalOffsetMin: 405, departureOffsetMin: 405 },
-      { cityId: 'VRA', arrivalOffsetMin: 405, departureOffsetMin: 405 },// TODO: vujce ke azurirat
-      { cityId: 'LES', arrivalOffsetMin: 405, departureOffsetMin: 405 },// TODO: vujce ke azurirat
-      { cityId: 'NIS', arrivalOffsetMin: 405, departureOffsetMin: 405 },// TODO: vujce ke azurirat
-      { cityId: 'JAG', arrivalOffsetMin: 405, departureOffsetMin: 405 },// TODO: vujce ke azurirat
+      { cityId: 'VRA', arrivalOffsetMin: 470, departureOffsetMin: 470 },
+      { cityId: 'LES', arrivalOffsetMin: 510, departureOffsetMin: 510 },
+      { cityId: 'NIS', arrivalOffsetMin: 570, departureOffsetMin: 570 },
+      { cityId: 'JAG', arrivalOffsetMin: 680, departureOffsetMin: 680 },
       { cityId: 'BEG', arrivalOffsetMin: 780, departureOffsetMin: 780 },
     ],
   },
