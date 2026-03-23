@@ -17,7 +17,6 @@ const detectLocale = (parts: string[]): Locale =>
 })
 export class SiteHeaderComponent {
   isMobileMenuOpen = false;
-  locale = inject(LOCALE_ID);
 
   get currentLocale(): Locale {
     return detectLocale(splitPath(location.pathname));
@@ -49,5 +48,21 @@ export class SiteHeaderComponent {
         : `/${next}/${rest}`;
 
     location.href = `${origin}${target}${search ?? ''}${hash ?? ''}`;
+  }
+
+  bookTicket(): void {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const dd = String(tomorrow.getDate()).padStart(2, '0');
+    const tomorrowDate = `${yyyy}-${mm}-${dd}`;
+
+    const language = this.currentLocale === 'mk' ? 'mk' : 'en';
+
+    const targetUrl = `https://www.obilet.com/${language}/journeys/6776-1818/${tomorrowDate}?partner=19713`;
+    window.open(targetUrl, '_blank');
   }
 }

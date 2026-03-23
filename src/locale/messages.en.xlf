@@ -63,8 +63,8 @@
         <target>Over 75 years of experience in passenger transport. Modern buses, professional drivers, regular routes to all cities.</target>
       </trans-unit>
       <trans-unit id="ctaViewRoutes">
-        <source>Погледни Релации</source>
-        <target>View Routes</target>
+        <source>Погледни релации</source>
+        <target>View routes</target>
       </trans-unit>
 
       <trans-unit id="internationalLineBadge">
@@ -345,7 +345,7 @@
       </trans-unit>
       <trans-unit id="aboutMissionCta">
         <source>Погледни релации</source>
-        <target>View Routes</target>
+        <target>View routes</target>
       </trans-unit>
       <trans-unit id="contactPageBadge">
         <source>Контакт</source>
@@ -400,6 +400,10 @@
       <trans-unit id="contactOpenMaps">
         <source>Отвори во Google Maps</source>
         <target>Open in Google Maps</target>
+      </trans-unit>
+      <trans-unit id="navBookTicket" datatype="html">
+        <source>Резервирај билет</source>
+        <target>Book a ticket</target>
       </trans-unit>
     </body>
   </file>

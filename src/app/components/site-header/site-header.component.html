@@ -1,7 +1,6 @@
 ﻿<header id="global-header" class="code-section bg-white shadow-md sticky top-0 z-50">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between">
-      <!-- Logo -->
       <a routerLink="" class="flex items-center">
         <img
           [ngSrc]="'assets/galeb_logo_staro.jpg'"
@@ -11,9 +10,16 @@
           class="h-28 py-2 w-auto">
       </a>
 
-      <!-- Desktop Navigation -->
       <div class="hidden lg:flex items-center space-x-8">
         <nav class="flex items-center space-x-8">
+
+          <button
+            (click)="bookTicket()"
+            class="bg-[var(--primary-color)] text-white px-5 py-2 rounded-full hover:opacity-90 transition-opacity font-medium shadow-sm"
+            i18n="@@navBookTicket">
+            Резервирај билет
+          </button>
+
           <a
             routerLink="about"
             class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
@@ -58,7 +64,6 @@
         </div>
       </div>
 
-      <!-- Mobile Menu Toggle -->
       <button
         type="button"
         class="lg:hidden text-[var(--dark-text-color)] p-2"
@@ -70,9 +75,16 @@
       </button>
     </div>
 
-    <!-- Mobile Navigation -->
     <nav class="lg:hidden pb-4" [class.hidden]="!isMobileMenuOpen">
       <div class="flex flex-col space-y-3 pt-4 border-t border-[var(--light-border-color)] mt-2">
+
+        <button
+          (click)="bookTicket(); closeMobileMenu()"
+          class="bg-[var(--primary-color)] text-white px-5 py-2 rounded-md hover:opacity-90 transition-opacity font-medium w-fit mb-2 shadow-sm"
+          i18n="@@navBookTicket">
+          Резервирај билет
+        </button>
+
         <a
           routerLink="about"
           class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium py-2"
@@ -123,5 +135,3 @@
     </nav>
   </div>
 </header>
-
-
