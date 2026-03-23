@@ -1,6 +1,5 @@
 ﻿import {City, Route, Run, TicketPrice} from '../components/trip-selector/trip-selector.models';
-
-export type Locale = 'mk' | 'en';
+import {Locale} from '../utils/languages.util';
 
 export const CITY_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   OHR: { mk: 'Охрид', en: 'Ohrid' },

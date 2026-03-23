@@ -1,5 +1,6 @@
 ﻿import { Route, Run, TripOption } from '../components/trip-selector/trip-selector.models';
-import {CITY_INFO_TRANSLATIONS, CITY_TRANSLATIONS, Locale} from '../data/trip-selector.data';
+import {CITY_INFO_TRANSLATIONS, CITY_TRANSLATIONS} from '../data/trip-selector.data';
+import {Locale} from './languages.util';
 
 export const toMinutes = (hhmm: string): number => {
   const [hh, mm] = hhmm.split(':').map(Number);

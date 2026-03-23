@@ -92,7 +92,6 @@
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableStopsCount"># Постојки</th>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableOneWay">Еднонасочна</th>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableReturn">Повратна</th>
-                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableStudent">Студентска</th>
                   </tr>
                   </thead>
 
@@ -128,11 +127,10 @@
 
                         <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.stops.length - 2 }}</td>
                         <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.price.oneWayTicket }}</td>
-                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.price.returnTicket }}</td>
 
                         <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
-                          @if (trip.price.studentTicket !== undefined) {
-                            {{ trip.price.studentTicket }}
+                          @if (trip.price.returnTicket !== undefined) {
+                            {{ trip.price.returnTicket }}
                           } @else {
                             <span i18n="@@notAvailableSlash">/</span>
                           }

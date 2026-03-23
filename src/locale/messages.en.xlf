@@ -227,10 +227,6 @@
         <source>Повратна</source>
         <target>Return</target>
       </trans-unit>
-      <trans-unit id="tableStudent">
-        <source>Студентска</source>
-        <target>Student</target>
-      </trans-unit>
       <trans-unit id="tripTypeSubtrip">
         <source>Под-релација</source>
         <target>Subroute</target>

@@ -1,14 +1,8 @@
 ﻿import { NgClass, NgOptimizedImage } from '@angular/common';
-import {Component, inject, LOCALE_ID} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import { RouterLink } from '@angular/router';
-
-type Locale = 'mk' | 'en';
-
-const splitPath = (pathname: string) =>
-  pathname.split('/').filter(Boolean);
-
-const detectLocale = (parts: string[]): Locale =>
-  (parts[0] === 'en' || parts[0] === 'mk') ? (parts[0] as Locale) : 'mk';
+import {detectLocale, Locale, splitPath} from '../../utils/languages.util';
+import {TicketService} from '../../services/ticket.service';
 
 @Component({
   selector: 'app-site-header',
@@ -16,6 +10,7 @@ const detectLocale = (parts: string[]): Locale =>
   templateUrl: './site-header.component.html',
 })
 export class SiteHeaderComponent {
+  ticketService = inject(TicketService);
   isMobileMenuOpen = false;
 
   get currentLocale(): Locale {
@@ -51,18 +46,6 @@ export class SiteHeaderComponent {
   }
 
   bookTicket(): void {
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(tomorrow.getDate() + 1);
-
-    const yyyy = tomorrow.getFullYear();
-    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
-    const dd = String(tomorrow.getDate()).padStart(2, '0');
-    const tomorrowDate = `${yyyy}-${mm}-${dd}`;
-
-    const language = this.currentLocale === 'mk' ? 'mk' : 'en';
-
-    const targetUrl = `https://www.obilet.com/${language}/journeys/6776-1818/${tomorrowDate}?partner=19713`;
-    window.open(targetUrl, '_blank');
+    this.ticketService.bookTicket(this.currentLocale);
   }
 }

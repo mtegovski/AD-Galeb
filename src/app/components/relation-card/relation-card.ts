@@ -1,6 +1,6 @@
 import {Component, inject, Input, LOCALE_ID} from '@angular/core';
 import {translateCity, translateCityInfo} from '../../utils/trip-selector.util';
-import {Locale} from '../../data/trip-selector.data';
+import {Locale} from '../../utils/languages.util';
 
 export interface RouteOverview {
   destination: string;

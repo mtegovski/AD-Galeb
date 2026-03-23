@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { CityId, TripOption } from './trip-selector.models';
-import {CITIES, Locale, ROUTES, RUNS} from '../../data/trip-selector.data';
+import {CITIES, ROUTES, RUNS} from '../../data/trip-selector.data';
 import {buildTripOptions, translateCity, translateRoute} from '../../utils/trip-selector.util';
+import {Locale} from '../../utils/languages.util';
 
 type TripForm = FormGroup<{
   fromCityId: import('@angular/forms').FormControl<CityId>;

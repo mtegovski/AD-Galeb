@@ -57,6 +57,5 @@ export interface TripOption {
 export interface TicketPrice {
   oneWayTicket: number;
   returnTicket?: number;
-  studentTicket?: number;
 }
 
