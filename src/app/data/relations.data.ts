@@ -24,14 +24,14 @@ export const OhridRelation: RouteOverview = {
   isInternational: false
 }
 
-export const NisRelation: RouteOverview = {
-  destination: 'NIS',
+export const BelgradeRelation: RouteOverview = {
+  destination: 'BEG',
   info: 'Секоја вечер линија до главниот град на Србија.',
   isInternational: true
 }
 
-export const BelgradeRelation: RouteOverview = {
-  destination: 'BEG',
+export const NisRelation: RouteOverview = {
+  destination: 'NIS',
   info: 'Секоја вечер линија до еден од најголемите градови во Србија.',
   isInternational: true
 }
