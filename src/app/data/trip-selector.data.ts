@@ -41,11 +41,11 @@ export const CITY_INFO_TRANSLATIONS: Record<string, Record<Locale, string>> = {
     mk: 'Директни линии до нашиот главен град. Повеќе поаѓања дневно.',
     en: 'Direct routes to our capital city. Multiple departures daily.'
   },
-  NIS: {
+  BEG: {
     mk: 'Секоја вечер линија до главниот град на Србија.',
     en: 'Every night a route to the capital of Serbia.'
   },
-  BEG: {
+  NIS: {
     mk: 'Секоја вечер линија до еден од најголемите градови во Србија.',
     en: 'Every night a route to one of the largest cities in Serbia.'
   }
