@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="yearsOfHistoryLine2">
         <source>историја</source>
-        <target>of history</target>
+        <target> of history</target>
       </trans-unit>
       <trans-unit id="routesDailyLine1">
         <source>Релации</source>
@@ -36,15 +36,15 @@
       </trans-unit>
       <trans-unit id="routesDailyLine2">
         <source>дневно</source>
-        <target>daily</target>
+        <target> daily</target>
       </trans-unit>
       <trans-unit id="commitmentAndQualityLine1">
         <source>Посветеност</source>
         <target>Commitment</target>
       </trans-unit>
       <trans-unit id="commitmentAndQualityLine2">
-        <source>квалитет</source>
-        <target>quality</target>
+        <source>и квалитет</source>
+        <target> and quality</target>
       </trans-unit>
       <trans-unit id="learnMoreAboutUs">
         <source>Дознај повеќе за нас</source>
