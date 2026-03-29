@@ -333,7 +333,6 @@ export const pricesByRoutes: Record<string, TicketPrice> = {
   'BEG-KUM': { oneWayTicket: 1540, returnTicket: 2640 },
 };
 
-// TODO: Update student tickets wherever they are available
 export const ROUTES: Route[] = [
   {
     id: 'R1',
@@ -401,10 +400,10 @@ export const ROUTES: Route[] = [
       { cityId: 'NIS', arrivalOffsetMin: 210, departureOffsetMin: 210 },
       { cityId: 'LES', arrivalOffsetMin: 270, departureOffsetMin: 270 },
       { cityId: 'VRA', arrivalOffsetMin: 330, departureOffsetMin: 330 },
-      { cityId: 'KUM', arrivalOffsetMin: 510, departureOffsetMin: 510 },
-      { cityId: 'SKP', arrivalOffsetMin: 570, departureOffsetMin: 570 },
-      { cityId: 'TET', arrivalOffsetMin: 525, departureOffsetMin: 525 },
-      { cityId: 'GOS', arrivalOffsetMin: 585, departureOffsetMin: 585 },
+      { cityId: 'KUM', arrivalOffsetMin: 450, departureOffsetMin: 450 },
+      { cityId: 'SKP', arrivalOffsetMin: 510, departureOffsetMin: 510 },
+      { cityId: 'TET', arrivalOffsetMin: 550, departureOffsetMin: 550 },
+      { cityId: 'GOS', arrivalOffsetMin: 590, departureOffsetMin: 590 },
       { cityId: 'KIC', arrivalOffsetMin: 630, departureOffsetMin: 630 },
       { cityId: 'OHR', arrivalOffsetMin: 690, departureOffsetMin: 690 },
     ],
@@ -461,8 +460,8 @@ export const ROUTES: Route[] = [
       { cityId: 'NIS', arrivalOffsetMin: 210, departureOffsetMin: 210 },
       { cityId: 'LES', arrivalOffsetMin: 270, departureOffsetMin: 270 },
       { cityId: 'VRA', arrivalOffsetMin: 330, departureOffsetMin: 330 },
-      { cityId: 'KUM', arrivalOffsetMin: 510, departureOffsetMin: 510 },
-      { cityId: 'SKP', arrivalOffsetMin: 570, departureOffsetMin: 570 },
+      { cityId: 'KUM', arrivalOffsetMin: 450, departureOffsetMin: 450 },
+      { cityId: 'SKP', arrivalOffsetMin: 510, departureOffsetMin: 510 },
       { cityId: 'KAV', arrivalOffsetMin: 540, departureOffsetMin: 540 },
       { cityId: 'VEL', arrivalOffsetMin: 575, departureOffsetMin: 575 },
       { cityId: 'PRI', arrivalOffsetMin: 640, departureOffsetMin: 640 },
