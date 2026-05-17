@@ -2,52 +2,58 @@
 import {Locale} from '../utils/languages.util';
 
 export const CITY_TRANSLATIONS: Record<string, Record<Locale, string>> = {
-  OHR: { mk: 'Охрид', en: 'Ohrid' },
-  RES: { mk: 'Ресен', en: 'Resen' },
-  BIT: { mk: 'Битола', en: 'Bitola' },
-  PRI: { mk: 'Прилеп', en: 'Prilep' },
-  VEL: { mk: 'Велес', en: 'Veles' },
-  STI: { mk: 'Штип', en: 'Štip' },
-  KOC: { mk: 'Кочани', en: 'Kochani' },
-  KAV: { mk: 'Кавадарци', en: 'Kavadarci' },
-  KIC: { mk: 'Кичево', en: 'Kichevo' },
-  GOS: { mk: 'Гостивар', en: 'Gostivar' },
-  TET: { mk: 'Тетово', en: 'Tetovo' },
-  SKP: { mk: 'Скопје', en: 'Skopje' },
-  KUM: { mk: 'Куманово', en: 'Kumanovo' },
+  OHR: { mk: 'Охрид', en: 'Ohrid', sr: 'Охрид' },
+  RES: { mk: 'Ресен', en: 'Resen', sr: 'Ресен' },
+  BIT: { mk: 'Битола', en: 'Bitola', sr: 'Битоља' },
+  PRI: { mk: 'Прилеп', en: 'Prilep', sr: 'Прилеп' },
+  VEL: { mk: 'Велес', en: 'Veles', sr: 'Велес' },
+  STI: { mk: 'Штип', en: 'Štip', sr: 'Штип' },
+  KOC: { mk: 'Кочани', en: 'Kochani', sr: 'Кочани' },
+  KAV: { mk: 'Кавадарци', en: 'Kavadarci', sr: 'Кавадарци' },
+  KIC: { mk: 'Кичево', en: 'Kichevo', sr: 'Кичево' },
+  GOS: { mk: 'Гостивар', en: 'Gostivar', sr: 'Гостивар' },
+  TET: { mk: 'Тетово', en: 'Tetovo', sr: 'Тетово' },
+  SKP: { mk: 'Скопје', en: 'Skopje', sr: 'Скопље' },
+  KUM: { mk: 'Куманово', en: 'Kumanovo', sr: 'Куманово' },
 
   // Serbia
-  VRA: { mk: 'Врање', en: 'Vranje' },
-  LES: { mk: 'Лесковац', en: 'Leskovac' },
-  NIS: { mk: 'Ниш', en: 'Niš' },
-  JAG: { mk: 'Јагодина', en: 'Jagodina' },
-  BEG: { mk: 'Белград', en: 'Belgrade' }
+  VRA: { mk: 'Врање', en: 'Vranje', sr: 'Врање' },
+  LES: { mk: 'Лесковац', en: 'Leskovac', sr: 'Лесковац' },
+  NIS: { mk: 'Ниш', en: 'Niš', sr: 'Ниш' },
+  JAG: { mk: 'Јагодина', en: 'Jagodina', sr: 'Јагодина' },
+  BEG: { mk: 'Белград', en: 'Belgrade', sr: 'Београд' }
 };
 
 export const CITY_INFO_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   OHR: {
     mk: 'Патувајте до бисерот на Балканот. Најфреквентни линии со поаѓања во текот на целиот ден.',
-    en: 'Travel to the pearl of the Balkans. Frequent departures throughout the day.'
+    en: 'Travel to the pearl of the Balkans. Frequent departures throughout the day.',
+    sr: 'Путујте до бисера Балкана. Најфреквентније линије са поласцима током целог дана.'
   },
   BIT: {
     mk: 'Поврзете се со градот на конзулите. Редовни линии преку Ресен.',
-    en: 'Connect to the city of consuls. Regular routes via Resen.'
+    en: 'Connect to the city of consuls. Regular routes via Resen.',
+    sr: 'Повежите се са градом конзула. Редовне линије преко Ресена.'
   },
   KOC: {
     mk: 'Директни линии до градот преку Велес и Штип.',
-    en: 'Direct routes to the city via Veles and Štip.'
+    en: 'Direct routes to the city via Veles and Štip.',
+    sr: 'Директне линије до града преко Велеса и Штипа.'
   },
   SKP: {
     mk: 'Директни линии до нашиот главен град. Повеќе поаѓања дневно.',
-    en: 'Direct routes to our capital city. Multiple departures daily.'
+    en: 'Direct routes to our capital city. Multiple departures daily.',
+    sr: 'Директне линије до нашег главног града. Више полазака дневно.'
   },
   BEG: {
     mk: 'Секоја вечер линија до главниот град на Србија.',
-    en: 'Every night a route to the capital of Serbia.'
+    en: 'Every night a route to the capital of Serbia.',
+    sr: 'Сваке вечери линија до главног града Србије.'
   },
   NIS: {
     mk: 'Секоја вечер линија до еден од најголемите градови во Србија.',
-    en: 'Every night a route to one of the largest cities in Serbia.'
+    en: 'Every night a route to one of the largest cities in Serbia.',
+    sr: 'Сваке вечери линија до једног од највећих градова у Србији.'
   }
 };
 

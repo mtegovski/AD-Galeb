@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="mk" target-language="sr" datatype="html" original="ng2.template">
+    <body>
+      <trans-unit id="fromWhichYear">
+        <source>Од 1948 Година</source>
+        <target>Од 1948</target>
+      </trans-unit>
+      <trans-unit id="trustedPartnerHeadlineLine1">
+        <source>Вашиот доверлив партнер</source>
+        <target>Ваш поуздан партнер</target>
+      </trans-unit>
+      <trans-unit id="trustedPartnerHeadlineLine2">
+        <source>за секое патување</source>
+        <target>за свако путовање</target>
+      </trans-unit>
+      <trans-unit id="galebHistory">
+        <source>АД Галеб е еден од главните регионални превозници со седиште во прекрасниот Охрид. Основани во 1948 година, веќе повеќе од седум децении ги поврзуваме луѓето со нивните дестинации.</source>
+        <target>АД Галеб је један од водећих регионалних превозника са седиштем у прелепом Охриду. Основани 1948. године, више од седам деценија повезујемо људе са њиховим дестинацијама.</target>
+      </trans-unit>
+      <trans-unit id="galebToday">
+        <source>Денес оперираме со модерна флота на автобуси и минибуси, нудејќи превоз од Охрид до речиси секој град во Македонија, како и меѓународни релации до Белград, Србија.</source>
+        <target>Данас управљамо модерном флотом аутобуса и минибуса, нудећи превоз од Охрида до готово сваког града у Македонији, као и међународне линије до Београда, Србија.</target>
+      </trans-unit>
+      <trans-unit id="yearsOfHistoryLine1">
+        <source>Години</source>
+        <target>Година</target>
+      </trans-unit>
+      <trans-unit id="yearsOfHistoryLine2">
+        <source>историја</source>
+        <target> историје</target>
+      </trans-unit>
+      <trans-unit id="routesDailyLine1">
+        <source>Релации</source>
+        <target>Линија</target>
+      </trans-unit>
+      <trans-unit id="routesDailyLine2">
+        <source>дневно</source>
+        <target> дневно</target>
+      </trans-unit>
+      <trans-unit id="commitmentAndQualityLine1">
+        <source>Посветеност</source>
+        <target>Посвећеност</target>
+      </trans-unit>
+      <trans-unit id="commitmentAndQualityLine2">
+        <source>и квалитет</source>
+        <target> и квалитет</target>
+      </trans-unit>
+      <trans-unit id="learnMoreAboutUs">
+        <source>Дознај повеќе за нас</source>
+        <target>Сазнај више о нама</target>
+      </trans-unit>
+      <trans-unit id="heroHeadlineLine1">
+        <source>Патувајте безбедно</source>
+        <target>Путујте безбедно</target>
+      </trans-unit>
+      <trans-unit id="heroHeadlineLine2">
+        <source> низ цела Македонија</source>
+        <target> широм Македоније</target>
+      </trans-unit>
+      <trans-unit id="heroSubheadline">
+        <source>Преку 75 години искуство во превоз на патници. Модерни автобуси, професионални возачи, редовни линии до сите градови.</source>
+        <target>Преко 75 година искуства у превозу путника. Модерни аутобуси, професионални возачи, редовне линије до свих градова.</target>
+      </trans-unit>
+      <trans-unit id="ctaViewRoutes">
+        <source>Погледни релации</source>
+        <target>Погледај линије</target>
+      </trans-unit>
+
+      <trans-unit id="internationalLineBadge">
+        <source>МЕЃУНАРОДНА ЛИНИЈА</source>
+        <target>МЕЂУНАРОДНА ЛИНИЈА</target>
+      </trans-unit>
+      <trans-unit id="approxDurationPrefix">
+        <source>~</source>
+        <target>~</target>
+      </trans-unit>
+      <trans-unit id="oneWayLabel">
+        <source>Еднонасочна:</source>
+        <target>Једносмерна:</target>
+      </trans-unit>
+      <trans-unit id="returnLabel">
+        <source>Повратна:</source>
+        <target>Повратна:</target>
+      </trans-unit>
+      <trans-unit id="studentLabel">
+        <source>Студентска:</source>
+        <target>Студентска:</target>
+      </trans-unit>
+      <trans-unit id="ourRoutesBadge">
+        <source>Нашите Релации</source>
+        <target>Наше линије</target>
+      </trans-unit>
+      <trans-unit id="connectedWith">
+        <source>Поврзани со</source>
+        <target>Повезани са</target>
+      </trans-unit>
+      <trans-unit id="allMacedonia">
+        <source> цела Македонија</source>
+        <target> целом Македонијом</target>
+      </trans-unit>
+      <trans-unit id="routesSectionDescription">
+        <source>Од Охрид до повеќе градови во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга.</source>
+        <target>Од Охрида до многих градова у земљи, плус међународне линије. Редовни поласци, удобна возила, професионална услуга.</target>
+      </trans-unit>
+      <trans-unit id="routesCtaAllRoutes">
+        <source>Погледни сите релации, распоред и цени</source>
+        <target>Погледај све линије, редове вожње и цене</target>
+      </trans-unit>
+      <trans-unit id="fixedTimetablesNote">
+        <source>Редовни линии со фиксни возни редови</source>
+        <target>Редовне линије са фиксним редовима вожње</target>
+      </trans-unit>
+      <trans-unit id="footerTagline">
+        <source>Доверлив превозник од 1948 година. Ве поврзуваме со секој дел на Македонија и пошироко.</source>
+        <target>Поуздан превозник од 1948. године. Повезујемо вас са сваким делом Македоније и шире.</target>
+      </trans-unit>
+      <trans-unit id="footerQuickLinks">
+        <source>Брзи линкови</source>
+        <target>Брзи линкови</target>
+      </trans-unit>
+      <trans-unit id="footerHome">
+        <source>Дома</source>
+        <target>Почетна</target>
+      </trans-unit>
+      <trans-unit id="footerAbout">
+        <source>За Нас</source>
+        <target>О Нама</target>
+      </trans-unit>
+      <trans-unit id="footerRoutes">
+        <source>Релации</source>
+        <target>Линије</target>
+      </trans-unit>
+      <trans-unit id="footerContactInfo">
+        <source>Контакт инфо</source>
+        <target>Контакт инфо</target>
+      </trans-unit>
+      <trans-unit id="footerAddressLine1">
+        <source>Питу Гули 4, Охрид 6000</source>
+        <target>Питу Гули 4, Охрид 6000</target>
+      </trans-unit>
+      <trans-unit id="footerWorkingHours">
+        <source>Работно време</source>
+        <target>Радно време</target>
+      </trans-unit>
+      <trans-unit id="footerCopyrightText">
+        <source>АД Галеб. Сите права задржани. Од 1948 година.</source>
+        <target>АД Галеб. Сва права задржана. Од 1948. године.</target>
+      </trans-unit>
+      <trans-unit id="navAbout">
+        <source>За Нас</source>
+        <target>О нама</target>
+      </trans-unit>
+      <trans-unit id="navRoutes">
+        <source>Релации</source>
+        <target>Линије</target>
+      </trans-unit>
+      <trans-unit id="navContact">
+        <source>Контакт</source>
+        <target>Контакт</target>
+      </trans-unit>
+      <trans-unit id="navOpenMenuAria">
+        <source>Отвори мени</source>
+        <target>Отвори мени</target>
+      </trans-unit>
+      <trans-unit id="tripPlannerBadge">
+        <source>Планер на патување</source>
+        <target>Планер путовања</target>
+      </trans-unit>
+      <trans-unit id="planRouteWith">
+        <source>Планирајте ја вашата рута со</source>
+        <target>Планирајте своју руту са</target>
+      </trans-unit>
+      <trans-unit id="clearSchedules">
+        <source> јасни распореди</source>
+        <target> јасним редовима вожње</target>
+      </trans-unit>
+      <trans-unit id="tripPlannerIntro">
+        <source>Изберете поаѓање и дестинација за да ги видите достапните патувања, времиња и постојки.</source>
+        <target>Изаберите полазак и дестинацију да видите доступна путовања, времена и станице.</target>
+      </trans-unit>
+      <trans-unit id="fromLabel">
+        <source>Од</source>
+        <target>Од</target>
+      </trans-unit>
+      <trans-unit id="toLabel">
+        <source>До</source>
+        <target>До</target>
+      </trans-unit>
+      <trans-unit id="chooseTwoDifferentCities">
+        <source>Ве молиме изберете два различни града.</source>
+        <target>Молимо изаберите два различита града.</target>
+      </trans-unit>
+      <trans-unit id="noTripsFound">
+        <source>Нема пронајдени патувања.</source>
+        <target>Нема пронађених путовања.</target>
+      </trans-unit>
+      <trans-unit id="tableDeparture">
+        <source>Поаѓање</source>
+        <target>Полазак</target>
+      </trans-unit>
+      <trans-unit id="tableArrival">
+        <source>Пристигнување</source>
+        <target>Долазак</target>
+      </trans-unit>
+      <trans-unit id="tableRoute">
+        <source>Релација</source>
+        <target>Линија</target>
+      </trans-unit>
+      <trans-unit id="tableType">
+        <source>Тип</source>
+        <target>Тип</target>
+      </trans-unit>
+      <trans-unit id="tableStops">
+        <source>Постојки</source>
+        <target>Станице</target>
+      </trans-unit>
+      <trans-unit id="tableStopsCount">
+        <source># Постојки</source>
+        <target># Станица</target>
+      </trans-unit>
+      <trans-unit id="tableOneWay">
+        <source>Еднонасочна</source>
+        <target>Једносмерна</target>
+      </trans-unit>
+      <trans-unit id="tableReturn">
+        <source>Повратна</source>
+        <target>Повратна</target>
+      </trans-unit>
+      <trans-unit id="tripTypeSubtrip">
+        <source>Под-релација</source>
+        <target>Подлинија</target>
+      </trans-unit>
+      <trans-unit id="tripTypeDirect">
+        <source>Директно</source>
+        <target>Директно</target>
+      </trans-unit>
+      <trans-unit id="notAvailableSlash">
+        <source>/</source>
+        <target>/</target>
+      </trans-unit>
+      <trans-unit id="whyGalebBadge">
+        <source>Зошто Галеб</source>
+        <target>Зашто Галеб</target>
+      </trans-unit>
+      <trans-unit id="whyGalebIntro">
+        <source>Со децении искуство и посветеност на квалитет, АД Галеб е избор број еден за илјадници патници.</source>
+        <target>Са деценијама искуства и посвећеношћу квалитету, АД Галеб је избор број један за хиљаде путника.</target>
+      </trans-unit>
+      <trans-unit id="featureTraditionTitle">
+        <source>75+ Години Традиција</source>
+        <target>75+ Година Традиције</target>
+      </trans-unit>
+      <trans-unit id="featureTraditionDesc">
+        <source>Од 1948 година, ние сме дел од секојдневниот живот на Охрид и Македонија. Искуство што се гледа и чувствува.</source>
+        <target>Од 1948. године, део смо свакодневног живота Охрида и Македоније. Искуство које се види и осећа.</target>
+      </trans-unit>
+      <trans-unit id="featureFleetTitle">
+        <source>Модерна Флота</source>
+        <target>Модерна Флота</target>
+      </trans-unit>
+      <trans-unit id="featureFleetDesc">
+        <source>Наши автобуси и минибуси се редовно одржувани, чисти и опремени со сè потребно за удобно патување.</source>
+        <target>Наши аутобуси и минибуси се редовно одржавају, чисти су и опремљени свиме што је потребно за удобно путовање.</target>
+      </trans-unit>
+      <trans-unit id="featureDriversTitle">
+        <source>Професионални Возачи</source>
+        <target>Професионални Возачи</target>
+      </trans-unit>
+      <trans-unit id="featureDriversDesc">
+        <source>Искусни, обучени и љубезни возачи кои се грижат за вашата безбедност и комфор на патот.</source>
+        <target>Искусни, обучени и љубазни возачи који брину о вашој безбедности и удобности на путу.</target>
+      </trans-unit>
+      <trans-unit id="featureSchedulesTitle">
+        <source>Редовни Распореди</source>
+        <target>Редовни Редови Вожње</target>
+      </trans-unit>
+      <trans-unit id="featureSchedulesDesc">
+        <source>Фиксни возни редови за сите линии. Планирајте го вашето патување со доверба во нашата точност.</source>
+        <target>Фиксни редови вожње за све линије. Планирајте своје путовање са поверењем у нашу тачност.</target>
+      </trans-unit>
+      <trans-unit id="featureCoverageTitle">
+        <source>Широка Покриеност</source>
+        <target>Широка Покривеност</target>
+      </trans-unit>
+      <trans-unit id="featureCoverageDesc">
+        <source>Од Охрид до сите главни градови во Македонија, плус меѓународни релации. Каде и да сакате, ние патуваме таму.</source>
+        <target>Од Охрида до свих главних градова у Македонији, плус међународне линије. Где год желите, ми путујемо тамо.</target>
+      </trans-unit>
+      <trans-unit id="featureServiceTitle">
+        <source>Пријателска Услуга</source>
+        <target>Пријатељска Услуга</target>
+      </trans-unit>
+      <trans-unit id="featureServiceDesc">
+        <source>Секој патник е важен за нас. Се трудиме секое патување да биде пријатно и без грижи.</source>
+        <target>Сваки путник нам је важан. Трудимо се да свако путовање буде пријатно и без брига.</target>
+      </trans-unit>
+      <trans-unit id="aboutPageBadge">
+        <source>За Нас</source>
+        <target>О Нама</target>
+      </trans-unit>
+      <trans-unit id="aboutPageTitleLine1">
+        <source>Приказната зад</source>
+        <target>Прича иза</target>
+      </trans-unit>
+      <trans-unit id="aboutPageTitleLine2">
+        <source> АД Галеб</source>
+        <target> АД Галеб</target>
+      </trans-unit>
+      <trans-unit id="aboutPageIntro">
+        <source>Повеќе од 75 години обезбедуваме сигурен, редовен и удобен превоз за патниците од Охрид и цела Македонија.</source>
+        <target>Више од 75 година обезбеђујемо сигуран, редован и удобан превоз за путнике из Охрида и широм Македоније.</target>
+      </trans-unit>
+      <trans-unit id="aboutWhoWeAreTitle">
+        <source>Кои сме ние</source>
+        <target>Ко смо ми</target>
+      </trans-unit>
+      <trans-unit id="aboutWhoWeAreText">
+        <source>АД Галеб е регионален превозник со традиција од 1948 година. Почнувајќи од Охрид, денес секојдневно поврзуваме градови низ државата и нудиме меѓународни релации.</source>
+        <target>АД Галеб је регионални превозник са традицијом од 1948. године. Почевши од Охрида, данас свакодневно повезујемо градове широм државе и нудимо међународне линије.</target>
+      </trans-unit>
+      <trans-unit id="aboutWhatWeDoTitle">
+        <source>Што нудиме</source>
+        <target>Шта Нудимо</target>
+      </trans-unit>
+      <trans-unit id="aboutWhatWeDoText">
+        <source>Модерна флота, искусни возачи и фиксни возни редови. Фокусот ни е секое патување да биде безбедно, навремено и пријатно.</source>
+        <target>Модерна флота, искусни возачи и фиксни редови вожње. Наш фокус је да свако путовање буде безбедно, тачно и пријатно.</target>
+      </trans-unit>
+      <trans-unit id="aboutMissionTitle">
+        <source>Нашата мисија</source>
+        <target>Наша мисија</target>
+      </trans-unit>
+      <trans-unit id="aboutMissionP1">
+        <source>Да им овозможиме на патниците достапен и доверлив превоз, со јасни информации за релации, термини и цени.</source>
+        <target>Да путницима омогућимо доступан и поуздан превоз, са јасним информацијама о линијама, терминима и ценама.</target>
+      </trans-unit>
+      <trans-unit id="aboutMissionP2">
+        <source>Продолжуваме да инвестираме во квалитет на услуга и во подобро искуство за секој патник.</source>
+        <target>Настављамо да инвестирамо у квалитет услуге и боље искуство за сваког путника.</target>
+      </trans-unit>
+      <trans-unit id="aboutMissionCta">
+        <source>Погледни релации</source>
+        <target>Погледај линије</target>
+      </trans-unit>
+      <trans-unit id="contactPageBadge">
+        <source>Контакт</source>
+        <target>Контакт</target>
+      </trans-unit>
+      <trans-unit id="contactPageTitle">
+        <source>Контактирајте нѐ</source>
+        <target>Контактирајте нас</target>
+      </trans-unit>
+      <trans-unit id="contactPageIntro">
+        <source>За информации за линии, термини и цени, јавете се или пишете ни. Тимот на АД Галеб е тука да ви помогне.</source>
+        <target>За информације о линијама, терминима и ценама, позовите нас или нам пишите. Тим АД Галеб је ту да вам помогне.</target>
+      </trans-unit>
+      <trans-unit id="contactAddressLabel">
+        <source>Адреса</source>
+        <target>Адреса</target>
+      </trans-unit>
+      <trans-unit id="contactAddressLine1">
+        <source>Питу Гули 4, Охрид 6000</source>
+        <target>Питу Гули 4, Охрид 6000</target>
+      </trans-unit>
+
+      <trans-unit id="contactPhonesLabel">
+        <source>Телефони</source>
+        <target>Бројеви Телефона</target>
+      </trans-unit>
+      <trans-unit id="contactPhoneMain">
+        <source>+389 46 260 339</source>
+        <target>+389 46 260 339</target>
+      </trans-unit>
+      <trans-unit id="contactPhoneAlt">
+        <source>+389 71 231 240</source>
+        <target>+389 71 231 240</target>
+      </trans-unit>
+      <trans-unit id="contactEmailsLabel">
+        <source>Е-пошта</source>
+        <target>Е-пошта</target>
+      </trans-unit>
+      <trans-unit id="contactWorkingHoursWeekdays">
+        <source>Понеделник - Недела: 05:00 - 19:00</source>
+        <target>Понедељак - Недеља: 05:00 - 19:00</target>
+      </trans-unit>
+
+      <trans-unit id="contactMapTitle">
+        <source>Локација</source>
+        <target>Локација</target>
+      </trans-unit>
+      <trans-unit id="contactMapNote">
+        <source>Погледнете ја нашата локација на Google Maps и добијте насоки до нас.</source>
+        <target>Погледајте нашу локацију на Google Maps и добијте упутства до нас.</target>
+      </trans-unit>
+      <trans-unit id="contactOpenMaps">
+        <source>Отвори во Google Maps</source>
+        <target>Отвори у Google Maps</target>
+      </trans-unit>
+      <trans-unit id="navBookTicket" datatype="html">
+        <source>Резервирај билет</source>
+        <target>Резервиши карту</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

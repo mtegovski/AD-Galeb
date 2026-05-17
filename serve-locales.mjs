@@ -53,11 +53,14 @@ http.createServer((req, res) => {
   if (pathname.startsWith("/en/")) {
     if (sendFile(res, path.join(root, "en", "index.html"))) return;
   }
+  if (pathname.startsWith("/sr/")) {
+    if (sendFile(res, path.join(root, "sr", "index.html"))) return;
+  }
 
   res.writeHead(404);
   res.end("Not found");
 }).listen(port, () => {
   console.log(`Serving: ${root}`);
   console.log(`Default: http://localhost:${port}/  (redirects to /mk/)`);
-  console.log(`Locales: http://localhost:${port}/mk/ and /en/`);
+  console.log(`Locales: http://localhost:${port}/mk/, /en/ and /sr/`);
 });

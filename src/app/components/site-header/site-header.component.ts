@@ -12,25 +12,38 @@ import {TicketService} from '../../services/ticket.service';
 export class SiteHeaderComponent {
   ticketService = inject(TicketService);
   isMobileMenuOpen = false;
+  isLanguageMenuOpen = false;
+
+  readonly locales: { code: Locale; label: string; name: string; flagSrc: string; ariaLabel: string }[] = [
+    { code: 'mk', label: 'MK', name: 'Македонски', flagSrc: 'assets/mk_flag.svg', ariaLabel: 'Switch to Macedonian' },
+    { code: 'en', label: 'EN', name: 'English', flagSrc: 'assets/en_flag.svg', ariaLabel: 'Switch to English' },
+    { code: 'sr', label: 'SR', name: 'Српски', flagSrc: 'assets/sr_flag.svg', ariaLabel: 'Switch to Serbian' },
+  ];
 
   get currentLocale(): Locale {
     return detectLocale(splitPath(location.pathname));
   }
 
+  get currentLocaleOption(): { code: Locale; label: string; name: string; flagSrc: string; ariaLabel: string } {
+    return this.locales.find(locale => locale.code === this.currentLocale) ?? this.locales[0];
+  }
+
   toggleMobileMenu(): void {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    this.isLanguageMenuOpen = false;
   }
 
   closeMobileMenu(): void {
     this.isMobileMenuOpen = false;
+    this.isLanguageMenuOpen = false;
   }
 
-  switchLocale(next: 'mk' | 'en'): void {
+  switchLocale(next: Locale): void {
     const { pathname, search, hash, origin } = location;
     const parts = pathname.split('/').filter(Boolean);
 
     // Replace or prepend locale folder
-    if (parts[0] === 'mk' || parts[0] === 'en') {
+    if (parts[0] === 'mk' || parts[0] === 'en' || parts[0] === 'sr') {
       parts[0] = next;
     } else {
       parts.unshift(next);
@@ -47,5 +60,9 @@ export class SiteHeaderComponent {
 
   bookTicket(): void {
     this.ticketService.bookTicket(this.currentLocale);
+  }
+
+  toggleLanguageMenu(): void {
+    this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
   }
 }

@@ -10,9 +10,8 @@
           class="h-28 py-2 w-auto">
       </a>
 
-      <div class="hidden lg:flex items-center space-x-8">
-        <nav class="flex items-center space-x-8">
-
+      <div class="flex items-center gap-4">
+        <nav class="hidden lg:flex items-center space-x-8">
           <button
             (click)="bookTicket()"
             class="bg-[var(--primary-color)] text-white px-5 py-2 rounded-full font-medium shadow-sm hover:brightness-90 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
@@ -42,37 +41,61 @@
           </a>
         </nav>
 
-        <div class="flex items-center rounded-full bg-[var(--primary-color)]/10 p-1 text-xs font-semibold">
-          <button
-            type="button"
-            class="px-3 py-1.5 rounded-full transition-colors"
-            [ngClass]="currentLocale === 'mk' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
-            (click)="switchLocale('mk')"
-            aria-pressed="{{ currentLocale === 'mk' }}"
-            aria-label="Switch to Macedonian">
-            MK
-          </button>
-          <button
-            type="button"
-            class="px-3 py-1.5 rounded-full transition-colors"
-            [ngClass]="currentLocale === 'en' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
-            (click)="switchLocale('en')"
-            aria-pressed="{{ currentLocale === 'en' }}"
-            aria-label="Switch to English">
-            EN
-          </button>
-        </div>
-      </div>
+        <div class="pt-2 lg:pt-0">
+          <div class="relative w-fit">
+            <button
+              type="button"
+              class="flex items-center gap-2 rounded-full border border-[var(--primary-color)]/20 bg-[var(--primary-color)]/10 px-3 py-2 text-sm font-semibold text-[var(--dark-text-color)] shadow-sm transition-all duration-200 hover:bg-[var(--primary-color)]/15"
+              (click)="toggleLanguageMenu()"
+              [attr.aria-expanded]="isLanguageMenuOpen"
+              aria-haspopup="menu"
+              aria-label="Select language">
+              <img
+                [ngSrc]="currentLocaleOption.flagSrc"
+                width="24"
+                height="24"
+                [alt]="currentLocaleOption.name"
+                class="h-6 w-6 rounded-full object-cover ring-1 ring-black/10">
+              <i
+                class="fas fa-chevron-down text-[10px] text-[var(--dark-text-color)]/60 transition-transform duration-200"
+                [ngClass]="isLanguageMenuOpen ? 'rotate-180' : ''"></i>
+            </button>
 
-      <button
-        type="button"
-        class="lg:hidden text-[var(--dark-text-color)] p-2"
-        (click)="toggleMobileMenu()"
-        [attr.aria-expanded]="isMobileMenuOpen"
-        aria-label="Отвори мени"
-        i18n-aria-label="@@navOpenMenuAria">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
+            <div
+              class="absolute right-0 mt-2 w-48 overflow-hidden rounded-2xl border border-[var(--primary-color)]/10 bg-white py-2 shadow-xl z-50"
+              [class.hidden]="!isLanguageMenuOpen"
+              role="menu">
+              @for (locale of locales; track locale.code) {
+                <button
+                  type="button"
+                  class="flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition-colors hover:bg-[var(--primary-color)]/10"
+                  [ngClass]="currentLocale === locale.code ? 'font-semibold text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]'"
+                  (click)="switchLocale(locale.code); closeMobileMenu()"
+                  [attr.aria-label]="locale.ariaLabel"
+                  role="menuitem">
+                  <img
+                    [ngSrc]="locale.flagSrc"
+                    width="24"
+                    height="24"
+                    [alt]="locale.name"
+                    class="h-6 w-6 rounded-full object-cover ring-1 ring-black/10">
+                  <span>{{ locale.name }}</span>
+                </button>
+              }
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="lg:hidden text-[var(--dark-text-color)] p-2"
+          (click)="toggleMobileMenu()"
+          [attr.aria-expanded]="isMobileMenuOpen"
+          aria-label="Отвори мени"
+          i18n-aria-label="@@navOpenMenuAria">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
     </div>
 
     <nav class="lg:hidden pb-4" [class.hidden]="!isMobileMenuOpen">
@@ -108,29 +131,6 @@
           i18n="@@navContact">
           Контакт
         </a>
-
-        <div class="pt-2">
-          <div class="flex items-center rounded-full bg-[var(--primary-color)]/10 p-1 text-xs font-semibold w-fit">
-            <button
-              type="button"
-              class="px-3 py-1.5 rounded-full transition-colors"
-              [ngClass]="currentLocale === 'mk' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
-              (click)="switchLocale('mk')"
-              aria-pressed="{{ currentLocale === 'mk' }}"
-              aria-label="Switch to Macedonian">
-              MK
-            </button>
-            <button
-              type="button"
-              class="px-3 py-1.5 rounded-full transition-colors"
-              [ngClass]="currentLocale === 'en' ? 'bg-white text-[var(--primary-color)]' : 'text-[var(--dark-text-color)]/70 hover:text-[var(--dark-text-color)]'"
-              (click)="switchLocale('en')"
-              aria-pressed="{{ currentLocale === 'en' }}"
-              aria-label="Switch to English">
-              EN
-            </button>
-          </div>
-        </div>
       </div>
     </nav>
   </div>

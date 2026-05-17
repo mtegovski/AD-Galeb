@@ -11,7 +11,8 @@
       "i18n": {
         "sourceLocale": "mk",
         "locales": {
-          "en": "src/locale/messages.en.xlf"
+          "en": "src/locale/messages.en.xlf",
+          "sr": "src/locale/messages.sr.xlf"
         }
       },
       "projectType": "application",
@@ -70,6 +71,11 @@
               "localize": [
                 "en"
               ]
+            },
+            "sr": {
+              "localize": [
+                "sr"
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -88,6 +94,9 @@
             },
             "en": {
               "buildTarget": "ad-galeb:build:en"
+            },
+            "sr": {
+              "buildTarget": "ad-galeb:build:sr"
             }
           },
           "defaultConfiguration": "development"

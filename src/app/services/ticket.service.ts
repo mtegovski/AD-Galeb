@@ -9,7 +9,7 @@ export class TicketService {
 
   /**
    * Opens the Obilet booking page for tomorrow's date.
-   * @param currentLocale The active language code ('mk' or 'en')
+   * @param currentLocale The active language code ('mk', 'en' or 'sr')
    */
   bookTicket(currentLocale: string): void {
     // 1. Calculate tomorrow's date
@@ -24,7 +24,22 @@ export class TicketService {
     const tomorrowDate = `${yyyy}-${mm}-${dd}`;
 
     // 3. Determine language (defaults to 'en' if not 'mk')
-    const language = currentLocale === 'mk' ? 'mk' : 'en';
+    let language: 'mk' | 'en' | 'sr';
+
+    switch (currentLocale) {
+      case 'mk':
+        language = 'mk';
+        break;
+      case 'en':
+        language = 'en';
+        break;
+      case 'sr':
+        language = 'sr';
+        break;
+      default:
+        language = 'mk';
+        break;
+    }
 
     // 4. Construct URL with the partner query parameter
     const targetUrl = `https://www.obilet.com/${language}/journeys/6776-1818/${tomorrowDate}?partner=19713`;
