@@ -125,12 +125,33 @@
                           }
                         </td>
 
-                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.stops.length - 2 }}</td>
-                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">{{ trip.price.oneWayTicket }}</td>
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
+                          {{ trip.stops.length - 2 }}
+                        </td>
 
                         <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
-                          @if (trip.price.returnTicket !== undefined) {
-                            {{ trip.price.returnTicket }}
+                          <div class="whitespace-nowrap">
+                            {{ trip.price.oneWayTicketMKD }} MKD
+                          </div>
+
+                          @if (trip.price.oneWayTicketRSD !== undefined) {
+                            <div class="mt-1 text-xs text-[var(--gray-text-color)] whitespace-nowrap">
+                              {{ trip.price.oneWayTicketRSD }} RSD
+                            </div>
+                          }
+                        </td>
+
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
+                          @if (trip.price.returnTicketMKD !== undefined) {
+                            <div class="whitespace-nowrap">
+                              {{ trip.price.returnTicketMKD }} MKD
+                            </div>
+
+                            @if (trip.price.returnTicketRSD !== undefined) {
+                              <div class="mt-1 text-xs text-[var(--gray-text-color)] whitespace-nowrap">
+                                {{ trip.price.returnTicketRSD }} RSD
+                              </div>
+                            }
                           } @else {
                             <span i18n="@@notAvailableSlash">/</span>
                           }
@@ -147,4 +168,3 @@
     </div>
   </section>
 }
-
