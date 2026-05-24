@@ -397,6 +397,10 @@
         <source>Отвори во Google Maps</source>
         <target>Отвори у Google Maps</target>
       </trans-unit>
+      <trans-unit id="switchCitiesAriaLabel" datatype="html">
+        <source>Смени ги градовите</source>
+        <target>Замени градове</target>
+      </trans-unit>
       <trans-unit id="navBookTicket" datatype="html">
         <source>Резервирај билет</source>
         <target>Резервиши карту</target>

@@ -69,6 +69,16 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
     });
   }
 
+  switchCities(): void {
+    const from = this.form.controls.fromCityId.value;
+    const to = this.form.controls.toCityId.value;
+
+    this.form.patchValue({
+      fromCityId: to,
+      toCityId: from,
+    });
+  }
+
   cityName(id: CityId): string {
     return translateCity(id, this.locale);
   }
