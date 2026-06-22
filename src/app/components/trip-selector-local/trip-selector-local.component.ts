@@ -1,50 +1,47 @@
 import {Component, inject, LOCALE_ID, OnDestroy, OnInit} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Subscription } from 'rxjs';
-import {CityId, TripOption} from './trip-selector.models';
-import {CITIES, ROUTES, RUNS} from '../../data/trip-selector.data';
+import {CommonModule} from '@angular/common';
+import {FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
+import {Subscription} from 'rxjs';
 import {buildTripOptions, translateCity, translateRoute} from '../../utils/trip-selector.util';
 import {Locale} from '../../utils/languages.util';
+import {LOCAL_CITIES, LOCAL_ROUTES, LOCAL_RUNS} from '../../data/trip-selector-local.data';
+import {City, CityId, Route, Run, TripOption} from '../trip-selector/trip-selector.models';
 
-type TripForm = FormGroup<{
+type TripLocalForm = FormGroup<{
   fromCityId: import('@angular/forms').FormControl<CityId>;
   toCityId: import('@angular/forms').FormControl<CityId>;
 }>;
 
 @Component({
-  selector: 'trip-selector',
+  selector: 'trip-selector-local',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './trip-selector.component.html',
+  templateUrl: './trip-selector-local.component.html',
 })
-export class TripSelectorComponent implements OnInit, OnDestroy {
-  // Static data
-  readonly cities = CITIES;
-  readonly routes = ROUTES;
-  readonly runs = RUNS;
-
-  // Built in ngOnInit to avoid fb init issues
-  form!: TripForm;
-  locale = inject(LOCALE_ID) as Locale;
-
-  // Plain array bound in template
-  tripOptions: TripOption[] = [];
-
+export class TripSelectorLocalComponent implements OnInit, OnDestroy {
+  readonly cities: City[] = LOCAL_CITIES;
+  readonly routes: Route[] = LOCAL_ROUTES;
+  readonly runs: Run[] = LOCAL_RUNS;
   private sub?: Subscription;
 
-  constructor(private readonly fb: FormBuilder) {}
+  form!: TripLocalForm;
+  locale = inject(LOCALE_ID) as Locale;
+
+  tripOptions: TripOption[] = [];
+
+  constructor(private readonly fb: FormBuilder) {
+  }
 
   ngOnInit(): void {
+    const defaultFrom = this.cities[0]?.id ?? '';
+    const defaultTo = this.cities[1]?.id ?? '';
+
     this.form = this.fb.nonNullable.group({
-      fromCityId: ['OHR' as CityId],
-      toCityId: ['SKP' as CityId],
-    }) as TripForm;
+      fromCityId: [defaultFrom as CityId],
+      toCityId: [defaultTo as CityId],
+    }) as TripLocalForm;
 
-    // initial compute
     this.recomputeTrips();
-
-    // recompute on every change
     this.sub = this.form.valueChanges.subscribe(() => this.recomputeTrips());
   }
 

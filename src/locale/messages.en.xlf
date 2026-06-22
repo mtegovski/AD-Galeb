@@ -405,6 +405,26 @@
         <source>Резервирај билет</source>
         <target>Book a ticket</target>
       </trans-unit>
+      <trans-unit id="localTripBadge">
+      <source>Локални патувања</source>
+      <target>Local trips</target>
+      </trans-unit>
+      <trans-unit id="localRoutesTitle">
+        <source>Локални релации</source>
+        <target>Local routes</target>
+      </trans-unit>
+      <trans-unit id="localTripIntro">
+        <source>Изберете поаѓање и дестинација за да ги видите достапните локални патувања.</source>
+        <target>Choose a departure and destination to see available local trips.</target>
+      </trans-unit>
+      <trans-unit id="navLocalRoutes">
+        <source>Локални релации</source>
+        <target>Local routes</target>
+      </trans-unit>
+      <trans-unit id="footerLocalRoutes">
+        <source>Локални релации</source>
+        <target>Local routes</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

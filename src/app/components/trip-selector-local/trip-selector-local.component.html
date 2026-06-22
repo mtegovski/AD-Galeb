@@ -1,0 +1,148 @@
+@if (form) {
+  <section class="code-section py-16 bg-gradient-to-br from-white to-[var(--light-background-color)] relative overflow-hidden">
+    <div class="absolute top-8 right-8 w-64 h-64 bg-[var(--primary-color)] rounded-full opacity-10 blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 bg-[var(--accent-color)] rounded-full opacity-10 blur-3xl"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center bg-white text-[var(--primary-color)] px-4 py-2 rounded-full font-semibold text-sm mb-5 shadow-md">
+          <i class="fas fa-bus mr-2"></i>
+          <span i18n="@@localTripBadge">Локални патувања</span>
+        </div>
+
+        <h1 class="font-[var(--font-family-heading)] text-3xl sm:text-4xl font-bold text-[var(--dark-text-color)] mb-4">
+          <span i18n="@@localRoutesTitle">Локални релации</span>
+        </h1>
+
+        <p class="text-[var(--gray-text-color)] text-lg leading-relaxed" i18n="@@localTripIntro">
+          Изберете поаѓање и дестинација за да ги видите достапните локални патувања.
+        </p>
+      </div>
+
+      <div class="mx-auto max-w-7xl">
+        <div class="bg-white/90 backdrop-blur rounded-2xl shadow-xl border border-[var(--light-border-color)] p-6 sm:p-8">
+          <form [formGroup]="form" class="grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-end">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-semibold text-[var(--dark-text-color)] uppercase tracking-wide"
+                i18n="@@fromLabel">
+                Од
+              </label>
+
+              <div class="relative">
+                <select
+                  formControlName="fromCityId"
+                  class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
+                  @for (c of cities; track c.id) {
+                    <option [value]="c.id">{{ translateCity(c.id, locale) }}</option>
+                  }
+                </select>
+                <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[var(--primary-color)]">
+                  <i class="fas fa-chevron-down text-sm"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="flex justify-center sm:pb-0">
+              <button
+                type="button"
+                class="group inline-flex h-12 w-12 items-center justify-center rounded-full border border-[var(--light-border-color)] bg-white text-[var(--primary-color)] shadow-md transition hover:-translate-y-0.5 hover:bg-[var(--primary-color)] hover:text-white hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
+                (click)="switchCities()"
+                i18n-aria-label="@@switchCitiesAriaLabel"
+                aria-label="Смени ги градовите">
+                <i class="fas fa-right-left text-lg transition-transform group-hover:rotate-180"></i>
+              </button>
+            </div>
+
+            <div class="space-y-2">
+              <label
+                class="text-sm font-semibold text-[var(--dark-text-color)] uppercase tracking-wide"
+                i18n="@@toLabel">
+                До
+              </label>
+
+              <div class="relative">
+                <select
+                  formControlName="toCityId"
+                  class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
+                  @for (c of cities; track c.id) {
+                    <option [value]="c.id">{{ translateCity(c.id, locale) }}</option>
+                  }
+                </select>
+                <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-[var(--primary-color)]">
+                  <i class="fas fa-chevron-down text-sm"></i>
+                </span>
+              </div>
+            </div>
+          </form>
+
+          @if (form.controls.fromCityId.value === form.controls.toCityId.value) {
+            <div
+              class="mt-6 rounded-xl border border-[var(--light-border-color)] bg-[var(--light-background-color)] px-4 py-3 text-sm text-[var(--dark-text-color)]"
+              i18n="@@chooseTwoDifferentCities">
+              Ве молиме изберете два различни града.
+            </div>
+          } @else {
+            @if (tripOptions.length === 0) {
+              <div
+                class="mt-6 rounded-xl border border-[var(--light-border-color)] bg-[var(--light-background-color)] px-4 py-3 text-sm text-[var(--dark-text-color)]"
+                i18n="@@noTripsFound">
+                Нема пронајдени патувања.
+              </div>
+            } @else {
+              <div class="mt-8 overflow-x-auto rounded-2xl border border-[var(--light-border-color)] bg-white shadow-lg">
+                <table class="min-w-full text-sm">
+                  <thead class="bg-[var(--light-background-color)] text-[var(--primary-color)] uppercase text-xs">
+                  <tr>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableDeparture">Поаѓање</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableOneWay">Еднонасочна</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableReturn">Повратна</th>
+                  </tr>
+                  </thead>
+
+                  <tbody class="divide-y divide-[var(--light-border-color)]">
+                    @for (trip of tripOptions; track trip.routeId) {
+                      <tr class="hover:bg-[var(--light-background-color)]/70 transition-colors">
+                        <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">
+                          {{ trip.departureTimeLocal }}
+                        </td>
+
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
+                          <div class="whitespace-nowrap">
+                            {{ trip.price.oneWayTicketMKD }} MKD
+                          </div>
+
+                          @if (trip.price.oneWayTicketRSD !== undefined) {
+                            <div class="mt-1 text-xs text-[var(--gray-text-color)] whitespace-nowrap">
+                              {{ trip.price.oneWayTicketRSD }} RSD
+                            </div>
+                          }
+                        </td>
+
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
+                          @if (trip.price.returnTicketMKD !== undefined) {
+                            <div class="whitespace-nowrap">
+                              {{ trip.price.returnTicketMKD }} MKD
+                            </div>
+
+                            @if (trip.price.returnTicketRSD !== undefined) {
+                              <div class="mt-1 text-xs text-[var(--gray-text-color)] whitespace-nowrap">
+                                {{ trip.price.returnTicketRSD }} RSD
+                              </div>
+                            }
+                          } @else {
+                            <span i18n="@@notAvailableSlash">/</span>
+                          }
+                        </td>
+                      </tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+}

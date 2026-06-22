@@ -520,6 +520,41 @@
           <context context-type="linenumber">111,113</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="localTripBadge" datatype="html">
+        <source>Локални патувања</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="localRoutesTitle" datatype="html">
+        <source>Локални релации</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="localTripIntro" datatype="html">
+        <source>Изберете поаѓање и дестинација за да ги видите достапните локални патувања.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navLocalRoutes" datatype="html">
+        <source>Локални релации</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerLocalRoutes" datatype="html">
+        <source>Локални релации</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="switchCitiesAriaLabel" datatype="html">
         <source>Смени ги градовите</source>
         <target>Смени ги градовите</target>

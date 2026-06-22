@@ -34,6 +34,13 @@
           </a>
 
           <a
+            routerLink="trips-local"
+            class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
+            i18n="@@navLocalRoutes">
+            Локални релации
+          </a>
+
+          <a
             routerLink="contact"
             class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
             i18n="@@navContact">
@@ -122,6 +129,14 @@
           (click)="closeMobileMenu()"
           i18n="@@navRoutes">
           Релации
+        </a>
+
+        <a
+          routerLink="trips-local"
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium py-2"
+          (click)="closeMobileMenu()"
+          i18n="@@navLocalRoutes">
+          Локални релации
         </a>
 
         <a

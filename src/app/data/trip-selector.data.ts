@@ -21,7 +21,23 @@ export const CITY_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   LES: { mk: 'Лесковац', en: 'Leskovac', sr: 'Лесковац' },
   NIS: { mk: 'Ниш', en: 'Niš', sr: 'Ниш' },
   JAG: { mk: 'Јагодина', en: 'Jagodina', sr: 'Јагодина' },
-  BEG: { mk: 'Белград', en: 'Belgrade', sr: 'Београд' }
+  BEG: { mk: 'Белград', en: 'Belgrade', sr: 'Београд' },
+
+  // Local cities/stops (Ohrid area)
+  KOS: { mk: 'Косел', en: 'Kosel', sr: 'Косел' },
+  LIV: { mk: 'Ливоишта', en: 'Livoishta', sr: 'Ливоишта' },
+  PES: { mk: 'Пештани', en: 'Peshtani', sr: 'Пештани' },
+  VELG: { mk: 'Велгошти', en: 'Velgoshti', sr: 'Велгошти' },
+  OTP: { mk: 'Отпад', en: 'Otpad', sr: 'Отпад' },
+  LESK: { mk: 'Лескоец', en: 'Leskoec', sr: 'Лескоец' },
+  VAP: { mk: 'Вапила', en: 'Vapila', sr: 'Вапила' },
+  BIZ: { mk: 'Билјанини Извори', en: 'Biljanini Izvori', sr: 'Биљанини Извори' },
+  RAC: { mk: 'Рача', en: 'Racha', sr: 'Рача' },
+  STF: { mk: 'Свети Стефан', en: 'Sveti Stefan', sr: 'Свети Стефан' },
+  GRA: { mk: 'Гранит', en: 'Granit', sr: 'Гранит' },
+  MET: { mk: 'Метропол', en: 'Metropol', sr: 'Метропол' },
+  LAG: { mk: 'Лагадин', en: 'Lagadin', sr: 'Лагадин' },
+  ELE: { mk: 'Елешец', en: 'Eleshec', sr: 'Елешец' },
 };
 
 export const CITY_INFO_TRANSLATIONS: Record<string, Record<Locale, string>> = {
