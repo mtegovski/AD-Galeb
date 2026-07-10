@@ -5,7 +5,8 @@ import {Subscription} from 'rxjs';
 import {buildTripOptions, translateCity, translateRoute} from '../../utils/trip-selector.util';
 import {Locale} from '../../utils/languages.util';
 import {LOCAL_CITIES, LOCAL_ROUTES, LOCAL_RUNS} from '../../data/trip-selector-local.data';
-import {City, CityId, Route, Run, TripOption} from '../trip-selector/trip-selector.models';
+import {City, CityId, Route, Run, StopLocation, TripOption} from '../trip-selector/trip-selector.models';
+import {StopMapModalComponent} from '../stop-map-modal/stop-map-modal.component';
 
 type TripLocalForm = FormGroup<{
   fromCityId: import('@angular/forms').FormControl<CityId>;
@@ -15,7 +16,7 @@ type TripLocalForm = FormGroup<{
 @Component({
   selector: 'trip-selector-local',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, StopMapModalComponent],
   templateUrl: './trip-selector-local.component.html',
 })
 export class TripSelectorLocalComponent implements OnInit, OnDestroy {
@@ -28,6 +29,10 @@ export class TripSelectorLocalComponent implements OnInit, OnDestroy {
   locale = inject(LOCALE_ID) as Locale;
 
   tripOptions: TripOption[] = [];
+
+  mapModalCityName: string = '';
+  mapModalLocations: StopLocation[] = [];
+  mapModalOpen = false;
 
   constructor(private readonly fb: FormBuilder) {
   }
@@ -76,8 +81,51 @@ export class TripSelectorLocalComponent implements OnInit, OnDestroy {
     });
   }
 
-  cityName(id: CityId): string {
-    return translateCity(id, this.locale);
+  fromCityHasStops(): boolean {
+    const fromId = this.form?.controls.fromCityId.value;
+    const toId = this.form?.controls.toCityId.value;
+    if (!fromId || !toId || fromId === toId) return false;
+
+    for (const route of this.routes) {
+      const fromStop = route.stops.find(s => s.cityId === fromId);
+      const toStop = route.stops.find(s => s.cityId === toId);
+      if (!fromStop || !toStop) continue;
+      const fromIdx = route.stops.indexOf(fromStop);
+      const toIdx = route.stops.indexOf(toStop);
+      if (fromIdx >= toIdx) continue;
+      if ((fromStop.boardingLocations ?? []).length > 0) return true;
+    }
+    return false;
+  }
+
+  openFromCityMap(): void {
+    const fromId = this.form.controls.fromCityId.value;
+    const toId = this.form.controls.toCityId.value;
+    const locations: StopLocation[] = [];
+    const seen = new Set<string>();
+
+    for (const route of this.routes) {
+      const fromStop = route.stops.find(s => s.cityId === fromId);
+      const toStop = route.stops.find(s => s.cityId === toId);
+
+      // Only consider routes where from comes before to
+      if (!fromStop || !toStop) continue;
+      const fromIdx = route.stops.indexOf(fromStop);
+      const toIdx = route.stops.indexOf(toStop);
+      if (fromIdx >= toIdx) continue;
+
+      for (const loc of fromStop.boardingLocations ?? []) {
+        const key = `${loc.lat},${loc.lng}`;
+        if (!seen.has(key)) {
+          seen.add(key);
+          locations.push(loc);
+        }
+      }
+    }
+
+    this.mapModalCityName = translateCity(fromId, this.locale);
+    this.mapModalLocations = locations;
+    this.mapModalOpen = true;
   }
 
   protected readonly translateCity = translateCity;

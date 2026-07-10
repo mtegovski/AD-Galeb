@@ -228,7 +228,20 @@ export const LOCAL_ROUTES: Route[] = [
     name: 'OHR-VELG',
     prices: getPartialRoutes(['OHR-OTP', 'OHR-VELG']),
     stops: [
-      {cityId: 'OHR', arrivalOffsetMin: 0, departureOffsetMin: 0},
+      {
+        cityId: 'OHR',
+        arrivalOffsetMin: 0,
+        departureOffsetMin: 0,
+        boardingLocations: [
+          {
+            lat: 41.1172, lng: 20.8016, label: {
+              mk: '',
+              en: '',
+              sr: '',
+            }
+          },
+        ]
+      },
       {cityId: 'OTP', arrivalOffsetMin: 0, departureOffsetMin: 0},
       {cityId: 'VELG', arrivalOffsetMin: 15, departureOffsetMin: 15}
     ]
@@ -248,7 +261,39 @@ export const LOCAL_ROUTES: Route[] = [
     name: 'OHR-KOS',
     prices: getPartialRoutes(['OHR-LESK', 'OHR-KOS', 'LESK-KOS']),
     stops: [
-      {cityId: 'OHR', arrivalOffsetMin: 0, departureOffsetMin: 0},
+      {
+        cityId: 'OHR', arrivalOffsetMin: 0, departureOffsetMin: 0,
+        boardingLocations: [
+          {
+            lat: 41.1161653, lng: 20.8037175, label: {
+              mk: 'Пекара Мартина',
+              en: 'Bakery Martina',
+              sr: 'Пекара Мартина',
+            }
+          },
+          {
+            lat: 41.113135, lng: 20.807879, label: {
+              mk: 'Гимназиjа „Свети Климент Охридски”',
+              en: 'Gymnasium "Saint Clement of Ohrid"',
+              sr: 'Гимназиjе „Свети Климент Охридски”',
+            }
+          },
+          {
+            lat: 41.116269, lng: 20.813812, label: {
+              mk: 'Месара Џорго',
+              en: 'Butcher shop Dzorgo',
+              sr: 'Месара Џорго',
+            }
+          },
+          {
+            lat: 41.1235234, lng: 20.8127321, label: {
+              mk: 'Наспроти АД Галеб',
+              en: 'Across AD Galeb',
+              sr: 'Супротно АД Галеб',
+            }
+          },
+        ]
+      },
       {cityId: 'LESK', arrivalOffsetMin: 0, departureOffsetMin: 0},
       {cityId: 'KOS', arrivalOffsetMin: 20, departureOffsetMin: 20},
     ],
@@ -270,7 +315,39 @@ export const LOCAL_ROUTES: Route[] = [
       'LESK-KOS', 'LESK-VAP', 'LESK-LIV',
       'KOS-VAP', 'KOS-LIV', 'VAP-LIV']),
     stops: [
-      {cityId: 'OHR', arrivalOffsetMin: 0, departureOffsetMin: 0},
+      {
+        cityId: 'OHR', arrivalOffsetMin: 0, departureOffsetMin: 0,
+        boardingLocations: [
+          {
+            lat: 41.1161653, lng: 20.8037175, label: {
+              mk: 'Пекара Мартина',
+              en: 'Bakery Martina',
+              sr: 'Пекара Мартина',
+            }
+          },
+          {
+            lat: 41.113135, lng: 20.807879, label: {
+              mk: 'Гимназиjа „Свети Климент Охридски”',
+              en: 'Gymnasium "Saint Clement of Ohrid"',
+              sr: 'Гимназиjе „Свети Климент Охридски”',
+            }
+          },
+          {
+            lat: 41.116269, lng: 20.813812, label: {
+              mk: 'Месара Џорго',
+              en: 'Butcher shop Dzorgo',
+              sr: 'Месара Џорго',
+            }
+          },
+          {
+            lat: 41.1235234, lng: 20.8127321, label: {
+              mk: 'Наспроти АД Галеб',
+              en: 'Across AD Galeb',
+              sr: 'Супротно АД Галеб',
+            }
+          },
+        ]
+      },
       {cityId: 'LESK', arrivalOffsetMin: 0, departureOffsetMin: 0},
       {cityId: 'KOS', arrivalOffsetMin: 20, departureOffsetMin: 20},
       {cityId: 'VAP', arrivalOffsetMin: 20, departureOffsetMin: 20},
@@ -305,7 +382,39 @@ export const LOCAL_ROUTES: Route[] = [
       'ELE-PES'
     ]),
     stops: [
-      {cityId: 'OHR', arrivalOffsetMin: 0, departureOffsetMin: 0},
+      {
+        cityId: 'OHR', arrivalOffsetMin: 0, departureOffsetMin: 0,
+        boardingLocations: [
+          {
+            lat: 41.1161653, lng: 20.8037175, label: {
+              mk: 'Пекара Мартина',
+              en: 'Bakery Martina',
+              sr: 'Пекара Мартина',
+            }
+          },
+          {
+            lat: 41.113135, lng: 20.807879, label: {
+              mk: 'Гимназиjа „Свети Климент Охридски”',
+              en: 'Gymnasium "Saint Clement of Ohrid"',
+              sr: 'Гимназиjе „Свети Климент Охридски”',
+            }
+          },
+          {
+            lat: 41.111739, lng: 20.808876, label: {
+              mk: 'Градска пекара',
+              en: 'City bakery',
+              sr: 'Градска пекара',
+            }
+          },
+          {
+            lat: 41.1071577, lng: 20.8134505, label: {
+              mk: 'Билјанини извори',
+              en: 'Biljanini Izvori',
+              sr: 'Биљанини извори',
+            }
+          }
+        ]
+      },
       {cityId: 'BIZ', arrivalOffsetMin: 0, departureOffsetMin: 0},
       {cityId: 'RAC', arrivalOffsetMin: 0, departureOffsetMin: 0},
       {cityId: 'STF', arrivalOffsetMin: 0, departureOffsetMin: 0},

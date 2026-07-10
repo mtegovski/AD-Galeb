@@ -575,6 +575,41 @@
           <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="closeModalAriaLabel" datatype="html">
+        <source>Затвори</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">22,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mapIframeTitle" datatype="html">
+        <source>Карта на постојката</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">41,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="openInMaps" datatype="html">
+        <source>Отвори во Google Maps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="showBoardingStopAriaLabel" datatype="html">
+        <source>Прикажи место на качување</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
+          <context context-type="linenumber">47,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ohrSkpViaKicBanner" datatype="html">
+        <source>Линијата Охрид – Скопје преку Кичево во 07:30 и линијата Скопје – Охрид преку Кичево во 14:00 се во вожба до 1-ви Септември.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">82,85</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

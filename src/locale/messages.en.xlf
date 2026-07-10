@@ -425,6 +425,26 @@
         <source>Локални релации</source>
         <target>Local routes</target>
       </trans-unit>
+      <trans-unit id="closeModalAriaLabel">
+        <source>Затвори</source>
+        <target>Close</target>
+      </trans-unit>
+      <trans-unit id="mapIframeTitle">
+        <source>Карта на постојката</source>
+        <target>Stop location map</target>
+      </trans-unit>
+      <trans-unit id="openInMaps">
+        <source>Отвори во Google Maps</source>
+        <target>Open in Google Maps</target>
+      </trans-unit>
+      <trans-unit id="showBoardingStopAriaLabel">
+        <source>Прикажи место на качување</source>
+        <target>Show boarding stop location</target>
+      </trans-unit>
+      <trans-unit id="ohrSkpViaKicBanner">
+        <source>Линијата Охрид – Скопје преку Кичево во 07:30 и линијата Скопје – Охрид преку Кичево во 14:00 се во вожба до 1-ви Септември.</source>
+        <target>The route from Ohrid to Skopje via Kichevo at 07:30 and the route from Skopje to Ohrid via Kichevo at 14:00 are in route until the 1st of September.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

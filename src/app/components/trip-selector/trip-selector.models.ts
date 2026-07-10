@@ -5,12 +5,25 @@ export interface City {
   name: string;
 }
 
+export interface StopLocation {
+  lat: number;
+  lng: number;
+  label?: StopNames;
+}
+
+interface StopNames {
+  mk: string;
+  en: string;
+  sr: string;
+}
+
 export interface RouteStop {
   cityId: CityId;
   /** Minutes from route start to arrival at this stop */
   arrivalOffsetMin: number;
   /** Minutes from route start to departure from this stop */
   departureOffsetMin: number;
+  boardingLocations?: StopLocation[]; // one or more physical boarding points
 }
 
 export interface Route {
