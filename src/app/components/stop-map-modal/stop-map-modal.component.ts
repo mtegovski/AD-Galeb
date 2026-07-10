@@ -2,14 +2,18 @@ import {Component, EventEmitter, inject, Input, LOCALE_ID, OnChanges, Output} fr
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 import {StopLocation} from '../trip-selector/trip-selector.models';
 import {Locale} from '../../utils/languages.util';
+import {I18nSelectPipe} from '@angular/common';
 
 @Component({
   selector: 'app-stop-map-modal',
   templateUrl: './stop-map-modal.component.html',
   standalone: true,
+  imports: [
+    I18nSelectPipe
+  ]
 })
 export class StopMapModalComponent implements OnChanges {
-  @Input() cityName: string = '';
+  @Input() modalTitle: string = '';
   @Input() locations: StopLocation[] = [];
   @Output() closed = new EventEmitter<void>();
 
@@ -18,6 +22,10 @@ export class StopMapModalComponent implements OnChanges {
 
   selectedLocation: StopLocation | null = null;
   mapUrl: SafeResourceUrl | null = null;
+  titleMapping: Record<string, string> = {
+    'arrivalStops': $localize`:@@arrivalStops:Постојки на пристигнување`,
+    'departureStops': $localize`:@@departureStops:Постојки на поаѓање`
+  };
 
   ngOnChanges(): void {
     this.selectedLocation = this.locations[0] ?? null;

@@ -32,7 +32,6 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
   // Plain array bound in template
   tripOptions: TripOption[] = [];
 
-  mapModalCityName: string = '';
   mapModalLocations: StopLocation[] = [];
   mapModalOpen = false;
 
@@ -125,7 +124,6 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
       }
     }
 
-    this.mapModalCityName = translateCity(fromId, this.locale);
     this.mapModalLocations = locations;
     this.mapModalOpen = true;
   }

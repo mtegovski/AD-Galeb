@@ -1,7 +1,7 @@
 ﻿@if (form) {
   @if (mapModalOpen) {
     <app-stop-map-modal
-      [cityName]="mapModalCityName"
+      [modalTitle]="'arrivalStops'"
       [locations]="mapModalLocations"
       (closed)="mapModalOpen = false">
     </app-stop-map-modal>

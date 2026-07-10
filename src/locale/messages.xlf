@@ -610,6 +610,20 @@
           <context context-type="linenumber">82,85</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="departureStops" datatype="html">
+        <source>Постојки за поаѓање</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">82,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="arrivalStops" datatype="html">
+        <source>Постојки за пристигнување</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">82,85</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

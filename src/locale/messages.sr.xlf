@@ -445,6 +445,14 @@
         <source>Линијата Охрид – Скопје преку Кичево во 07:30 и линијата Скопје – Охрид преку Кичево во 14:00 се во вожба до 1-ви Септември.</source>
         <target>Линија Охрид – Скопље преко Кичева у 07:30 и линија Скопље – Охрид преко Кичева у 14:00 саобраћају до 1. септембра.</target>
       </trans-unit>
+       <trans-unit id="departureStops">
+        <source>Постојки за поаѓање</source>
+        <target>Станице за полазак</target>
+      </trans-unit>
+      <trans-unit id="arrivalStops">
+        <source>Постојки за пристигнување</source>
+        <target>Станице за долазак</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

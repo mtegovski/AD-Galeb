@@ -2,7 +2,7 @@ import {Component, inject, LOCALE_ID, OnDestroy, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import {Subscription} from 'rxjs';
-import {buildTripOptions, translateCity, translateRoute} from '../../utils/trip-selector.util';
+import {buildTripOptions, translateCity} from '../../utils/trip-selector.util';
 import {Locale} from '../../utils/languages.util';
 import {LOCAL_CITIES, LOCAL_ROUTES, LOCAL_RUNS} from '../../data/trip-selector-local.data';
 import {City, CityId, Route, Run, StopLocation, TripOption} from '../trip-selector/trip-selector.models';
@@ -30,7 +30,6 @@ export class TripSelectorLocalComponent implements OnInit, OnDestroy {
 
   tripOptions: TripOption[] = [];
 
-  mapModalCityName: string = '';
   mapModalLocations: StopLocation[] = [];
   mapModalOpen = false;
 
@@ -123,11 +122,9 @@ export class TripSelectorLocalComponent implements OnInit, OnDestroy {
       }
     }
 
-    this.mapModalCityName = translateCity(fromId, this.locale);
     this.mapModalLocations = locations;
     this.mapModalOpen = true;
   }
 
   protected readonly translateCity = translateCity;
-  protected readonly translateRoute = translateRoute;
 }
