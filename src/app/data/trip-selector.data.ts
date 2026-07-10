@@ -574,12 +574,14 @@ export const ROUTES: Route[] = [
 
 export const RUNS: Run[] = [
   { id: 'R1-0530', routeId: 'R1', departureTimeLocal: '05:30' },
+  { id: 'R1-0730', routeId: 'R1', departureTimeLocal: '07:30' },
   { id: 'R1-1045', routeId: 'R1', departureTimeLocal: '10:45' },
   { id: 'R1-1500', routeId: 'R1', departureTimeLocal: '15:00' },
   { id: 'R1-1900', routeId: 'R1', departureTimeLocal: '19:00' },
 
   { id: 'R2-0800', routeId: 'R2', departureTimeLocal: '08:00' },
   { id: 'R2-1000', routeId: 'R2', departureTimeLocal: '10:00' },
+  { id: 'R2-1400', routeId: 'R2', departureTimeLocal: '14:00' },
   { id: 'R2-1630', routeId: 'R2', departureTimeLocal: '16:30' },
   { id: 'R2-1830', routeId: 'R2', departureTimeLocal: '18:30' },
 
