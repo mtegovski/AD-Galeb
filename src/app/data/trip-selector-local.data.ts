@@ -232,15 +232,6 @@ export const LOCAL_ROUTES: Route[] = [
         cityId: 'OHR',
         arrivalOffsetMin: 0,
         departureOffsetMin: 0,
-        boardingLocations: [
-          {
-            lat: 41.1172, lng: 20.8016, label: {
-              mk: '',
-              en: '',
-              sr: '',
-            }
-          },
-        ]
       },
       {cityId: 'OTP', arrivalOffsetMin: 0, departureOffsetMin: 0},
       {cityId: 'VELG', arrivalOffsetMin: 15, departureOffsetMin: 15}
