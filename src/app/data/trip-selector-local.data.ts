@@ -232,6 +232,50 @@ export const LOCAL_ROUTES: Route[] = [
         cityId: 'OHR',
         arrivalOffsetMin: 0,
         departureOffsetMin: 0,
+        boardingLocations: [
+          {
+            lat: 41.1161653, lng: 20.8037175, label: {
+              mk: 'Пекара Мартина',
+              en: 'Bakery Martina',
+              sr: 'Пекара Мартина',
+            }
+          },
+          {
+            lat: 41.113135, lng: 20.807879, label: {
+              mk: 'Гимназиjа „Свети Климент Охридски”',
+              en: 'Gymnasium "Saint Clement of Ohrid"',
+              sr: 'Гимназиjе „Свети Климент Охридски”',
+            }
+          },
+          {
+            lat: 41.116269, lng: 20.813812, label: {
+              mk: 'Месара Џорго',
+              en: 'Butcher shop Dzorgo',
+              sr: 'Месара Џорго',
+            }
+          },
+          {
+            lat: 41.12011, lng: 20.8133158, label: {
+              mk: 'ООУ „Христо Узунов”',
+              en: 'Elementary School "Hristo Uzunov"',
+              sr: 'ООУ „Христо Узунов”',
+            }
+          },
+          {
+            lat: 41.1235234, lng: 20.8127321, label: {
+              mk: 'Наспроти АД Галеб',
+              en: 'Across AD Galeb',
+              sr: 'Супротно АД Галеб',
+            }
+          },
+          {
+            lat: 41.1244224, lng: 20.8136612, label: {
+              mk: 'Лукоил',
+              en: 'Lukoil',
+              sr: 'Лукоил',
+            }
+          },
+        ]
       },
       {cityId: 'OTP', arrivalOffsetMin: 0, departureOffsetMin: 0},
       {cityId: 'VELG', arrivalOffsetMin: 15, departureOffsetMin: 15}

@@ -1,7 +1,7 @@
 ﻿@if (form) {
   @if (mapModalOpen) {
     <app-stop-map-modal
-      [modalTitle]="'arrivalStops'"
+      [modalTitle]="form.controls.fromCityId.value === 'OHR' ? 'arrivalStops' : 'departureStops'"
       [locations]="mapModalLocations"
       (closed)="mapModalOpen = false">
     </app-stop-map-modal>
