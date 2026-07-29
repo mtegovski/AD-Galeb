@@ -116,7 +116,7 @@ export const pricesByRoutes: Record<string, TicketPrice> = {
   'OHR-KIC': {oneWayTicketMKD: 420, returnTicketMKD: 550},
   'OHR-GOS': {oneWayTicketMKD: 500, returnTicketMKD: 790},
   'OHR-TET': {oneWayTicketMKD: 610, returnTicketMKD: 880},
-  'OHR-SKP': {oneWayTicketMKD: 850, returnTicketMKD: 1200},
+  'OHR-SKP': {oneWayTicketMKD: 950, returnTicketMKD: 1350},
   'OHR-KUM': {oneWayTicketMKD: 990},
   'OHR-KAV': {oneWayTicketMKD: 850, returnTicketMKD: 1160},
   'OHR-VRA': {oneWayTicketMKD: 1100, returnTicketMKD: 2100, oneWayTicketRSD: 2200, returnTicketRSD: 4130},
@@ -221,7 +221,7 @@ export const pricesByRoutes: Record<string, TicketPrice> = {
 
   // --- KIC Departures ---
   'KIC-OHR': {oneWayTicketMKD: 420, returnTicketMKD: 550},
-  'KIC-SKP': {oneWayTicketMKD: 460, returnTicketMKD: 660},
+  'KIC-SKP': {oneWayTicketMKD: 500, returnTicketMKD: 720},
   'KIC-GOS': {oneWayTicketMKD: 220, returnTicketMKD: 330},
   'KIC-TET': {oneWayTicketMKD: 260, returnTicketMKD: 400},
   'KIC-KUM': {oneWayTicketMKD: 720},
@@ -256,8 +256,8 @@ export const pricesByRoutes: Record<string, TicketPrice> = {
   'TET-BEG': {oneWayTicketMKD: 1820, returnTicketMKD: 3190, oneWayTicketRSD: 3580, returnTicketRSD: 6330},
 
   // --- SKP Departures ---
-  'SKP-OHR': {oneWayTicketMKD: 850, returnTicketMKD: 1200},
-  'SKP-KIC': {oneWayTicketMKD: 460, returnTicketMKD: 660},
+  'SKP-OHR': {oneWayTicketMKD: 950, returnTicketMKD: 1350},
+  'SKP-KIC': {oneWayTicketMKD: 500, returnTicketMKD: 720},
   'SKP-GOS': {oneWayTicketMKD: 330},
   'SKP-TET': {oneWayTicketMKD: 220},
   'SKP-KUM': {oneWayTicketMKD: 220},

@@ -445,6 +445,10 @@
         <source>Линијата Охрид – Скопје преку Кичево во 07:30 и линијата Скопје – Охрид преку Кичево во 14:00 се во вожба до 1-ви Септември.</source>
         <target>The route from Ohrid to Skopje via Kichevo at 07:30 and the route from Skopje to Ohrid via Kichevo at 14:00 are in route until the 1st of September.</target>
       </trans-unit>
+      <trans-unit id="pricesCorrectionBanner">
+        <source>Направени се промени во цените за релациите Охрид-Скопје и Кичево-Скопје. Ќе следат промени и за останатите линии во идните денови.</source>
+        <target>Changes have been made to the prices for the Ohrid-Skopje and Kicevo-Skopje routes. Changes will follow for the other lines in the coming days.</target>
+      </trans-unit>
        <trans-unit id="departureStops">
         <source>Постојки за поаѓање</source>
         <target>Departure stops</target>
