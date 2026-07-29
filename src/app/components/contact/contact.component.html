@@ -84,13 +84,20 @@
           Погледнете ја нашата локација на Google Maps и добијте насоки до нас.
         </p>
 
-        <div class="overflow-hidden rounded-xl border border-[var(--light-border-color)]">
+        <!-- Map Container with Loading Overlay -->
+        <div class="relative overflow-hidden rounded-xl border border-[var(--light-border-color)] h-[360px] bg-[var(--light-background-color)]">
+          @if (isMapLoading()) {
+            <div class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-[var(--light-background-color)] text-[var(--gray-text-color)] gap-3">
+              <i class="fas fa-circle-notch fa-spin text-3xl text-[var(--primary-color)]"></i>
+            </div>
+          }
+
           <iframe
             title="AD Galeb Location Map"
             src="https://maps.google.com/maps?q=Galeb%20Ticket%20Office&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            class="w-full h-[360px]"
-            style="border: 0;"
+            class="w-full h-full border-0"
             loading="lazy"
+            (load)="isMapLoading.set(false)"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>

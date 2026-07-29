@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html',
 })
 export class ContactComponent {
-
+  isMapLoading = signal(true);
 }
