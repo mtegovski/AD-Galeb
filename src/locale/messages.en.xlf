@@ -176,8 +176,8 @@
         <target> clear schedules</target>
       </trans-unit>
       <trans-unit id="tripPlannerIntro">
-        <source>Изберете поаѓање и дестинација за да ги видите достапните патувања, времиња и постојки.</source>
-        <target>Choose a departure and destination to see available trips, times and stops.</target>
+        <source>Нашите линии сообраќаат секој ден. Изберете поаѓање и дестинација за да ги видите сите достапни патувања, времиња и постојки.</source>
+        <target>Our routes operate every day. Select a departure and destination to see all trips, times and stops.</target>
       </trans-unit>
       <trans-unit id="fromLabel">
         <source>Од</source>

@@ -318,7 +318,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="tripPlannerIntro" datatype="html">
-        <source> Изберете поаѓање и дестинација за да ги видите достапните патувања, времиња и постојки. </source>
+        <source> Нашите линии сообраќаат секој ден. Изберете поаѓање и дестинација за да ги видите сите достапни патувања, времиња и постојки. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
           <context context-type="linenumber">19,21</context>
