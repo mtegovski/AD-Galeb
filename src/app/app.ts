@@ -2,13 +2,14 @@ import {Component, OnInit} from '@angular/core';
 import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
+import { PromoModalComponent } from './components/promo-modal/promo-modal.component';
 import {filter} from 'rxjs';
 
 declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SiteFooterComponent, SiteHeaderComponent],
+  imports: [RouterOutlet, SiteFooterComponent, SiteHeaderComponent, PromoModalComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
