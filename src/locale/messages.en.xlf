@@ -457,6 +457,82 @@
         <source>Постојки за пристигнување</source>
         <target>Arrival stops</target>
       </trans-unit>
+      <trans-unit id="navFaq">
+        <source>Најчесто поставувани прашања</source>
+        <target>FAQ</target>
+      </trans-unit>
+      <trans-unit id="footerFaq">
+        <source>Најчесто поставувани прашања</source>
+        <target>FAQ</target>
+      </trans-unit>
+      <trans-unit id="faqBadge">
+        <source>Најчесто поставувани прашања</source>
+        <target>FAQ</target>
+      </trans-unit>
+      <trans-unit id="faqPageTitle">
+        <source>Најчесто поставувани прашања</source>
+        <target>Frequently Asked Questions</target>
+      </trans-unit>
+      <trans-unit id="faqPageIntro">
+        <source>Одговори на најчестите прашања од нашите патници.</source>
+        <target>Answers to the most common questions from our passengers.</target>
+      </trans-unit>
+      <trans-unit id="faqQ1">
+        <source>Дали Обилет е официјален партнер на Галеб?</source>
+        <target>Is Obilet Galeb's official partner?</target>
+      </trans-unit>
+      <trans-unit id="faqA1">
+        <source>Да, Обилет е официјален партнер на Галеб.</source>
+        <target>Yes, Obilet is Galeb's official partner.</target>
+      </trans-unit>
+      <trans-unit id="faqQ2">
+        <source>Дали треба да ги испринтам картите пред патување?</source>
+        <target>Do we need to print the tickets before travelling?</target>
+      </trans-unit>
+      <trans-unit id="faqA2">
+        <source>Препорачано е но не е обавезно да ги имате испринтани картите од Обилет.</source>
+        <target>It is preferred but not mandatory to print the tickets from Obilet.</target>
+      </trans-unit>
+      <trans-unit id="faqQ3">
+        <source>Кога треба да пристигнам на станица пред тргнување?</source>
+        <target>When do I need to arrive at the station before departing?</target>
+      </trans-unit>
+      <trans-unit id="faqA3">
+        <source>Најдобро е да пристигнете 15-20 минути пред тргнување.</source>
+        <target>It's best to arrive 15-20 minutes before departure.</target>
+      </trans-unit>
+      <trans-unit id="faqQ4">
+        <source>Дали треба да платам дополнително за багаж?</source>
+        <target>Do I need to pay extra for my luggage?</target>
+      </trans-unit>
+      <trans-unit id="faqA4">
+        <source>Не, не треба да платите дополнително за багаж.</source>
+        <target>No, you do not need to pay extra for luggage.</target>
+      </trans-unit>
+      <trans-unit id="faqQ5">
+        <source>Како можам да купам карта?</source>
+        <target>How can I buy a ticket?</target>
+      </trans-unit>
+      <trans-unit id="faqA5">
+        <source>Онлајн преку Обилет, на касата или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
+        <target>Online via Obilet, at the ticket office or directly in the bus if there is a free seat. In the bus you can only buy a one way ticket.</target>
+      </trans-unit>
+      <trans-unit id="faqQ6">
+        <source>Каде застануваат автобусите?</source>
+        <target>Where do the buses stop?</target>
+      </trans-unit>
+      <trans-unit id="faqA6">
+        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица.</source>
+        <target>All buses stop at the main city stations. In Skopje there are additional two stops before the main station.</target>
+      </trans-unit>
+      <trans-unit id="faqQ7">
+        <source>Дали автобусите возат секој ден?</source>
+        <target>Do the buses run every day?</target>
+      </trans-unit>
+      <trans-unit id="faqA7">
+        <source>Да, сите автобуски линии возат секој ден.</source>
+        <target>Yes, all bus routes run every day.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -30,5 +30,11 @@ export const routes: Routes = [
       import('./components/contact/contact.component')
         .then(m => m.ContactComponent),
   },
+  {
+    path: 'faq',
+    loadComponent: () =>
+      import('./components/faq/faq.component')
+        .then(m => m.FaqComponent),
+  },
   { path: '**', redirectTo: '' },
 ];

@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
       <a routerLink="" class="flex items-center">
         <img
-          [ngSrc]="'assets/galeb_logo_staro.jpg'"
+          [ngSrc]="'assets/galeb_logo.jpg'"
           width="1011"
           height="239"
           alt="АД Галеб Logo"
@@ -45,6 +45,13 @@
             class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
             i18n="@@navContact">
             Контакт
+          </a>
+
+          <a
+            routerLink="faq"
+            class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium"
+            i18n="@@navFaq">
+            Најчесто поставувани прашања
           </a>
         </nav>
 
@@ -145,6 +152,14 @@
           (click)="closeMobileMenu()"
           i18n="@@navContact">
           Контакт
+        </a>
+
+        <a
+          routerLink="faq"
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors font-medium py-2"
+          (click)="closeMobileMenu()"
+          i18n="@@navFaq">
+          Најчесто поставувани прашања
         </a>
       </div>
     </nav>

@@ -631,6 +631,139 @@
           <context context-type="linenumber">82,85</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="navFaq" datatype="html">
+        <source>Најчесто поставувани прашања</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerFaq" datatype="html">
+        <source>Најчесто поставувани прашања</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqBadge" datatype="html">
+        <source>Најчесто поставувани прашања</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqPageTitle" datatype="html">
+        <source>Најчесто поставувани прашања</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqPageIntro" datatype="html">
+        <source>Одговори на најчестите прашања од нашите патници.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ1" datatype="html">
+        <source>Дали Обилет е официјален партнер на Галеб?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA1" datatype="html">
+        <source>Да, Обилет е официјален партнер на Галеб.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ2" datatype="html">
+        <source>Дали треба да ги испринтам картите пред патување?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA2" datatype="html">
+        <source>Препорачано е но не е обавезно да ги имате испринтани картите од Обилет.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ3" datatype="html">
+        <source>Кога треба да пристигнам на станица пред тргнување?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA3" datatype="html">
+        <source>Најдобро е да пристигнете 15-20 минути пред тргнување.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ4" datatype="html">
+        <source>Дали треба да платам дополнително за багаж?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA4" datatype="html">
+        <source>Не, не треба да платите дополнително за багаж.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ5" datatype="html">
+        <source>Како можам да купам карта?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA5" datatype="html">
+        <source>Онлајн преку Обилет, на касата или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ6" datatype="html">
+        <source>Каде застануваат автобусите?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA6" datatype="html">
+        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ7" datatype="html">
+        <source>Дали автобусите возат секој ден?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA7" datatype="html">
+        <source>Да, сите автобуски линии возат секој ден.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
