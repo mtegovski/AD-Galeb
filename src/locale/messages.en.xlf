@@ -514,7 +514,7 @@
         <target>How can I buy a ticket?</target>
       </trans-unit>
       <trans-unit id="faqA5">
-        <source>Онлајн преку Обилет, на касата или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
+        <source>Онлајн преку Обилет, на шалтер на билетара или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
         <target>Online via Obilet, at the ticket office or directly in the bus if there is a free seat. In the bus you can only buy a one way ticket.</target>
       </trans-unit>
       <trans-unit id="faqQ6">
@@ -522,8 +522,8 @@
         <target>Where do the buses stop?</target>
       </trans-unit>
       <trans-unit id="faqA6">
-        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица.</source>
-        <target>All buses stop at the main city stations. In Skopje there are additional two stops before the main station.</target>
+        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица, кои се означени во распоредот на самата страна.</source>
+        <target>All buses stop at the main city stations. In Skopje there are two more stops before the main station, which are marked in the schedule on the page itself.</target>
       </trans-unit>
       <trans-unit id="faqQ7">
         <source>Дали автобусите возат секој ден?</source>

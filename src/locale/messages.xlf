@@ -730,7 +730,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="faqA5" datatype="html">
-        <source>Онлајн преку Обилет, на касата или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
+        <source>Онлајн преку Обилет, на шалтер на билетара или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
           <context context-type="linenumber">1</context>
@@ -744,7 +744,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="faqA6" datatype="html">
-        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица.</source>
+        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица, кои се означени во распоредот на самата страна.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
           <context context-type="linenumber">1</context>
