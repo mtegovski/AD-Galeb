@@ -116,22 +116,6 @@
                 Нема пронајдени патувања.
               </div>
             } @else {
-              @if ((form.controls.fromCityId.value === 'OHR' && form.controls.toCityId.value === 'SKP') ||
-              (form.controls.fromCityId.value === 'SKP' && form.controls.toCityId.value === 'OHR')) {
-                <div class="mt-6 flex items-start gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-                  <i class="fas fa-circle-info mt-0.5 shrink-0 text-amber-500"></i>
-                  <span i18n="@@ohrSkpViaKicBanner">
-                    Линијата Охрид – Скопје преку Кичево во 07:30 и линијата Скопје – Охрид преку Кичево во 14:00 се во вожба до 1-ви Септември.
-                  </span>
-                </div>
-              }
-              <div class="mt-6 flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
-                <i class="fas fa-circle-info mt-0.5 shrink-0 text-red-500"></i>
-                <span i18n="@@pricesCorrectionBanner">
-                  Направени се промени во цените за релациите Охрид-Скопје и Кичево-Скопје. Ќе следат промени и за
-                  останатите линии во идните денови.
-                </span>
-              </div>
               <div
                 class="mt-8 overflow-x-auto rounded-2xl border border-[var(--light-border-color)] bg-white shadow-lg">
                 <table class="min-w-full text-sm">
