@@ -605,7 +605,6 @@ export const RUNS: Run[] = [
 
   {id: 'R2-0800', routeId: 'R2', departureTimeLocal: '08:00'},
   {id: 'R2-1000', routeId: 'R2', departureTimeLocal: '10:00'},
-  {id: 'R2-1400', routeId: 'R2', departureTimeLocal: '14:00'},
   {id: 'R2-1630', routeId: 'R2', departureTimeLocal: '16:30'},
   {id: 'R2-1830', routeId: 'R2', departureTimeLocal: '18:30'},
 
