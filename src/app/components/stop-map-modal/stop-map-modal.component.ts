@@ -1,4 +1,4 @@
-import {Component, EventEmitter, inject, Input, LOCALE_ID, OnChanges, Output} from '@angular/core';
+import {Component, EventEmitter, inject, Input, LOCALE_ID, OnChanges, Output, signal} from '@angular/core';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 import {StopLocation} from '../trip-selector/trip-selector.models';
 import {Locale} from '../../utils/languages.util';
@@ -20,6 +20,7 @@ export class StopMapModalComponent implements OnChanges {
   private sanitizer = inject(DomSanitizer);
   locale = inject(LOCALE_ID) as Locale;
 
+  isMapLoading = signal(true);
   selectedLocation: StopLocation | null = null;
   mapUrl: SafeResourceUrl | null = null;
   titleMapping: Record<string, string> = {
