@@ -227,6 +227,10 @@
         <source>Повратна</source>
         <target>Return</target>
       </trans-unit>
+      <trans-unit id="tableStudent">
+        <source>Студентска</source>
+        <target>Student</target>
+      </trans-unit>
       <trans-unit id="tripTypeSubtrip">
         <source>Под-релација</source>
         <target>Subroute</target>
@@ -532,6 +536,22 @@
       <trans-unit id="faqA7">
         <source>Да, сите автобуски линии возат секој ден.</source>
         <target>Yes, all bus routes run every day.</target>
+      </trans-unit>
+      <trans-unit id="faqQ8">
+        <source>Дали има студентски билети?</source>
+        <target>Are there student tickets?</target>
+      </trans-unit>
+      <trans-unit id="faqA8">
+        <source>Да, за некои од линиите. Достапните студентски билети можете да ги видите во пребарувачот на линии.</source>
+        <target>Yes, there are for some of the routes. You can see the available student tickets in the routes finder.</target>
+      </trans-unit>
+      <trans-unit id="faqQ9">
+        <source>Дали има попусти за деца?</source>
+        <target>Are there discounts for children?</target>
+      </trans-unit>
+      <trans-unit id="faqA9">
+        <source>Да, за меѓунардоните линии. Деца од 4 до 10 годишна возраст имаат попуст од 50%.</source>
+        <target>Yes, for international routes. Children aged 4 to 10 receive a 50% discount.</target>
       </trans-unit>
     </body>
   </file>

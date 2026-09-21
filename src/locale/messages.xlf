@@ -408,6 +408,13 @@
           <context context-type="linenumber">94,95</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="tableStudent" datatype="html">
+        <source>Студентска</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="tripTypeSubtrip" datatype="html">
         <source> Под-релација </source>
         <context-group purpose="location">
@@ -759,6 +766,34 @@
       </trans-unit>
       <trans-unit id="faqA7" datatype="html">
         <source>Да, сите автобуски линии возат секој ден.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ8" datatype="html">
+        <source>Дали има студентски билети?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA8" datatype="html">
+        <source>Да, за некои од линиите. Достапните студентски билети можете да ги видите во пребарувачот на линии.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ9" datatype="html">
+        <source>Дали има попусти за деца?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA9" datatype="html">
+        <source>Да, за меѓунардоните линии. Деца од 4 до 10 годишна возраст имаат попуст од 50%.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
           <context context-type="linenumber">1</context>

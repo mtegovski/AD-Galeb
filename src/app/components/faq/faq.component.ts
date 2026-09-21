@@ -48,6 +48,16 @@ export class FaqComponent {
       answer: $localize`:@@faqA7:Да, сите автобуски линии возат секој ден.`,
       open: false,
     },
+    {
+      question: $localize`:@@faqQ8:Дали има студентски билети?`,
+      answer: $localize`:@@faqA8:Да, за некои од линиите. Достапните студентски билети можете да ги видите во пребарувачот на линии.`,
+      open: false,
+    },
+    {
+      question: $localize`:@@faqQ9:Дали има попусти за деца?`,
+      answer: $localize`:@@faqA9:Да, за меѓунардоните линии. Деца од 4 до 10 годишна возраст имаат попуст од 50%.`,
+      open: false,
+    },
   ];
 
   toggle(index: number): void {

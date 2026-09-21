@@ -70,6 +70,7 @@ export interface TripOption {
 export interface TicketPrice {
   oneWayTicketMKD: number;
   returnTicketMKD?: number;
+  studentTicketMKD?: number;
   oneWayTicketRSD?: number;
   returnTicketRSD?: number;
 }
