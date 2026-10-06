@@ -1,6 +1,15 @@
 ﻿import {City, Route, Run, TicketPrice} from '../components/trip-selector/trip-selector.models';
 import {Locale} from '../utils/languages.util';
 
+const getPartialRoutes = (keys: string[]): Record<string, TicketPrice> => {
+  return keys.reduce((acc, key) => {
+    if (pricesByRoutes[key]) {
+      acc[key] = pricesByRoutes[key];
+    }
+    return acc;
+  }, {} as Record<string, TicketPrice>);
+};
+
 export const CITY_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   OHR: {mk: 'Охрид', en: 'Ohrid', sr: 'Охрид'},
   RES: {mk: 'Ресен', en: 'Resen', sr: 'Ресен'},
@@ -96,15 +105,6 @@ export const CITIES: City[] = [
   {id: 'JAG', name: 'Jagodina'},
   {id: 'BEG', name: 'Belgrade'},
 ];
-
-const getPartialRoutes = (keys: string[]): Record<string, TicketPrice> => {
-  return keys.reduce((acc, key) => {
-    if (pricesByRoutes[key]) {
-      acc[key] = pricesByRoutes[key];
-    }
-    return acc;
-  }, {} as Record<string, TicketPrice>);
-};
 
 export const pricesByRoutes: Record<string, TicketPrice> = {
   // --- OHR Departures ---
@@ -497,8 +497,8 @@ export const ROUTES: Route[] = [
       'VRA-KUM', 'VRA-SKP', 'VRA-KAV', 'VRA-VEL', 'VRA-PRI', 'VRA-BIT', 'VRA-RES', 'VRA-OHR',
       'KUM-SKP', 'KUM-KAV', 'KUM-VEL', 'KUM-PRI', 'KUM-BIT', 'KUM-RES', 'KUM-OHR',
       'SKP-KAV', 'SKP-VEL', 'SKP-PRI', 'SKP-BIT', 'SKP-RES', 'SKPBIT-OHR',
-      'KAV-VEL', 'KAV-PRI', 'KAV-BIT', 'KAV-RES', 'KAV-OHR',
-      'VEL-PRI', 'VEL-BIT', 'VEL-RES', 'VEL-OHR',
+      'VEL-KAV', 'VEL-PRI', 'VEL-BIT', 'VEL-RES', 'VEL-OHR',
+      'KAV-PRI', 'KAV-BIT', 'KAV-RES', 'KAV-OHR',
       'PRI-BIT', 'PRI-RES', 'PRI-OHR',
       'BIT-RES', 'BIT-OHR',
       'RES-OHR'
@@ -512,12 +512,12 @@ export const ROUTES: Route[] = [
       {cityId: 'KUM', arrivalOffsetMin: 450, departureOffsetMin: 450},
       {cityId: 'SKP', arrivalOffsetMin: 510, departureOffsetMin: 510},
       {cityId: 'SKPBIT', arrivalOffsetMin: 510, departureOffsetMin: 510},
-      {cityId: 'KAV', arrivalOffsetMin: 540, departureOffsetMin: 540},
-      {cityId: 'VEL', arrivalOffsetMin: 575, departureOffsetMin: 575},
-      {cityId: 'PRI', arrivalOffsetMin: 640, departureOffsetMin: 600},
-      {cityId: 'BIT', arrivalOffsetMin: 685, departureOffsetMin: 720},
-      {cityId: 'RES', arrivalOffsetMin: 725, departureOffsetMin: 765},
-      {cityId: 'OHR', arrivalOffsetMin: 760, departureOffsetMin: 760},
+      {cityId: 'VEL', arrivalOffsetMin: 585, departureOffsetMin: 585},
+      {cityId: 'KAV', arrivalOffsetMin: 630, departureOffsetMin: 630},
+      {cityId: 'PRI', arrivalOffsetMin: 705, departureOffsetMin: 705},
+      {cityId: 'BIT', arrivalOffsetMin: 765, departureOffsetMin: 765},
+      {cityId: 'RES', arrivalOffsetMin: 830, departureOffsetMin: 830},
+      {cityId: 'OHR', arrivalOffsetMin: 870, departureOffsetMin: 870},
     ],
   },
   {
@@ -618,7 +618,7 @@ export const RUNS: Run[] = [
 
   {id: 'R4-2130', routeId: 'R4', departureTimeLocal: '21:30'},
 
-  {id: 'R5-1610', routeId: 'R5', departureTimeLocal: '15:30'},
+  {id: 'R5-1530', routeId: 'R5', departureTimeLocal: '15:30'},
 
   {id: 'R6-2130', routeId: 'R6', departureTimeLocal: '21:30'},
 
