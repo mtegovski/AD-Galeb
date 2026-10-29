@@ -11,6 +11,7 @@ import {
   translateRoute
 } from '../../utils/trip-selector.util';
 import {Locale} from '../../utils/languages.util';
+import {loadLastSearch, saveLastSearch} from '../../utils/last-search.util';
 import {CITIES, ROUTES, RUNS} from '../../data/trip-selector.data';
 import {LOCAL_CITIES, LOCAL_ROUTES, LOCAL_RUNS} from '../../data/trip-selector-local.data';
 import {City, CityId, Route, Run, StopLocation, TripOption} from './trip-selector.models';
@@ -61,26 +62,29 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
   constructor(private readonly fb: FormBuilder) {}
 
   ngOnInit(): void {
-    const defaultFrom = this.isLocal ? this.cities[0]?.id ?? '' : 'OHR';
-    const defaultTo = this.isLocal ? this.cities[1]?.id ?? '' : 'SKP';
-
-    // A shared or bookmarked search, e.g. /trips?from=OHR&to=BIT
+    // A shared or bookmarked search (e.g. /trips?from=SKP&to=BIT) wins, then the visitor's
+    // last search on this page; otherwise no city is preselected
     const params = this.route.snapshot.queryParamMap;
-    const fromParam = params.get('from');
-    const toParam = params.get('to');
+    const initial = params.has('from') || params.has('to')
+      ? {from: params.get('from'), to: params.get('to')}
+      : loadLastSearch(this.mode);
 
     this.form = this.fb.nonNullable.group({
-      fromCityId: [(this.isKnownCity(fromParam) ? fromParam : defaultFrom) as CityId],
-      toCityId: [(this.isKnownCity(toParam) ? toParam : defaultTo) as CityId],
+      fromCityId: [(this.isKnownCity(initial?.from ?? null) ? initial!.from : '') as CityId],
+      toCityId: [(this.isKnownCity(initial?.to ?? null) ? initial!.to : '') as CityId],
     }) as TripForm;
 
     // initial compute
     this.recomputeTrips();
+    this.rememberSearch();
+    // A search restored from the last visit also goes into the URL, so it can be shared
+    this.updateUrl();
 
     // recompute on every change
     this.sub = this.form.valueChanges.subscribe(() => {
       this.recomputeTrips();
       this.updateUrl();
+      this.rememberSearch();
     });
   }
 
@@ -117,11 +121,20 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
     const url = this.router.createUrlTree([], {
       relativeTo: this.route,
       queryParams: {
-        from: this.form.controls.fromCityId.value,
-        to: this.form.controls.toCityId.value,
+        from: this.form.controls.fromCityId.value || null,
+        to: this.form.controls.toCityId.value || null,
       },
     });
     this.location.replaceState(this.router.serializeUrl(url));
+  }
+
+  /** Saves the search once both cities are chosen, so the page (and the home page search) can reopen it */
+  private rememberSearch(): void {
+    const from = this.form.controls.fromCityId.value;
+    const to = this.form.controls.toCityId.value;
+    if (from && to && from !== to) {
+      saveLastSearch(this.mode, {from, to});
+    }
   }
 
   private isKnownCity(id: string | null): id is CityId {

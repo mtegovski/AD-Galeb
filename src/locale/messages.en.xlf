@@ -625,6 +625,14 @@
         <source>Јазик</source>
         <target>Language</target>
       </trans-unit>
+      <trans-unit id="selectCityPlaceholder">
+        <source>Изберете град</source>
+        <target>Select a city</target>
+      </trans-unit>
+      <trans-unit id="chooseCitiesPrompt">
+        <source>Изберете од каде и до каде патувате за да ги видите поаѓањата.</source>
+        <target>Choose where you are travelling from and to, to see the departures.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
