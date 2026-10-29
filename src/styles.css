@@ -13,6 +13,7 @@
   --button-padding-x: 16px;
   --button-padding-y: 8px;
   --font-family-body: "Open Sans", sans-serif;
+  --font-family-heading: "Nunito", "Open Sans", sans-serif;
   --light-text-color: #ffffff;
   --dark-border-color: #1b5e20;
   --light-border-color: #e0e0e0;
@@ -27,4 +28,11 @@
   --primary-button-hover-text-color: #ffffff;
   --secondary-button-hover-bg-color: #e3f2fd;
   --secondary-button-hover-text-color: #1e88e5;
+}
+
+/* Headings and timetable times use Nunito; body text stays Open Sans */
+@layer base {
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-family-heading);
+  }
 }
