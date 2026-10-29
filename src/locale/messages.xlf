@@ -161,7 +161,7 @@
         <source>Дознај повеќе за нас</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">59,60</context>
+          <context context-type="linenumber">59,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="aboutPageBadge" datatype="html">
@@ -281,7 +281,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">66,69</context>
+          <context context-type="linenumber">61,64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactAddressLabel" datatype="html">
@@ -341,7 +341,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">98,101</context>
+          <context context-type="linenumber">93,96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactMapTitle" datatype="html">
@@ -534,7 +534,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">77,78</context>
+          <context context-type="linenumber">75,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="selectCityPlaceholder" datatype="html">
@@ -549,11 +549,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">85,86</context>
+          <context context-type="linenumber">83,84</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">131,132</context>
+          <context context-type="linenumber">129,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="switchCitiesAriaLabel" datatype="html">
@@ -564,7 +564,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">115,116</context>
+          <context context-type="linenumber">113,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="toLabel" datatype="html">
@@ -575,7 +575,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">124,125</context>
+          <context context-type="linenumber">122,123</context>
         </context-group>
       </trans-unit>
       <trans-unit id="heroShowTimetable" datatype="html">
@@ -589,7 +589,7 @@
         <source>Резервирај билет</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
-          <context context-type="linenumber">85,86</context>
+          <context context-type="linenumber">85,87</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
@@ -601,7 +601,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="internationalLineBadge" datatype="html">
-        <source> МЕЃУНАРОДНА ЛИНИЈА </source>
+        <source> Меѓународна линија </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/relation-card/relation-card.html</context>
           <context context-type="linenumber">20,23</context>
@@ -611,49 +611,49 @@
         <source>Погледни возен ред</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/relation-card/relation-card.html</context>
-          <context context-type="linenumber">31,32</context>
+          <context context-type="linenumber">31,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ourRoutesBadge" datatype="html">
         <source>Нашите Релации</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
-          <context context-type="linenumber">11,14</context>
+          <context context-type="linenumber">9,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="connectedWith" datatype="html">
         <source>Поврзани со</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
-          <context context-type="linenumber">16,17</context>
+          <context context-type="linenumber">14,15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="allMacedonia" datatype="html">
         <source> цела Македонија</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
-          <context context-type="linenumber">17,20</context>
+          <context context-type="linenumber">15,18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="routesSectionDescription" datatype="html">
         <source> Од Охрид до секој главен град во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
-          <context context-type="linenumber">21,26</context>
+          <context context-type="linenumber">19,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="routesCtaAllRoutes" datatype="html">
         <source>Погледни сите релации, распоред и цени</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
-          <context context-type="linenumber">39,40</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fixedTimetablesNote" datatype="html">
         <source>Редовни линии со фиксни возни редови</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
-          <context context-type="linenumber">45,48</context>
+          <context context-type="linenumber">42,45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerTagline" datatype="html">
@@ -674,28 +674,28 @@
         <source>Дома</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">22,24</context>
+          <context context-type="linenumber">21,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerAbout" datatype="html">
         <source>За Нас</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">31,33</context>
+          <context context-type="linenumber">29,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerRoutes" datatype="html">
         <source>Релации</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">40,42</context>
+          <context context-type="linenumber">37,39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navContact" datatype="html">
         <source>Контакт</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">49,51</context>
+          <context context-type="linenumber">45,47</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
@@ -710,21 +710,21 @@
         <source>Најчесто поставувани прашања</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">58,59</context>
+          <context context-type="linenumber">53,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerAddressLine1" datatype="html">
         <source>Питу Гули 4, Охрид 6000</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">73,75</context>
+          <context context-type="linenumber">68,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerCopyrightText" datatype="html">
         <source>АД Галеб. Сите права задржани. Од 1948 година.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">108,111</context>
+          <context context-type="linenumber">103,106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navMenuAria" datatype="html">
@@ -849,268 +849,268 @@
         <source>Локални патувања</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">20,23</context>
+          <context context-type="linenumber">18,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="localRoutesTitle" datatype="html">
         <source>Локални релации</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">24,27</context>
+          <context context-type="linenumber">22,25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="localTripIntro" datatype="html">
         <source> Изберете поаѓање и дестинација за да ги видите достапните локални патувања. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">28,30</context>
+          <context context-type="linenumber">26,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tripPlannerBadge" datatype="html">
         <source>Планер на патување</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">34,37</context>
+          <context context-type="linenumber">32,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="planRouteWith" datatype="html">
         <source>Планирајте ја вашата рута со</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="clearSchedules" datatype="html">
         <source> јасни распореди</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">39,42</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tripPlannerIntro" datatype="html">
         <source> Нашите линии сообраќаат секој ден. Изберете поаѓање и дестинација за да ги видите сите достапни патувања, времиња и постојки. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">43,45</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tabIntercityRoutes" datatype="html">
         <source>Меѓуградски релации</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">56,59</context>
+          <context context-type="linenumber">54,57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navLocalRoutes" datatype="html">
         <source>Локални релации</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">64,66</context>
+          <context context-type="linenumber">62,64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="showBoardingStopAriaLabel" datatype="html">
         <source>Прикажи место на качување</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">100,101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="chooseCitiesPrompt" datatype="html">
         <source>Изберете од каде и до каде патувате за да ги видите поаѓањата.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">148,150</context>
+          <context context-type="linenumber">146,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="chooseTwoDifferentCities" datatype="html">
         <source> Ве молиме изберете два различни града. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">154,156</context>
+          <context context-type="linenumber">152,154</context>
         </context-group>
       </trans-unit>
       <trans-unit id="noTripsFound" datatype="html">
         <source> Нема пронајдени патувања. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">161,162</context>
+          <context context-type="linenumber">159,160</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableDeparture" datatype="html">
         <source>Поаѓање</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">168,169</context>
+          <context context-type="linenumber">166,167</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">355,356</context>
+          <context context-type="linenumber">353,354</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableOneWay" datatype="html">
         <source>Еднонасочна</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">169,170</context>
+          <context context-type="linenumber">167,168</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">313,314</context>
+          <context context-type="linenumber">311,312</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">361,362</context>
+          <context context-type="linenumber">359,360</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableReturn" datatype="html">
         <source>Повратна</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">170,171</context>
+          <context context-type="linenumber">168,169</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">322,323</context>
+          <context context-type="linenumber">320,321</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">362,363</context>
+          <context context-type="linenumber">360,361</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nextDeparture" datatype="html">
         <source>Следно поаѓање</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">183,184</context>
+          <context context-type="linenumber">181,182</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">233,234</context>
+          <context context-type="linenumber">231,232</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">376,377</context>
+          <context context-type="linenumber">374,375</context>
         </context-group>
       </trans-unit>
       <trans-unit id="notAvailableSlash" datatype="html">
         <source>/</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">214</context>
+          <context context-type="linenumber">212</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">331</context>
+          <context context-type="linenumber">329</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">341</context>
+          <context context-type="linenumber">339</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">452</context>
+          <context context-type="linenumber">450</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">461</context>
+          <context context-type="linenumber">459</context>
         </context-group>
       </trans-unit>
       <trans-unit id="nextDayArrival" datatype="html">
         <source>Пристигнува следниот ден</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">242</context>
+          <context context-type="linenumber">240</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">384</context>
+          <context context-type="linenumber">382</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tripTypeSubtrip" datatype="html">
         <source> Под-релација </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">250,251</context>
+          <context context-type="linenumber">248,249</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">401,402</context>
+          <context context-type="linenumber">399,400</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tripTypeDirect" datatype="html">
         <source> Директно </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">256,257</context>
+          <context context-type="linenumber">254,255</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">407</context>
+          <context context-type="linenumber">405</context>
         </context-group>
       </trans-unit>
       <trans-unit id="stopsCount" datatype="html">
         <source>{VAR_PLURAL, plural, =0 {без постојки} =1 {1 постојка} other {<x id="INTERPOLATION"/> постојки}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">275</context>
+          <context context-type="linenumber">273</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">279</context>
+          <context context-type="linenumber">277</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">419</context>
+          <context context-type="linenumber">417</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">423</context>
+          <context context-type="linenumber">421</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableStudent" datatype="html">
         <source>Студентска</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">335,336</context>
+          <context context-type="linenumber">333,334</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">363,364</context>
+          <context context-type="linenumber">361,362</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableArrival" datatype="html">
         <source>Пристигнување</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">356,357</context>
+          <context context-type="linenumber">354,355</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableDuration" datatype="html">
         <source>Траење</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">357,358</context>
+          <context context-type="linenumber">355,356</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableRoute" datatype="html">
         <source>Релација</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">358,359</context>
+          <context context-type="linenumber">356,357</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableType" datatype="html">
         <source>Тип</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">360</context>
+          <context context-type="linenumber">358</context>
         </context-group>
       </trans-unit>
       <trans-unit id="tableStops" datatype="html">
         <source>Постојки</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">360,361</context>
+          <context context-type="linenumber">358,359</context>
         </context-group>
       </trans-unit>
       <trans-unit id="whyGalebIntro" datatype="html">

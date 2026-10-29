@@ -88,7 +88,7 @@
       <button
         type="button"
         (click)="bookTicket()"
-        class="inline-flex items-center gap-2 rounded-full bg-[var(--primary-color)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:brightness-90 cursor-pointer lg:px-5 lg:text-base">
+        class="inline-flex items-center gap-2 rounded-full bg-[var(--primary-color)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-md hover:brightness-90 cursor-pointer lg:px-5 lg:text-base">
         <i class="fas fa-ticket-alt"></i>
         <span class="sm:hidden" i18n="@@navBookShort">Резервирај</span>
         <span class="hidden sm:inline" i18n="@@navBookTicket">Резервирај билет</span>
@@ -174,7 +174,7 @@
 
   <div class="space-y-4 border-t border-[var(--light-border-color)] px-5 py-5">
     <div>
-      <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-[var(--gray-text-color)]" i18n="@@navLanguage">Јазик</p>
+      <p class="mb-2 text-sm font-semibold text-[var(--gray-text-color)]" i18n="@@navLanguage">Јазик</p>
       <div class="grid grid-cols-3 gap-2" role="group" i18n-aria-label="@@navLanguage" aria-label="Јазик">
         @for (locale of locales; track locale.code) {
           <button

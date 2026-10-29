@@ -64,8 +64,8 @@
       </trans-unit>
 
       <trans-unit id="internationalLineBadge">
-        <source>МЕЃУНАРОДНА ЛИНИЈА</source>
-        <target>INTERNATIONAL LINE</target>
+        <source>Меѓународна линија</source>
+        <target>International line</target>
       </trans-unit>
       <trans-unit id="ourRoutesBadge">
         <source>Нашите Релации</source>
