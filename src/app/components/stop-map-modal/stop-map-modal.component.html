@@ -43,6 +43,7 @@
 
     <!-- Map iframe -->
     <div class="px-6 py-4">
+      <div class="relative h-[340px] overflow-hidden rounded-xl">
       @if (isMapLoading()) {
         <div class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-[var(--light-background-color)] text-[var(--gray-text-color)] gap-3">
           <i class="fas fa-circle-notch fa-spin text-3xl text-[var(--primary-color)]"></i>
@@ -51,8 +52,7 @@
       @if (mapUrl) {
         <iframe
           [src]="mapUrl"
-          class="w-full rounded-xl border border-[var(--light-border-color)]"
-          height="340"
+          class="w-full h-full rounded-xl border border-[var(--light-border-color)]"
           style="border: 0;"
           loading="lazy"
           i18n-title="@@mapIframeTitle"
@@ -62,6 +62,7 @@
           title="Карта на постојката">
         </iframe>
       }
+      </div>
     </div>
 
     <!-- Footer -->

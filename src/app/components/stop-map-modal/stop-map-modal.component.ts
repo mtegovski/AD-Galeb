@@ -34,7 +34,9 @@ export class StopMapModalComponent implements OnChanges {
   }
 
   selectLocation(loc: StopLocation): void {
+    if (loc === this.selectedLocation) return;
     this.selectedLocation = loc;
+    this.isMapLoading.set(true);
     this.mapUrl = this.buildMapUrl();
   }
 

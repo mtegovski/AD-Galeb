@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
-import {filter} from 'rxjs';
+import {filter, skip} from 'rxjs';
 
 declare let gtag: Function;
 
@@ -18,7 +18,9 @@ export class App implements OnInit {
 
   ngOnInit() {
     this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
+      filter(event => event instanceof NavigationEnd),
+      // The initial page view is already sent by gtag('config') in index.html
+      skip(1)
     ).subscribe((event: NavigationEnd) => {
       // Manually send the new URL to Google Analytics
       gtag('config', 'G-3BTF44VZNN', {
