@@ -605,6 +605,26 @@
         <source>Погледни возен ред</source>
         <target>Погледај ред вожње</target>
       </trans-unit>
+      <trans-unit id="navFaqShort">
+        <source>Прашања</source>
+        <target>Питања</target>
+      </trans-unit>
+      <trans-unit id="navBookShort">
+        <source>Резервирај</source>
+        <target>Резервиши</target>
+      </trans-unit>
+      <trans-unit id="navCloseMenuAria">
+        <source>Затвори мени</source>
+        <target>Затвори мени</target>
+      </trans-unit>
+      <trans-unit id="navMenuAria">
+        <source>Мени</source>
+        <target>Мени</target>
+      </trans-unit>
+      <trans-unit id="navLanguage">
+        <source>Јазик</source>
+        <target>Језик</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
