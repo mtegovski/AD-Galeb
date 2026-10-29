@@ -1,4 +1,4 @@
-﻿<section class="code-section relative min-h-screen flex items-center justify-center overflow-hidden" id="smr9q6r">
+﻿<section class="code-section relative min-h-svh flex items-center justify-center overflow-hidden" id="smr9q6r">
   <div class="absolute inset-0 z-0">
     <img src="assets/IMG_8949.jpeg"
          class="absolute inset-0 h-full w-full object-cover object-center"
@@ -10,29 +10,74 @@
     </div>
   </div>
 
-  <div class="container mx-auto px-4 py-20 relative z-10">
+  <div class="container mx-auto px-4 py-12 sm:py-20 relative z-10">
     <div class="max-w-4xl">
 
-      <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+      <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6">
         <span i18n="@@heroHeadlineLine1">Патувајте безбедно</span>
         <span i18n="@@heroHeadlineLine2"> низ цела Македонија</span>
       </h1>
 
-      <p class="text-xl sm:text-2xl text-white/95 mb-8 font-light leading-relaxed max-w-2xl"
+      <p class="text-lg sm:text-2xl text-white/95 mb-6 sm:mb-8 font-light leading-relaxed max-w-2xl"
         i18n="@@heroSubheadline">
         Преку 75 години искуство во превоз на патници. Модерни автобуси,
         професионални возачи, редовни линии до сите градови.
       </p>
 
-      <div class="flex flex-col sm:flex-row gap-4 mb-6">
-        <a
-          routerLink="trips"
-          class="group bg-[var(--accent-color)] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-[var(--primary-color)] transition-all shadow-2xl hover:shadow-xl transform hover:-translate-y-1 text-center">
-          <i class="fas fa-route mr-2"></i>
-          <span i18n="@@ctaViewRoutes">Погледни релации</span>
-          <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform inline-block"></i>
-        </a>
+      <form
+        class="mb-5 grid max-w-3xl grid-cols-[1fr_auto] gap-3 rounded-2xl bg-white/95 p-4 shadow-2xl backdrop-blur sm:mb-6 sm:grid-cols-[1fr_auto_1fr_auto] sm:items-end sm:p-5"
+        (submit)="$event.preventDefault(); showTimetable()">
+        <label class="col-start-1 row-start-1 block">
+          <span class="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-[var(--gray-text-color)]" i18n="@@fromLabel">Од</span>
+          <span class="relative block">
+            <select
+              class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
+              [value]="from()"
+              (change)="from.set($any($event.target).value)">
+              <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
+              @for (c of cities; track c.id) {
+                <option [value]="c.id" [selected]="c.id === from()">{{ translateCity(c.id, locale) }}</option>
+              }
+            </select>
+            <i class="fas fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-sm text-[var(--primary-color)]"></i>
+          </span>
+        </label>
 
+        <button
+          type="button"
+          class="group col-start-2 row-span-2 row-start-1 inline-flex h-11 w-11 items-center self-center sm:row-span-1 sm:h-12 sm:w-12 sm:self-end justify-center rounded-full border border-[var(--light-border-color)] bg-white text-[var(--primary-color)] transition hover:bg-[var(--primary-color)] hover:text-white cursor-pointer"
+          (click)="swapCities()"
+          i18n-aria-label="@@switchCitiesAriaLabel"
+          aria-label="Смени ги градовите">
+          <i class="fas fa-right-left transition-transform rotate-90 sm:rotate-0 sm:group-hover:rotate-180"></i>
+        </button>
+
+        <label class="col-start-1 row-start-2 block sm:col-start-3 sm:row-start-1">
+          <span class="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-[var(--gray-text-color)]" i18n="@@toLabel">До</span>
+          <span class="relative block">
+            <select
+              class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
+              [value]="to()"
+              (change)="to.set($any($event.target).value)">
+              <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
+              @for (c of cities; track c.id) {
+                <option [value]="c.id" [selected]="c.id === to()">{{ translateCity(c.id, locale) }}</option>
+              }
+            </select>
+            <i class="fas fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-sm text-[var(--primary-color)]"></i>
+          </span>
+        </label>
+
+        <button
+          type="submit"
+          [disabled]="!canSearch"
+          class="col-span-2 row-start-3 inline-flex h-12 items-center justify-center gap-2 rounded-xl sm:col-span-1 sm:col-start-4 sm:row-start-1 bg-[var(--accent-color)] px-6 font-bold text-white shadow-lg transition hover:bg-[var(--primary-color)] cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-[var(--accent-color)]">
+          <i class="fas fa-magnifying-glass"></i>
+          <span i18n="@@heroShowTimetable">Прикажи возен ред</span>
+        </button>
+      </form>
+
+      <div class="flex flex-col sm:flex-row gap-4 mb-6">
         <button
           (click)="bookTicket()"
           class="group bg-white text-[var(--primary-color)] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[var(--primary-color)] hover:text-white transition-all shadow-2xl hover:shadow-xl transform hover:-translate-y-1 text-center cursor-pointer">

@@ -633,6 +633,10 @@
         <source>Изберете од каде и до каде патувате за да ги видите поаѓањата.</source>
         <target>Изаберите одакле и докле путујете да бисте видели поласке.</target>
       </trans-unit>
+      <trans-unit id="heroShowTimetable">
+        <source>Прикажи возен ред</source>
+        <target>Прикажи ред вожње</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
