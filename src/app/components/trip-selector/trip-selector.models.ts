@@ -52,6 +52,8 @@ export interface TripOption {
 
   departureTimeLocal: string;
   arrivalTimeLocal: string;
+  /** Days between departure and arrival (1 when the bus arrives after midnight) */
+  arrivalDayOffset: number;
 
   stops: CityId[];
 

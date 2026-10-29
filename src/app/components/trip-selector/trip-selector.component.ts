@@ -3,7 +3,13 @@ import {CommonModule} from '@angular/common';
 import {FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import {ActivatedRoute, RouterLink, RouterLinkActive} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {buildTripOptions, translateCity, translateRoute} from '../../utils/trip-selector.util';
+import {
+  buildTripOptions,
+  findNextTrip,
+  formatDuration,
+  translateCity,
+  translateRoute
+} from '../../utils/trip-selector.util';
 import {Locale} from '../../utils/languages.util';
 import {CITIES, ROUTES, RUNS} from '../../data/trip-selector.data';
 import {LOCAL_CITIES, LOCAL_ROUTES, LOCAL_RUNS} from '../../data/trip-selector-local.data';
@@ -38,6 +44,8 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
 
   // Plain array bound in template
   tripOptions: TripOption[] = [];
+  /** The first trip that has not departed yet today (Skopje time) */
+  nextTrip?: TripOption;
 
   mapModalLocations: StopLocation[] = [];
   mapModalOpen = false;
@@ -72,6 +80,7 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
 
     if (!from || !to || from === to) {
       this.tripOptions = [];
+      this.nextTrip = undefined;
       return;
     }
 
@@ -81,6 +90,7 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
       routes: this.routes,
       runs: this.runs,
     });
+    this.nextTrip = findNextTrip(this.tripOptions);
   }
 
   switchCities(): void {
@@ -136,6 +146,7 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
     return translateCity(id, this.locale);
   }
 
+  protected readonly formatDuration = formatDuration;
   protected readonly translateCity = translateCity;
   protected readonly translateRoute = translateRoute;
 }

@@ -581,6 +581,26 @@
         <source>Меѓуградски релации</source>
         <target>Intercity routes</target>
       </trans-unit>
+      <trans-unit id="tableDuration">
+        <source>Траење</source>
+        <target>Duration</target>
+      </trans-unit>
+      <trans-unit id="durationHoursUnit">
+        <source>ч</source>
+        <target>h</target>
+      </trans-unit>
+      <trans-unit id="durationMinutesUnit">
+        <source>мин</source>
+        <target>min</target>
+      </trans-unit>
+      <trans-unit id="nextDeparture">
+        <source>Следно поаѓање</source>
+        <target>Next departure</target>
+      </trans-unit>
+      <trans-unit id="nextDayArrival">
+        <source>Пристигнува следниот ден</source>
+        <target>Arrives the next day</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

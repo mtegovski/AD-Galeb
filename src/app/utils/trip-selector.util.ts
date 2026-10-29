@@ -48,8 +48,10 @@ export const buildTripOptions = (params: {
 
     for (const run of runsByRoute.get(route.id) ?? []) {
       const runStartMins = toMinutes(run.departureTimeLocal);
-      const departTime = toHHMM(runStartMins + fromStop.departureOffsetMin);
-      const arriveTime = toHHMM(runStartMins + toStop.arrivalOffsetMin);
+      const departMins = runStartMins + fromStop.departureOffsetMin;
+      const arriveMins = runStartMins + toStop.arrivalOffsetMin;
+      const departTime = toHHMM(departMins);
+      const arriveTime = toHHMM(arriveMins);
       const duration = toStop.arrivalOffsetMin - fromStop.departureOffsetMin;
 
       const currentTrip: TripOption = {
@@ -60,6 +62,7 @@ export const buildTripOptions = (params: {
         segmentStopIndices: { fromIndex: fromIdx, toIndex: toIdx },
         departureTimeLocal: departTime,
         arrivalTimeLocal: arriveTime,
+        arrivalDayOffset: Math.floor(arriveMins / 1440) - Math.floor(departMins / 1440),
         stops: route.stops.slice(fromIdx, toIdx + 1).map(s => s.cityId),
         intermediateStopsCount: Math.max(0, (toIdx - fromIdx) - 1),
         durationMin: duration,
@@ -84,6 +87,35 @@ export const buildTripOptions = (params: {
 
   return Array.from(bestOptionsMap.values())
     .sort((a, b) => a.departureTimeLocal.localeCompare(b.departureTimeLocal));
+};
+
+/** Current time of day in North Macedonia, in minutes since midnight */
+export const nowInSkopjeMinutes = (): number => {
+  const hhmm = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Skopje',
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+  }).format(new Date());
+  return toMinutes(hhmm);
+};
+
+/** First trip of the day that has not departed yet (trips must be sorted by departure) */
+export const findNextTrip = (trips: TripOption[]): TripOption | undefined => {
+  const now = nowInSkopjeMinutes();
+  return trips.find(t => toMinutes(t.departureTimeLocal) > now);
+};
+
+/** e.g. "3 h 15 min", "45 min", "2 h" */
+export const formatDuration = (totalMin: number): string => {
+  const hours = Math.floor(totalMin / 60);
+  const minutes = totalMin % 60;
+  const h = $localize`:@@durationHoursUnit:ч`;
+  const m = $localize`:@@durationMinutesUnit:мин`;
+
+  if (hours === 0) return `${minutes} ${m}`;
+  if (minutes === 0) return `${hours} ${h}`;
+  return `${hours} ${h} ${minutes} ${m}`;
 };
 
 export const translateCity = (id: string, locale: Locale): string => {

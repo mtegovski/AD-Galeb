@@ -581,6 +581,26 @@
         <source>Меѓуградски релации</source>
         <target>Међуградске линије</target>
       </trans-unit>
+      <trans-unit id="tableDuration">
+        <source>Траење</source>
+        <target>Трајање</target>
+      </trans-unit>
+      <trans-unit id="durationHoursUnit">
+        <source>ч</source>
+        <target>ч</target>
+      </trans-unit>
+      <trans-unit id="durationMinutesUnit">
+        <source>мин</source>
+        <target>мин</target>
+      </trans-unit>
+      <trans-unit id="nextDeparture">
+        <source>Следно поаѓање</source>
+        <target>Следећи полазак</target>
+      </trans-unit>
+      <trans-unit id="nextDayArrival">
+        <source>Пристигнува следниот ден</source>
+        <target>Стиже следећег дана</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

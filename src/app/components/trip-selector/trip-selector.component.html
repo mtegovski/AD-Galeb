@@ -164,9 +164,17 @@
 
                   <tbody class="divide-y divide-[var(--light-border-color)]">
                     @for (trip of tripOptions; track trip.runId + '-' + trip.routeId) {
-                      <tr class="hover:bg-[var(--light-background-color)]/70 transition-colors">
+                      <tr class="hover:bg-[var(--light-background-color)]/70 transition-colors" [class.bg-emerald-50]="trip === nextTrip">
                         <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">
                           {{ trip.departureTimeLocal }}
+                          @if (trip === nextTrip) {
+                            <div class="mt-1">
+                            <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-700 whitespace-nowrap">
+                              <i class="fas fa-clock"></i>
+                              <span i18n="@@nextDeparture">Следно поаѓање</span>
+                            </span>
+                            </div>
+                          }
                         </td>
 
                         <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
@@ -205,12 +213,25 @@
               <!-- Mobile / tablet: one card per departure -->
               <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:hidden">
                 @for (trip of tripOptions; track trip.runId + '-' + trip.routeId) {
-                  <article class="rounded-2xl border border-[var(--light-border-color)] bg-white p-5 shadow-md">
+                  <article
+                    class="rounded-2xl border border-[var(--light-border-color)] bg-white p-5 shadow-md"
+                    [class.ring-2]="trip === nextTrip"
+                    [class.ring-emerald-400]="trip === nextTrip">
+                    @if (trip === nextTrip) {
+                      <div class="mb-3">
+                            <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-700 whitespace-nowrap">
+                              <i class="fas fa-clock"></i>
+                              <span i18n="@@nextDeparture">Следно поаѓање</span>
+                            </span>
+                      </div>
+                    }
                     <div class="flex items-start justify-between gap-3">
                       <div class="flex items-center gap-2 text-2xl font-bold text-[var(--dark-text-color)] whitespace-nowrap">
                         <span>{{ trip.departureTimeLocal }}</span>
                         <i class="fas fa-arrow-right text-base text-[var(--primary-color)]"></i>
-                        <span>{{ trip.arrivalTimeLocal }}</span>
+                        <span>{{ trip.arrivalTimeLocal }}@if (trip.arrivalDayOffset > 0) {
+                            <sup class="ml-0.5 text-xs font-bold text-[var(--accent2-color)]" title="Пристигнува следниот ден" i18n-title="@@nextDayArrival">+{{ trip.arrivalDayOffset }}</sup>
+                          }</span>
                       </div>
 
                       @if (trip.isSubtrip) {
@@ -230,6 +251,10 @@
 
                     <p class="mt-2 text-sm font-semibold text-[var(--dark-text-color)]">
                       {{ translateRoute(trip.routeName, locale) }}
+                    </p>
+                    <p class="mt-1 text-sm text-[var(--dark-text-color)]">
+                      <i class="fas fa-clock mr-1 text-[var(--primary-color)]"></i>
+                      {{ formatDuration(trip.durationMin) }}
                     </p>
                     <p class="mt-1 text-xs text-[var(--gray-text-color)]">
                       @for (stop of trip.stops; track stop; let last = $last) {
@@ -285,6 +310,7 @@
                   <tr>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableDeparture">Поаѓање</th>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableArrival">Пристигнување</th>
+                    <th class="px-4 py-3 font-semibold text-left" i18n="@@tableDuration">Траење</th>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableRoute">Релација</th>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableType">Тип</th>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableStops">Постојки</th>
@@ -297,13 +323,27 @@
 
                   <tbody class="divide-y divide-[var(--light-border-color)]">
                     @for (trip of tripOptions; track trip.runId + '-' + trip.routeId) {
-                      <tr class="hover:bg-[var(--light-background-color)]/70 transition-colors">
+                      <tr class="hover:bg-[var(--light-background-color)]/70 transition-colors" [class.bg-emerald-50]="trip === nextTrip">
                         <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">
                           {{ trip.departureTimeLocal }}
+                          @if (trip === nextTrip) {
+                            <div class="mt-1">
+                            <span class="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-700 whitespace-nowrap">
+                              <i class="fas fa-clock"></i>
+                              <span i18n="@@nextDeparture">Следно поаѓање</span>
+                            </span>
+                            </div>
+                          }
                         </td>
 
                         <td class="px-4 py-3 font-semibold text-[var(--dark-text-color)] whitespace-nowrap">
-                          {{ trip.arrivalTimeLocal }}
+                          {{ trip.arrivalTimeLocal }}@if (trip.arrivalDayOffset > 0) {
+                            <sup class="ml-0.5 text-xs font-bold text-[var(--accent2-color)]" title="Пристигнува следниот ден" i18n-title="@@nextDayArrival">+{{ trip.arrivalDayOffset }}</sup>
+                          }
+                        </td>
+
+                        <td class="px-4 py-3 text-[var(--dark-text-color)] whitespace-nowrap">
+                          {{ formatDuration(trip.durationMin) }}
                         </td>
 
                         <td class="px-4 py-3 text-[var(--dark-text-color)]">
