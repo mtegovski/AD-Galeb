@@ -62,30 +62,10 @@
         <source>Преку 75 години искуство во превоз на патници. Модерни автобуси, професионални возачи, редовни линии до сите градови.</source>
         <target>Over 75 years of experience in passenger transport. Modern buses, professional drivers, regular routes to all cities.</target>
       </trans-unit>
-      <trans-unit id="ctaViewRoutes">
-        <source>Погледни релации</source>
-        <target>View routes</target>
-      </trans-unit>
 
       <trans-unit id="internationalLineBadge">
         <source>МЕЃУНАРОДНА ЛИНИЈА</source>
         <target>INTERNATIONAL LINE</target>
-      </trans-unit>
-      <trans-unit id="approxDurationPrefix">
-        <source>~</source>
-        <target>~</target>
-      </trans-unit>
-      <trans-unit id="oneWayLabel">
-        <source>Еднонасочна:</source>
-        <target>One-way:</target>
-      </trans-unit>
-      <trans-unit id="returnLabel">
-        <source>Повратна:</source>
-        <target>Return:</target>
-      </trans-unit>
-      <trans-unit id="studentLabel">
-        <source>Студентска:</source>
-        <target>Student:</target>
       </trans-unit>
       <trans-unit id="ourRoutesBadge">
         <source>Нашите Релации</source>
@@ -215,10 +195,6 @@
         <source>Постојки</source>
         <target>Stops</target>
       </trans-unit>
-      <trans-unit id="tableStopsCount">
-        <source># Постојки</source>
-        <target># Stops</target>
-      </trans-unit>
       <trans-unit id="tableOneWay">
         <source>Еднонасочна</source>
         <target>One-way</target>
@@ -343,10 +319,6 @@
         <source>Продолжуваме да инвестираме во квалитет на услуга и во подобро искуство за секој патник.</source>
         <target>We continue to invest in service quality and in a better experience for every passenger.</target>
       </trans-unit>
-      <trans-unit id="aboutMissionCta">
-        <source>Погледни релации</source>
-        <target>View routes</target>
-      </trans-unit>
       <trans-unit id="contactPageBadge">
         <source>Контакт</source>
         <target>Contact</target>
@@ -425,10 +397,6 @@
         <source>Локални релации</source>
         <target>Local routes</target>
       </trans-unit>
-      <trans-unit id="footerLocalRoutes">
-        <source>Локални релации</source>
-        <target>Local routes</target>
-      </trans-unit>
       <trans-unit id="closeModalAriaLabel">
         <source>Затвори</source>
         <target>Close</target>
@@ -445,14 +413,6 @@
         <source>Прикажи место на качување</source>
         <target>Show boarding stop location</target>
       </trans-unit>
-      <trans-unit id="ohrSkpViaKicBanner">
-        <source>Линијата Охрид – Скопје преку Кичево во 07:30 и линијата Скопје – Охрид преку Кичево во 14:00 се во вожба до 1-ви Септември.</source>
-        <target>The route from Ohrid to Skopje via Kichevo at 07:30 and the route from Skopje to Ohrid via Kichevo at 14:00 are in route until the 1st of September.</target>
-      </trans-unit>
-      <trans-unit id="pricesCorrectionBanner">
-        <source>Направени се промени во цените за релациите Охрид-Скопје и Кичево-Скопје. Ќе следат промени и за останатите линии во идните денови.</source>
-        <target>Changes have been made to the prices for the Ohrid-Skopje and Kicevo-Skopje routes. Changes will follow for the other lines in the coming days.</target>
-      </trans-unit>
        <trans-unit id="departureStops">
         <source>Постојки за поаѓање</source>
         <target>Departure stops</target>
@@ -466,10 +426,6 @@
         <target>FAQ</target>
       </trans-unit>
       <trans-unit id="footerFaq">
-        <source>Најчесто поставувани прашања</source>
-        <target>FAQ</target>
-      </trans-unit>
-      <trans-unit id="faqBadge">
         <source>Најчесто поставувани прашања</source>
         <target>FAQ</target>
       </trans-unit>

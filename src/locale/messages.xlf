@@ -2,160 +2,616 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="mk" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="pageTitleHome" datatype="html">
+        <source>АД Галеб - Охрид</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleTrips" datatype="html">
+        <source>Релации и цени | АД Галеб</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleLocalTrips" datatype="html">
+        <source>Локални релации | АД Галеб</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleAbout" datatype="html">
+        <source>За нас | АД Галеб</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleContact" datatype="html">
+        <source>Контакт | АД Галеб</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTitleFaq" datatype="html">
+        <source>Најчесто поставувани прашања | АД Галеб</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="fromWhichYear" datatype="html">
         <source>Од 1948 Година</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">8,11</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">80,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="trustedPartnerHeadlineLine1" datatype="html">
         <source>Вашиот доверлив партнер</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">12,13</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="trustedPartnerHeadlineLine2" datatype="html">
         <source>за секое патување</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">13,16</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">12,15</context>
+          <context context-type="linenumber">11,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="galebHistory" datatype="html">
         <source> АД Галеб е еден од главните регионални превозници со седиште во прекрасниот Охрид. Основани во 1948 година, веќе повеќе од седум децении ги поврзуваме луѓето со нивните дестинации. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">17,19</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="galebToday" datatype="html">
         <source> Денес оперираме со модерна флота на автобуси и минибуси, нудејќи превоз од Охрид до речиси секој град во Македонија, како и меѓународни релации до Белград, Србија. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">23,25</context>
+          <context context-type="linenumber">22,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="yearsOfHistoryLine1" datatype="html">
         <source>Години</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">35,36</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="yearsOfHistoryLine2" datatype="html">
-        <source>историја</source>
+        <source> историја</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">36,38</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">61,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="routesDailyLine1" datatype="html">
         <source>Релации</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">67,68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="routesDailyLine2" datatype="html">
-        <source>дневно</source>
+        <source> дневно</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">45,47</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">68,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="commitmentAndQualityLine1" datatype="html">
         <source>Посветеност</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">53,54</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">74,75</context>
         </context-group>
       </trans-unit>
       <trans-unit id="commitmentAndQualityLine2" datatype="html">
-        <source>квалитет</source>
+        <source>и квалитет</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">54,56</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">75,78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="learnMoreAboutUs" datatype="html">
         <source>Дознај повеќе за нас</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">60,61</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutPageBadge" datatype="html">
+        <source>За Нас</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutPageTitleLine1" datatype="html">
+        <source>Приказната зад</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutPageTitleLine2" datatype="html">
+        <source> АД Галеб</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutPageIntro" datatype="html">
+        <source> Повеќе од 75 години обезбедуваме сигурен, редовен и удобен превоз за патниците од Охрид и цела Македонија. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutWhoWeAreTitle" datatype="html">
+        <source> Кои сме ние </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutWhoWeAreText" datatype="html">
+        <source> АД Галеб е регионален превозник со традиција од 1948 година. Почнувајќи од Охрид, денес секојдневно поврзуваме градови низ државата и нудиме меѓународни релации. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutWhatWeDoTitle" datatype="html">
+        <source> Што нудиме </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutWhatWeDoText" datatype="html">
+        <source> Модерна флота, искусни возачи и фиксни возни редови. Фокусот ни е секое патување да биде безбедно, навремено и пријатно. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutMissionTitle" datatype="html">
+        <source> Нашата мисија </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutMissionP1" datatype="html">
+        <source> Да им овозможиме на патниците достапен и доверлив превоз, со јасни информации за релации, термини и цени. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutMissionP2" datatype="html">
+        <source> Продолжуваме да инвестираме во квалитет на услуга и во подобро искуство за секој патник. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyGalebBadge" datatype="html">
+        <source> Зошто Галеб </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">53,56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactPageBadge" datatype="html">
+        <source>Контакт</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactPageTitle" datatype="html">
+        <source> Контактирајте нѐ </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactPageIntro" datatype="html">
+        <source> За информации за линии, термини и цени, јавете се или пишете ни. Тимот на АД Галеб е тука да ви помогне. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerContactInfo" datatype="html">
+        <source> Контакт инфо </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">21,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
+          <context context-type="linenumber">66,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactAddressLabel" datatype="html">
+        <source>Адреса</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactAddressLine1" datatype="html">
+        <source>Питу Гули 4, Охрид 6000</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactPhonesLabel" datatype="html">
+        <source>Телефони</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactPhoneMain" datatype="html">
+        <source> +389 46 260 339 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactPhoneAlt" datatype="html">
+        <source> +389 71 231 240 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactEmailsLabel" datatype="html">
+        <source>Е-пошта</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerWorkingHours" datatype="html">
+        <source>Работно време</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactWorkingHoursWeekdays" datatype="html">
+        <source>Понеделник - Недела: 05:00 - 19:00</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">71,73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
+          <context context-type="linenumber">98,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactMapTitle" datatype="html">
+        <source> Локација </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">80,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactMapNote" datatype="html">
+        <source> Погледнете ја нашата локација на Google Maps и добијте насоки до нас. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">84,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactOpenMaps" datatype="html">
+        <source> Отвори во Google Maps </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">111,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqPageTitle" datatype="html">
+        <source> Најчесто поставувани прашања </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqPageIntro" datatype="html">
+        <source> Одговори на најчестите прашања од нашите патници. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ1" datatype="html">
+        <source>Дали Обилет е официјален партнер на Галеб?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA1" datatype="html">
+        <source>Да, Обилет е официјален партнер на Галеб.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ2" datatype="html">
+        <source>Дали треба да ги испринтам картите пред патување?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA2" datatype="html">
+        <source>Препорачано е но не е обавезно да ги имате испринтани картите од Обилет.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ3" datatype="html">
+        <source>Кога треба да пристигнам на станица пред тргнување?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA3" datatype="html">
+        <source>Најдобро е да пристигнете 15-20 минути пред тргнување.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ4" datatype="html">
+        <source>Дали треба да платам дополнително за багаж?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA4" datatype="html">
+        <source>Не, не треба да платите дополнително за багаж.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ5" datatype="html">
+        <source>Како можам да купам карта?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA5" datatype="html">
+        <source>Онлајн преку Обилет, на шалтер на билетара или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ6" datatype="html">
+        <source>Каде застануваат автобусите?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA6" datatype="html">
+        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица, кои се означени во распоредот на самата страна.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ7" datatype="html">
+        <source>Дали автобусите возат секој ден?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA7" datatype="html">
+        <source>Да, сите автобуски линии возат секој ден.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ8" datatype="html">
+        <source>Дали има студентски билети?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA8" datatype="html">
+        <source>Да, за некои од линиите. Достапните студентски билети можете да ги видите во пребарувачот на линии.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqQ9" datatype="html">
+        <source>Дали има попусти за деца?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="faqA9" datatype="html">
+        <source>Да, за меѓунардоните линии. Деца од 4 до 10 годишна возраст имаат попуст од 50%.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
+          <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="heroHeadlineLine1" datatype="html">
         <source>Патувајте безбедно</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="heroHeadlineLine2" datatype="html">
         <source> низ цела Македонија</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
-          <context context-type="linenumber">12,16</context>
+          <context context-type="linenumber">18,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="heroSubheadline" datatype="html">
         <source> Преку 75 години искуство во превоз на патници. Модерни автобуси, професионални возачи, редовни линии до сите градови. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
-          <context context-type="linenumber">18,22</context>
+          <context context-type="linenumber">23,27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="ctaViewRoutes" datatype="html">
-        <source>Погледни Релации</source>
+      <trans-unit id="fromLabel" datatype="html">
+        <source> Од </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
-          <context context-type="linenumber">27,28</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">77,78</context>
         </context-group>
       </trans-unit>
-
+      <trans-unit id="selectCityPlaceholder" datatype="html">
+        <source>Изберете град</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">131,132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="switchCitiesAriaLabel" datatype="html">
+        <source>Смени ги градовите</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="toLabel" datatype="html">
+        <source> До </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">124,125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heroShowTimetable" datatype="html">
+        <source>Прикажи возен ред</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">76,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navBookTicket" datatype="html">
+        <source>Резервирај билет</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">94,97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">204,206</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="internationalLineBadge" datatype="html">
         <source> МЕЃУНАРОДНА ЛИНИЈА </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/relation-card/relation-card.html</context>
-          <context context-type="linenumber">15,18</context>
+          <context context-type="linenumber">20,23</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="approxDurationPrefix" datatype="html">
-        <source>~</source>
+      <trans-unit id="relationCardCta" datatype="html">
+        <source>Погледни возен ред</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/relation-card/relation-card.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="oneWayLabel" datatype="html">
-        <source>Еднонасочна:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/relation-card/relation-card.html</context>
-          <context context-type="linenumber">35,36</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="returnLabel" datatype="html">
-        <source>Повратна:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/relation-card/relation-card.html</context>
-          <context context-type="linenumber">39,40</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="studentLabel" datatype="html">
-        <source>Студентска:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/relation-card/relation-card.html</context>
-          <context context-type="linenumber">45,46</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ourRoutesBadge" datatype="html">
@@ -173,14 +629,14 @@
         </context-group>
       </trans-unit>
       <trans-unit id="allMacedonia" datatype="html">
-        <source> Ццла Македонија</source>
+        <source> цела Македонија</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
           <context context-type="linenumber">17,20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="routesSectionDescription" datatype="html">
-        <source>Од Охрид до повеќе градови во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга.</source>
+        <source> Од Охрид до секој главен град во земјата, плус меѓународни релации. Редовни поаѓања, удобни возила, професионална услуга. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/routes-section/routes-section.component.html</context>
           <context context-type="linenumber">21,26</context>
@@ -204,599 +660,562 @@
         <source> Доверлив превозник од 1948 година. Ве поврзуваме со секој дел на Македонија и пошироко. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">17,19</context>
+          <context context-type="linenumber">7,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerQuickLinks" datatype="html">
         <source> Брзи линкови </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">24,27</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerHome" datatype="html">
+        <source>Дома</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
+          <context context-type="linenumber">22,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerAbout" datatype="html">
         <source>За Нас</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">33,35</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerRoutes" datatype="html">
         <source>Релации</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">42,44</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footerContactInfo" datatype="html">
-        <source> Контакт инфо </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">60,63</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footerAddressLine1" datatype="html">
-        <source>Питу Гули 4, Охрид 6000</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">67,68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footerWorkingHours" datatype="html">
-        <source> Работно време </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">89,90</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footerCopyrightText" datatype="html">
-        <source>АД Галеб. Сите права задржани. Од 1948 година.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">101,104</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navAbout" datatype="html">
-        <source> За Нас </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">21,22</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">88,90</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navRoutes" datatype="html">
-        <source> Релации </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">28,29</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">96,99</context>
+          <context context-type="linenumber">40,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="navContact" datatype="html">
-        <source> Контакт </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">42,43</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">112,115</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navOpenMenuAria" datatype="html">
-        <source>Отвори мени</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">74,75</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tripPlannerBadge" datatype="html">
-        <source>Планер на патување</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">10,13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="planRouteWith" datatype="html">
-        <source>Планирајте ја вашата рута со</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">14,15</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="clearSchedules" datatype="html">
-        <source> јасни распореди</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">15,18</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tripPlannerIntro" datatype="html">
-        <source> Нашите линии сообраќаат секој ден. Изберете поаѓање и дестинација за да ги видите сите достапни патувања, времиња и постојки. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">19,21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="fromLabel" datatype="html">
-        <source> Од </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">30,31</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="toLabel" datatype="html">
-        <source> До </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">51,52</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="chooseTwoDifferentCities" datatype="html">
-        <source> Ве молиме изберете два различни града. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">73,75</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="noTripsFound" datatype="html">
-        <source> Нема пронајдени патувања. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">80,81</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableDeparture" datatype="html">
-        <source>Поаѓање</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">87,88</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableArrival" datatype="html">
-        <source>Пристигнување</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">88,89</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableRoute" datatype="html">
-        <source>Релација</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">89,90</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableType" datatype="html">
-        <source>Тип</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">91</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableStops" datatype="html">
-        <source>Постојки</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">91,92</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableStopsCount" datatype="html">
-        <source># Постојки</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">92,93</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableOneWay" datatype="html">
-        <source>Еднонасочна</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">93,94</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableReturn" datatype="html">
-        <source>Повратна</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">94,95</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tableStudent" datatype="html">
-        <source>Студентска</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">94,95</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tripTypeSubtrip" datatype="html">
-        <source> Под-релација </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">111,112</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="tripTypeDirect" datatype="html">
-        <source> Директно </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">117</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="notAvailableSlash" datatype="html">
-        <source>/</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">137</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="whyGalebBadge" datatype="html">
-        <source>Зошто Галеб</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">7,10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="whyGalebIntro" datatype="html">
-        <source> Со децении искуство и посветеност на квалитет, АД Галеб е избор број еден за илјадници патници. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">16,19</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureTraditionTitle" datatype="html">
-        <source> 75+ Години Традиција </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">31,33</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureTraditionDesc" datatype="html">
-        <source> Од 1948 година, ние сме дел од секојдневниот живот на Охрид и Македонија. Искуство што се гледа и чувствува. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">34,36</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureFleetTitle" datatype="html">
-        <source> Модерна Флота </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">47,49</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureFleetDesc" datatype="html">
-        <source> Наши автобуси и минибуси се редовно одржувани, чисти и опремени со сè потребно за удобно патување. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">50,52</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureDriversTitle" datatype="html">
-        <source> Професионални Возачи </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">63,65</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureDriversDesc" datatype="html">
-        <source> Искусни, обучени и љубезни возачи кои се грижат за вашата безбедност и комфор на патот. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">66,68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureSchedulesTitle" datatype="html">
-        <source> Редовни Распореди </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">79,81</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureSchedulesDesc" datatype="html">
-        <source> Фиксни возни редови за сите линии. Планирајте го вашето патување со доверба во нашата точност. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">82,84</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureCoverageTitle" datatype="html">
-        <source> Широка Покриеност </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">95,97</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureCoverageDesc" datatype="html">
-        <source> Од Охрид до сите главни градови во Македонија, плус меѓународни релации. Каде и да сакате, ние патуваме таму. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">98,100</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="featureServiceTitle" datatype="html">
-        <source> Пријателска Услуга </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
-          <context context-type="linenumber">111,113</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="localTripBadge" datatype="html">
-        <source>Локални патувања</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
-          <context context-type="linenumber">12,13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="localRoutesTitle" datatype="html">
-        <source>Локални релации</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
-          <context context-type="linenumber">16,17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="localTripIntro" datatype="html">
-        <source>Изберете поаѓање и дестинација за да ги видите достапните локални патувања.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
-          <context context-type="linenumber">19,20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navLocalRoutes" datatype="html">
-        <source>Локални релации</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">36,37</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="footerLocalRoutes" datatype="html">
-        <source>Локални релации</source>
+        <source>Контакт</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">49,51</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="switchCitiesAriaLabel" datatype="html">
-        <source>Смени ги градовите</source>
-        <target>Смени ги градовите</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">57,61</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navBookTicket" datatype="html">
-        <source>Резервирај билет</source>
-        <target>Резервирај билет</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">15,16</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
-          <context context-type="linenumber">65,66</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="closeModalAriaLabel" datatype="html">
-        <source>Затвори</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
-          <context context-type="linenumber">22,26</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="mapIframeTitle" datatype="html">
-        <source>Карта на постојката</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
-          <context context-type="linenumber">41,48</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="openInMaps" datatype="html">
-        <source>Отвори во Google Maps</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
-          <context context-type="linenumber">53,55</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="showBoardingStopAriaLabel" datatype="html">
-        <source>Прикажи место на качување</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector-local/trip-selector-local.component.html</context>
-          <context context-type="linenumber">47,53</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ohrSkpViaKicBanner" datatype="html">
-        <source>Линијата Охрид – Скопје преку Кичево во 07:30 и линијата Скопје – Охрид преку Кичево во 14:00 се во вожба до 1-ви Септември.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">82,85</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="pricesCorrectionBanner" datatype="html">
-        <source>Направени се промени во цените за релациите Охрид-Скопје и Кичево-Скопје. Ќе следат промени и за останатите линии во идните денови.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
-          <context context-type="linenumber">86,89</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="departureStops" datatype="html">
-        <source>Постојки за поаѓање</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
-          <context context-type="linenumber">82,85</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="arrivalStops" datatype="html">
-        <source>Постојки за пристигнување</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
-          <context context-type="linenumber">82,85</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="navFaq" datatype="html">
-        <source>Најчесто поставувани прашања</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">171,173</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footerFaq" datatype="html">
         <source>Најчесто поставувани прашања</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="linenumber">58,59</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqBadge" datatype="html">
+      <trans-unit id="footerAddressLine1" datatype="html">
+        <source>Питу Гули 4, Охрид 6000</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerCopyrightText" datatype="html">
+        <source>АД Галеб. Сите права задржани. Од 1948 година.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-footer/site-footer.component.html</context>
+          <context context-type="linenumber">108,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navMenuAria" datatype="html">
+        <source>Мени</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navRoutes" datatype="html">
+        <source>Релации</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">153,155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navAbout" datatype="html">
+        <source>За Нас</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">159,161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navFaqShort" datatype="html">
+        <source>Прашања</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navLanguage" datatype="html">
+        <source>Јазик</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">177,178</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navBookShort" datatype="html">
+        <source>Резервирај</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navOpenMenuAria" datatype="html">
+        <source>Отвори мени</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navCloseMenuAria" datatype="html">
+        <source>Затвори мени</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">142,143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navFaq" datatype="html">
         <source>Најчесто поставувани прашања</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/site-header/site-header.component.html</context>
+          <context context-type="linenumber">165,167</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqPageTitle" datatype="html">
-        <source>Најчесто поставувани прашања</source>
+      <trans-unit id="closeModalAriaLabel" datatype="html">
+        <source>Затвори</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqPageIntro" datatype="html">
-        <source>Одговори на најчестите прашања од нашите патници.</source>
+      <trans-unit id="mapIframeTitle" datatype="html">
+        <source>Карта на постојката</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">62,65</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ1" datatype="html">
-        <source>Дали Обилет е официјален партнер на Галеб?</source>
+      <trans-unit id="openInMaps" datatype="html">
+        <source>Отвори во Google Maps</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.html</context>
+          <context context-type="linenumber">74,76</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA1" datatype="html">
-        <source>Да, Обилет е официјален партнер на Галеб.</source>
+      <trans-unit id="arrivalStops" datatype="html">
+        <source>Постојки на пристигнување</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.ts</context>
+          <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ2" datatype="html">
-        <source>Дали треба да ги испринтам картите пред патување?</source>
+      <trans-unit id="departureStops" datatype="html">
+        <source>Постојки на поаѓање</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/stop-map-modal/stop-map-modal.component.ts</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA2" datatype="html">
-        <source>Препорачано е но не е обавезно да ги имате испринтани картите од Обилет.</source>
+      <trans-unit id="localTripBadge" datatype="html">
+        <source>Локални патувања</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">20,23</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ3" datatype="html">
-        <source>Кога треба да пристигнам на станица пред тргнување?</source>
+      <trans-unit id="localRoutesTitle" datatype="html">
+        <source>Локални релации</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">24,27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA3" datatype="html">
-        <source>Најдобро е да пристигнете 15-20 минути пред тргнување.</source>
+      <trans-unit id="localTripIntro" datatype="html">
+        <source> Изберете поаѓање и дестинација за да ги видите достапните локални патувања. </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">28,30</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ4" datatype="html">
-        <source>Дали треба да платам дополнително за багаж?</source>
+      <trans-unit id="tripPlannerBadge" datatype="html">
+        <source>Планер на патување</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">34,37</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA4" datatype="html">
-        <source>Не, не треба да платите дополнително за багаж.</source>
+      <trans-unit id="planRouteWith" datatype="html">
+        <source>Планирајте ја вашата рута со</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">38,39</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ5" datatype="html">
-        <source>Како можам да купам карта?</source>
+      <trans-unit id="clearSchedules" datatype="html">
+        <source> јасни распореди</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">39,42</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA5" datatype="html">
-        <source>Онлајн преку Обилет, на шалтер на билетара или директно во автобусот доколку има слободно место. Во автобусот може да се купи само еднонасочна карта.</source>
+      <trans-unit id="tripPlannerIntro" datatype="html">
+        <source> Нашите линии сообраќаат секој ден. Изберете поаѓање и дестинација за да ги видите сите достапни патувања, времиња и постојки. </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">43,45</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ6" datatype="html">
-        <source>Каде застануваат автобусите?</source>
+      <trans-unit id="tabIntercityRoutes" datatype="html">
+        <source>Меѓуградски релации</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">56,59</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA6" datatype="html">
-        <source>Сите автобуси застануваат на главните градски станици. Во Скопје има уште две постојки пред главната станица, кои се означени во распоредот на самата страна.</source>
+      <trans-unit id="navLocalRoutes" datatype="html">
+        <source>Локални релации</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">64,66</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ7" datatype="html">
-        <source>Дали автобусите возат секој ден?</source>
+      <trans-unit id="showBoardingStopAriaLabel" datatype="html">
+        <source>Прикажи место на качување</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">102,103</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA7" datatype="html">
-        <source>Да, сите автобуски линии возат секој ден.</source>
+      <trans-unit id="chooseCitiesPrompt" datatype="html">
+        <source>Изберете од каде и до каде патувате за да ги видите поаѓањата.</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">148,150</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ8" datatype="html">
-        <source>Дали има студентски билети?</source>
+      <trans-unit id="chooseTwoDifferentCities" datatype="html">
+        <source> Ве молиме изберете два различни града. </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">154,156</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA8" datatype="html">
-        <source>Да, за некои од линиите. Достапните студентски билети можете да ги видите во пребарувачот на линии.</source>
+      <trans-unit id="noTripsFound" datatype="html">
+        <source> Нема пронајдени патувања. </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">161,162</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqQ9" datatype="html">
-        <source>Дали има попусти за деца?</source>
+      <trans-unit id="tableDeparture" datatype="html">
+        <source>Поаѓање</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">168,169</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">355,356</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="faqA9" datatype="html">
-        <source>Да, за меѓунардоните линии. Деца од 4 до 10 годишна возраст имаат попуст од 50%.</source>
+      <trans-unit id="tableOneWay" datatype="html">
+        <source>Еднонасочна</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/faq/faq.component.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">169,170</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">313,314</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">361,362</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableReturn" datatype="html">
+        <source>Повратна</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">170,171</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">322,323</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">362,363</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nextDeparture" datatype="html">
+        <source>Следно поаѓање</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">183,184</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">233,234</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">376,377</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notAvailableSlash" datatype="html">
+        <source>/</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">331</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">341</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">461</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nextDayArrival" datatype="html">
+        <source>Пристигнува следниот ден</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">384</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tripTypeSubtrip" datatype="html">
+        <source> Под-релација </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">250,251</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">401,402</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tripTypeDirect" datatype="html">
+        <source> Директно </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">256,257</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">407</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="stopsCount" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {без постојки} =1 {1 постојка} other {<x id="INTERPOLATION"/> постојки}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">275</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">279</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">419</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">423</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableStudent" datatype="html">
+        <source>Студентска</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">335,336</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">363,364</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableArrival" datatype="html">
+        <source>Пристигнување</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">356,357</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableDuration" datatype="html">
+        <source>Траење</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">357,358</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableRoute" datatype="html">
+        <source>Релација</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">358,359</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableType" datatype="html">
+        <source>Тип</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">360</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tableStops" datatype="html">
+        <source>Постојки</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trip-selector/trip-selector.component.html</context>
+          <context context-type="linenumber">360,361</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="whyGalebIntro" datatype="html">
+        <source> Со децении искуство и посветеност на квалитет, АД Галеб е избор број еден за илјадници патници. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">15,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureTraditionTitle" datatype="html">
+        <source> 75+ Години Традиција </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureTraditionDesc" datatype="html">
+        <source> Од 1948 година, ние сме дел од секојдневниот живот на Охрид и Македонија. Искуство што се гледа и чувствува. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureFleetTitle" datatype="html">
+        <source> Модерна Флота </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureFleetDesc" datatype="html">
+        <source> Наши автобуси и минибуси се редовно одржувани, чисти и опремени со сè потребно за удобно патување. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureDriversTitle" datatype="html">
+        <source> Професионални Возачи </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureDriversDesc" datatype="html">
+        <source> Искусни, обучени и љубезни возачи кои се грижат за вашата безбедност и комфор на патот. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureSchedulesTitle" datatype="html">
+        <source> Редовни Распореди </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureSchedulesDesc" datatype="html">
+        <source> Фиксни возни редови за сите линии. Планирајте го вашето патување со доверба во нашата точност. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">76,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureCoverageTitle" datatype="html">
+        <source> Широка Покриеност </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureCoverageDesc" datatype="html">
+        <source> Од Охрид до сите главни градови во Македонија, плус меѓународни релации. Каде и да сакате, ние патуваме таму. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">91,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureServiceTitle" datatype="html">
+        <source> Пријателска Услуга </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">103,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="featureServiceDesc" datatype="html">
+        <source> Секој патник е важен за нас. Се трудиме секое патување да биде пријатно и без грижи. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/why-choose-section/why-choose-section.component.html</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="durationHoursUnit" datatype="html">
+        <source>ч</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/trip-selector.util.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="durationMinutesUnit" datatype="html">
+        <source>мин</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/utils/trip-selector.util.ts</context>
+          <context context-type="linenumber">122</context>
         </context-group>
       </trans-unit>
     </body>
