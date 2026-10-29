@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://galeb.mk/mk/</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/en/</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/sr/</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/mk/trips</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/trips"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/trips"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/trips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/trips"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/en/trips</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/trips"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/trips"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/trips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/trips"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/sr/trips</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/trips"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/trips"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/trips"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/trips"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/mk/trips-local</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/trips-local"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/en/trips-local</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/trips-local"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/sr/trips-local</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/trips-local"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/trips-local"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/mk/about</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/about"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/about"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/about"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/about"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/sr/about</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/about"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/about"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/mk/contact</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/contact"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/contact"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/sr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/contact"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/mk/faq</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/faq"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/faq"/>
+  </url>
+  <url>
+    <loc>https://galeb.mk/sr/faq</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://galeb.mk/mk/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://galeb.mk/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://galeb.mk/sr/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://galeb.mk/mk/faq"/>
+  </url>
+</urlset>

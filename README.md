@@ -17,7 +17,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 To build the project run:
 
 ```bash
-ng build --localize
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This will compile all locales and store the build artifacts in the `dist/ad-galeb/browser/` directory (one folder per locale). It also copies `robots.txt` and `sitemap.xml` from `src/root/` to the site root. By default, the production build optimizes your application for performance and speed.

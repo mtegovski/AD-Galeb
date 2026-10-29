@@ -553,6 +553,30 @@
         <source>Да, за меѓунардоните линии. Деца од 4 до 10 годишна возраст имаат попуст од 50%.</source>
         <target>Yes, for international routes. Children aged 4 to 10 receive a 50% discount.</target>
       </trans-unit>
+      <trans-unit id="pageTitleHome">
+        <source>АД Галеб - Охрид</source>
+        <target>AD Galeb - Ohrid</target>
+      </trans-unit>
+      <trans-unit id="pageTitleTrips">
+        <source>Релации и цени | АД Галеб</source>
+        <target>Routes and prices | AD Galeb</target>
+      </trans-unit>
+      <trans-unit id="pageTitleLocalTrips">
+        <source>Локални релации | АД Галеб</source>
+        <target>Local routes | AD Galeb</target>
+      </trans-unit>
+      <trans-unit id="pageTitleAbout">
+        <source>За нас | АД Галеб</source>
+        <target>About us | AD Galeb</target>
+      </trans-unit>
+      <trans-unit id="pageTitleContact">
+        <source>Контакт | АД Галеб</source>
+        <target>Contact | AD Galeb</target>
+      </trans-unit>
+      <trans-unit id="pageTitleFaq">
+        <source>Најчесто поставувани прашања | АД Галеб</source>
+        <target>FAQ | AD Galeb</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

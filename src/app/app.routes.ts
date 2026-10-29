@@ -4,34 +4,39 @@ import {AboutUsComponent} from './components/about-us/about-us.component';
 import {TripSelectorLocalComponent} from './components/trip-selector-local/trip-selector-local.component';
 
 export const routes: Routes = [
-  { path: '', component: LandingPageComponent },
+  { path: '', component: LandingPageComponent, title: $localize`:@@pageTitleHome:АД Галеб - Охрид` },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
   {
     path: 'trips',
+    title: $localize`:@@pageTitleTrips:Релации и цени | АД Галеб`,
     loadComponent: () =>
       import('./components/trip-selector/trip-selector.component')
         .then(m => m.TripSelectorComponent),
   },
   {
     path: 'trips-local',
+    title: $localize`:@@pageTitleLocalTrips:Локални релации | АД Галеб`,
     loadComponent: () =>
       import('./components/trip-selector-local/trip-selector-local.component')
         .then(m => m.TripSelectorLocalComponent),
   },
   {
     path: 'about',
+    title: $localize`:@@pageTitleAbout:За нас | АД Галеб`,
     loadComponent: () =>
       import('./components/about-us/about-us.component')
         .then(m => m.AboutUsComponent),
   },
   {
     path: 'contact',
+    title: $localize`:@@pageTitleContact:Контакт | АД Галеб`,
     loadComponent: () =>
       import('./components/contact/contact.component')
         .then(m => m.ContactComponent),
   },
   {
     path: 'faq',
+    title: $localize`:@@pageTitleFaq:Најчесто поставувани прашања | АД Галеб`,
     loadComponent: () =>
       import('./components/faq/faq.component')
         .then(m => m.FaqComponent),
