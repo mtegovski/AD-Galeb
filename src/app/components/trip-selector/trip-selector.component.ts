@@ -1,7 +1,7 @@
 import {Component, inject, LOCALE_ID, OnDestroy, OnInit} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, Location} from '@angular/common';
 import {FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
-import {ActivatedRoute, RouterLink, RouterLinkActive} from '@angular/router';
+import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {
   buildTripOptions,
@@ -30,7 +30,11 @@ export type TripMode = 'intercity' | 'local';
   templateUrl: './trip-selector.component.html',
 })
 export class TripSelectorComponent implements OnInit, OnDestroy {
-  readonly mode: TripMode = inject(ActivatedRoute).snapshot.data['mode'] ?? 'intercity';
+  private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
+  private readonly location = inject(Location);
+
+  readonly mode: TripMode = this.route.snapshot.data['mode'] ?? 'intercity';
   readonly isLocal = this.mode === 'local';
 
   // Static data
@@ -58,16 +62,24 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
     const defaultFrom = this.isLocal ? this.cities[0]?.id ?? '' : 'OHR';
     const defaultTo = this.isLocal ? this.cities[1]?.id ?? '' : 'SKP';
 
+    // A shared or bookmarked search, e.g. /trips?from=OHR&to=BIT
+    const params = this.route.snapshot.queryParamMap;
+    const fromParam = params.get('from');
+    const toParam = params.get('to');
+
     this.form = this.fb.nonNullable.group({
-      fromCityId: [defaultFrom as CityId],
-      toCityId: [defaultTo as CityId],
+      fromCityId: [(this.isKnownCity(fromParam) ? fromParam : defaultFrom) as CityId],
+      toCityId: [(this.isKnownCity(toParam) ? toParam : defaultTo) as CityId],
     }) as TripForm;
 
     // initial compute
     this.recomputeTrips();
 
     // recompute on every change
-    this.sub = this.form.valueChanges.subscribe(() => this.recomputeTrips());
+    this.sub = this.form.valueChanges.subscribe(() => {
+      this.recomputeTrips();
+      this.updateUrl();
+    });
   }
 
   ngOnDestroy(): void {
@@ -91,6 +103,26 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
       runs: this.runs,
     });
     this.nextTrip = findNextTrip(this.tripOptions);
+  }
+
+  /**
+   * Keeps the selected cities in the URL so the search can be shared or bookmarked.
+   * Uses replaceState instead of a router navigation, so changing a city
+   * does not add history entries or scroll the page to the top.
+   */
+  private updateUrl(): void {
+    const url = this.router.createUrlTree([], {
+      relativeTo: this.route,
+      queryParams: {
+        from: this.form.controls.fromCityId.value,
+        to: this.form.controls.toCityId.value,
+      },
+    });
+    this.location.replaceState(this.router.serializeUrl(url));
+  }
+
+  private isKnownCity(id: string | null): id is CityId {
+    return !!id && this.cities.some(c => c.id === id);
   }
 
   switchCities(): void {

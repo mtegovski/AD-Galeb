@@ -601,6 +601,10 @@
         <source>Пристигнува следниот ден</source>
         <target>Arrives the next day</target>
       </trans-unit>
+      <trans-unit id="relationCardCta">
+        <source>Погледни возен ред</source>
+        <target>View timetable</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

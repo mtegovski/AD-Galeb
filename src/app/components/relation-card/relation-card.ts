@@ -1,8 +1,11 @@
 import {Component, inject, Input, LOCALE_ID} from '@angular/core';
+import {RouterLink} from '@angular/router';
 import {translateCity, translateCityInfo} from '../../utils/trip-selector.util';
 import {Locale} from '../../utils/languages.util';
 
 export interface RouteOverview {
+  /** Departure city of the timetable the card links to */
+  origin: string;
   destination: string;
   info: string;
   isInternational: boolean;
@@ -10,7 +13,7 @@ export interface RouteOverview {
 
 @Component({
   selector: 'app-relation-card',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './relation-card.html',
 })
 
