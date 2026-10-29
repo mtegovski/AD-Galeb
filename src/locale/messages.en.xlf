@@ -637,6 +637,10 @@
         <source>Прикажи возен ред</source>
         <target>Show timetable</target>
       </trans-unit>
+      <trans-unit id="stopsCount">
+        <source>{VAR_PLURAL, plural, =0 {без постојки} =1 {1 постојка} other {<x id="INTERPOLATION"/> постојки}}</source>
+        <target>{VAR_PLURAL, plural, =0 {no stops} =1 {1 stop} other {<x id="INTERPOLATION"/> stops}}</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

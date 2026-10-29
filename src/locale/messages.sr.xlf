@@ -637,6 +637,10 @@
         <source>Прикажи возен ред</source>
         <target>Прикажи ред вожње</target>
       </trans-unit>
+      <trans-unit id="stopsCount">
+        <source>{VAR_PLURAL, plural, =0 {без постојки} =1 {1 постојка} other {<x id="INTERPOLATION"/> постојки}}</source>
+        <target>{VAR_PLURAL, plural, =0 {без станица} =1 {1 станица} few {<x id="INTERPOLATION"/> станице} other {<x id="INTERPOLATION"/> станица}}</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
