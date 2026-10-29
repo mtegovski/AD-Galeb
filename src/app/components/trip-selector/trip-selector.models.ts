@@ -57,6 +57,9 @@ export interface TripOption {
 
   stops: CityId[];
 
+  /** Every stop of this segment with its local time, from departure to arrival */
+  stopTimes: StopTime[];
+
   /** Number of intermediate stops (excluding from + to). */
   intermediateStopsCount: number;
 
@@ -67,6 +70,14 @@ export interface TripOption {
   routeName: string;
   runLabel: string;
   price: TicketPrice;
+}
+
+export interface StopTime {
+  cityId: CityId;
+  /** "HH:mm" local time (departure time for the first stop, arrival time for the others) */
+  time: string;
+  /** Days after the departure day (1 when the bus reaches the stop after midnight) */
+  dayOffset: number;
 }
 
 export interface TicketPrice {

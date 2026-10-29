@@ -50,6 +50,8 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
   tripOptions: TripOption[] = [];
   /** The first trip that has not departed yet today (Skopje time) */
   nextTrip?: TripOption;
+  /** Trips whose stop-by-stop timeline is expanded */
+  private expandedTrips = new Set<string>();
 
   mapModalLocations: StopLocation[] = [];
   mapModalOpen = false;
@@ -89,6 +91,7 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
   recomputeTrips(): void {
     const from = this.form.controls.fromCityId.value;
     const to = this.form.controls.toCityId.value;
+    this.expandedTrips.clear();
 
     if (!from || !to || from === to) {
       this.tripOptions = [];
@@ -133,6 +136,17 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
       fromCityId: to,
       toCityId: from,
     });
+  }
+
+  isExpanded(trip: TripOption): boolean {
+    return this.expandedTrips.has(trip.runId + '-' + trip.routeId);
+  }
+
+  toggleStops(trip: TripOption): void {
+    const key = trip.runId + '-' + trip.routeId;
+    if (!this.expandedTrips.delete(key)) {
+      this.expandedTrips.add(key);
+    }
   }
 
   get mapModalTitle(): string {

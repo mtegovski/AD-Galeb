@@ -256,13 +256,47 @@
                       <i class="fas fa-clock mr-1 text-[var(--primary-color)]"></i>
                       {{ formatDuration(trip.durationMin) }}
                     </p>
-                    <p class="mt-1 text-xs text-[var(--gray-text-color)]">
-                      @for (stop of trip.stops; track stop; let last = $last) {
-                        {{ cityName(stop) }}@if (!last) {
-                          -
+                    <button
+                      type="button"
+                      (click)="toggleStops(trip)"
+                      [attr.aria-expanded]="isExpanded(trip)"
+                      class="mt-3 flex w-full items-center justify-between rounded-xl border border-[var(--light-border-color)] px-3 py-2.5 text-sm font-semibold text-[var(--primary-color)] transition-colors hover:bg-[var(--light-background-color)] cursor-pointer">
+                      <span class="flex items-center gap-2">
+                        <i class="fas fa-location-dot"></i>
+                        <span i18n="@@tableStops">Постојки</span>
+                        <span class="rounded-full bg-[var(--light-background-color)] px-2 py-0.5 text-xs">{{ trip.stops.length }}</span>
+                      </span>
+                      <i class="fas fa-chevron-down text-xs transition-transform" [class.rotate-180]="isExpanded(trip)"></i>
+                    </button>
+
+                    @if (isExpanded(trip)) {
+                      <ol class="mt-2 rounded-xl bg-[var(--light-background-color)]/60 px-3 py-2">
+                        @for (st of trip.stopTimes; track $index; let first = $first; let last = $last) {
+                          <li class="grid min-h-9 grid-cols-[3.75rem_0.75rem_1fr] items-center gap-x-3">
+                            <span
+                              class="text-right text-sm tabular-nums text-[var(--dark-text-color)] whitespace-nowrap"
+                              [ngClass]="first || last ? 'font-bold' : 'font-medium'">
+                              {{ st.time }}@if (st.dayOffset > 0) {<span class="ml-0.5 align-top text-[10px] font-bold text-[var(--accent2-color)]">+{{ st.dayOffset }}</span>}
+                            </span>
+                            <span class="relative flex items-center justify-center self-stretch">
+                              <span
+                                class="absolute left-1/2 w-0.5 -translate-x-1/2 bg-[var(--primary-color)]/25"
+                                [ngClass]="first ? 'top-1/2 bottom-0' : last ? 'top-0 bottom-1/2' : 'inset-y-0'"></span>
+                              <span
+                                class="relative rounded-full"
+                                [ngClass]="first || last
+                                  ? 'h-3 w-3 bg-[var(--primary-color)] ring-4 ring-[var(--primary-color)]/15'
+                                  : 'h-2 w-2 border-2 border-[var(--primary-color)] bg-white'"></span>
+                            </span>
+                            <span
+                              class="truncate text-sm"
+                              [ngClass]="first || last ? 'font-semibold text-[var(--dark-text-color)]' : 'text-[var(--gray-text-color)]'">
+                              {{ cityName(st.cityId) }}
+                            </span>
+                          </li>
                         }
-                      }
-                    </p>
+                      </ol>
+                    }
 
                     <dl class="mt-4 grid grid-cols-3 gap-2 border-t border-[var(--light-border-color)] pt-4 text-sm">
                       <div>
@@ -367,11 +401,20 @@
                         </td>
 
                         <td class="px-4 py-3 text-[var(--gray-text-color)]">
-                          @for (stop of trip.stops; track stop; let last = $last) {
-                            {{ cityName(stop) }}@if (!last) {
-                              -
-                            }
-                          }
+                          <button
+                            type="button"
+                            (click)="toggleStops(trip)"
+                            [attr.aria-expanded]="isExpanded(trip)"
+                            class="group flex items-start gap-2 text-left cursor-pointer hover:text-[var(--primary-color)]">
+                            <span>
+                              @for (stop of trip.stops; track stop; let last = $last) {
+                                {{ cityName(stop) }}@if (!last) {
+                                  -
+                                }
+                              }
+                            </span>
+                            <i class="fas fa-chevron-down mt-1 text-[10px] text-[var(--primary-color)] transition-transform" [class.rotate-180]="isExpanded(trip)"></i>
+                          </button>
                         </td>
 
                         <td class="px-4 py-3 text-[var(--dark-text-color)] font-semibold">
@@ -415,6 +458,25 @@
                           }
                         </td>
                       </tr>
+                      @if (isExpanded(trip)) {
+                        <tr class="bg-[var(--light-background-color)]/50">
+                          <td colspan="10" class="px-4 py-4">
+                            <ol class="flex flex-wrap items-center gap-y-3">
+                              @for (st of trip.stopTimes; track $index; let last = $last) {
+                                <li class="flex items-center">
+                                  <div class="flex flex-col items-center rounded-xl border border-[var(--light-border-color)] bg-white px-3 py-2 shadow-sm">
+                                    <span class="font-semibold tabular-nums text-[var(--dark-text-color)]">{{ st.time }}@if (st.dayOffset > 0) {<sup class="ml-0.5 text-[10px] font-bold text-[var(--accent2-color)]">+{{ st.dayOffset }}</sup>}</span>
+                                    <span class="text-xs text-[var(--gray-text-color)] whitespace-nowrap">{{ cityName(st.cityId) }}</span>
+                                  </div>
+                                  @if (!last) {
+                                    <i class="fas fa-arrow-right mx-2 text-xs text-[var(--primary-color)]/50"></i>
+                                  }
+                                </li>
+                              }
+                            </ol>
+                          </td>
+                        </tr>
+                      }
                     }
                   </tbody>
                 </table>

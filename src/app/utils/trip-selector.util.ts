@@ -64,6 +64,14 @@ export const buildTripOptions = (params: {
         arrivalTimeLocal: arriveTime,
         arrivalDayOffset: Math.floor(arriveMins / 1440) - Math.floor(departMins / 1440),
         stops: route.stops.slice(fromIdx, toIdx + 1).map(s => s.cityId),
+        stopTimes: route.stops.slice(fromIdx, toIdx + 1).map((s, i) => {
+          const mins = runStartMins + (i === 0 ? s.departureOffsetMin : s.arrivalOffsetMin);
+          return {
+            cityId: s.cityId,
+            time: toHHMM(mins),
+            dayOffset: Math.floor(mins / 1440) - Math.floor(departMins / 1440),
+          };
+        }),
         intermediateStopsCount: Math.max(0, (toIdx - fromIdx) - 1),
         durationMin: duration,
         isSubtrip: !(fromIdx === 0 && toIdx === route.stops.length - 1),
