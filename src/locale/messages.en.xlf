@@ -577,6 +577,10 @@
         <source>Најчесто поставувани прашања | АД Галеб</source>
         <target>FAQ | AD Galeb</target>
       </trans-unit>
+      <trans-unit id="tabIntercityRoutes">
+        <source>Меѓуградски релации</source>
+        <target>Intercity routes</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

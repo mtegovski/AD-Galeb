@@ -1,25 +1,28 @@
 import { Routes } from '@angular/router';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import {AboutUsComponent} from './components/about-us/about-us.component';
-import {TripSelectorLocalComponent} from './components/trip-selector-local/trip-selector-local.component';
 
 export const routes: Routes = [
   { path: '', component: LandingPageComponent, title: $localize`:@@pageTitleHome:АД Галеб - Охрид` },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
   {
     path: 'trips',
+    pathMatch: 'full',
     title: $localize`:@@pageTitleTrips:Релации и цени | АД Галеб`,
+    data: { mode: 'intercity' },
     loadComponent: () =>
       import('./components/trip-selector/trip-selector.component')
         .then(m => m.TripSelectorComponent),
   },
   {
-    path: 'trips-local',
+    path: 'trips/local',
     title: $localize`:@@pageTitleLocalTrips:Локални релации | АД Галеб`,
+    data: { mode: 'local' },
     loadComponent: () =>
-      import('./components/trip-selector-local/trip-selector-local.component')
-        .then(m => m.TripSelectorLocalComponent),
+      import('./components/trip-selector/trip-selector.component')
+        .then(m => m.TripSelectorComponent),
   },
+  // Old URL of the local routes page
+  { path: 'trips-local', redirectTo: 'trips/local', pathMatch: 'full' },
   {
     path: 'about',
     title: $localize`:@@pageTitleAbout:За нас | АД Галеб`,
