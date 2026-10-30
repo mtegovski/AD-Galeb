@@ -1,4 +1,4 @@
-﻿import {Component, inject, LOCALE_ID, signal} from '@angular/core';
+﻿import {Component, ElementRef, inject, LOCALE_ID, signal, viewChild} from '@angular/core';
 import {Router} from '@angular/router';
 import {detectLocale, Locale, splitPath} from '../../utils/languages.util';
 import {TicketService} from '../../services/ticket.service';
@@ -23,22 +23,36 @@ export class HeroSectionComponent {
   from = signal<CityId>(this.isKnownCity(this.lastSearch?.from) ? this.lastSearch!.from : '');
   to = signal<CityId>(this.isKnownCity(this.lastSearch?.to) ? this.lastSearch!.to : '');
 
+  /** Why the last search attempt could not run: a city is missing, or both are the same */
+  searchError = signal<'missing' | 'same' | null>(null);
+  private fromSelect = viewChild.required<ElementRef<HTMLSelectElement>>('fromSelect');
+  private toSelect = viewChild.required<ElementRef<HTMLSelectElement>>('toSelect');
+
   get currentLocale(): Locale {
     return detectLocale(splitPath(location.pathname));
-  }
-
-  get canSearch(): boolean {
-    return !!this.from() && !!this.to() && this.from() !== this.to();
   }
 
   swapCities(): void {
     const from = this.from();
     this.from.set(this.to());
     this.to.set(from);
+    this.searchError.set(null);
   }
 
   showTimetable(): void {
-    if (!this.canSearch) return;
+    // Explain what is missing and put the cursor on the field to fix
+    if (!this.from() || !this.to()) {
+      this.searchError.set('missing');
+      (this.from() ? this.toSelect() : this.fromSelect()).nativeElement.focus();
+      return;
+    }
+    if (this.from() === this.to()) {
+      this.searchError.set('same');
+      this.toSelect().nativeElement.focus();
+      return;
+    }
+
+    this.searchError.set(null);
     this.router.navigate(['/trips'], {queryParams: {from: this.from(), to: this.to()}});
   }
 

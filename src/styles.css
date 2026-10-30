@@ -36,6 +36,11 @@
     font-family: var(--font-family-heading);
   }
 
+  /* Headings split their lines evenly instead of leaving one word alone on the last line */
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
   /* One focus ring for keyboard users only (never on mouse click or tap). The white halo
      keeps it visible on the blue hero and footer as well as on white. */
   :focus-visible {

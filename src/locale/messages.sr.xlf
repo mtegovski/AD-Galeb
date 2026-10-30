@@ -15,8 +15,8 @@
         <target>за свако путовање</target>
       </trans-unit>
       <trans-unit id="galebHistory">
-        <source>АД Галеб е еден од главните регионални превозници со седиште во прекрасниот Охрид. Основани во 1948 година, веќе повеќе од седум децении ги поврзуваме луѓето со нивните дестинации.</source>
-        <target>АД Галеб је један од водећих регионалних превозника са седиштем у прелепом Охриду. Основани 1948. године, више од седам деценија повезујемо људе са њиховим дестинацијама.</target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span translate=&quot;no&quot;&gt;"/>АД Галеб<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> е еден од главните регионални превозници со седиште во прекрасниот Охрид. Основани во 1948 година, веќе повеќе од седум децении ги поврзуваме луѓето со нивните дестинации. </source>
+        <target><x id="START_TAG_SPAN"/>АД Галеб<x id="CLOSE_TAG_SPAN"/> је један од водећих регионалних превозника са седиштем у прелепом Охриду. Основани 1948. године, више од седам деценија повезујемо људе са њиховим дестинацијама.</target>
       </trans-unit>
       <trans-unit id="galebToday">
         <source>Денес оперираме со модерна флота на автобуси и минибуси, нудејќи превоз од Охрид до речиси секој град во Македонија, како и меѓународни релации до Белград, Србија.</source>
@@ -124,8 +124,8 @@
         <target>Радно време</target>
       </trans-unit>
       <trans-unit id="footerCopyrightText">
-        <source>АД Галеб. Сите права задржани. Од 1948 година.</source>
-        <target>АД Галеб. Сва права задржана. Од 1948. године.</target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span translate=&quot;no&quot;&gt;"/>АД Галеб<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>. Сите права задржани. Од 1948 година.</source>
+        <target><x id="START_TAG_SPAN"/>АД Галеб<x id="CLOSE_TAG_SPAN"/>. Сва права задржана. Од 1948. године.</target>
       </trans-unit>
       <trans-unit id="navAbout">
         <source>За Нас</source>
@@ -220,12 +220,12 @@
         <target>/</target>
       </trans-unit>
       <trans-unit id="whyGalebBadge">
-        <source>Зошто Галеб</source>
-        <target>Зашто Галеб</target>
+        <source> Зошто <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span translate=&quot;no&quot;&gt;"/>Галеб<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Зашто <x id="START_TAG_SPAN"/>Галеб<x id="CLOSE_TAG_SPAN"/></target>
       </trans-unit>
       <trans-unit id="whyGalebIntro">
-        <source>Со децении искуство и посветеност на квалитет, АД Галеб е избор број еден за илјадници патници.</source>
-        <target>Са деценијама искуства и посвећеношћу квалитету, АД Галеб је избор број један за хиљаде путника.</target>
+        <source> Со децении искуство и посветеност на квалитет, <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span translate=&quot;no&quot;&gt;"/>АД Галеб<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> е избор број еден за илјадници патници. </source>
+        <target>Са деценијама искуства и посвећеношћу квалитету, <x id="START_TAG_SPAN"/>АД Галеб<x id="CLOSE_TAG_SPAN"/> је избор број један за хиљаде путника.</target>
       </trans-unit>
       <trans-unit id="featureTraditionTitle">
         <source>75+ Години Традиција</source>
@@ -296,8 +296,8 @@
         <target>Ко смо ми</target>
       </trans-unit>
       <trans-unit id="aboutWhoWeAreText">
-        <source>АД Галеб е регионален превозник со традиција од 1948 година. Почнувајќи од Охрид, денес секојдневно поврзуваме градови низ државата и нудиме меѓународни релации.</source>
-        <target>АД Галеб је регионални превозник са традицијом од 1948. године. Почевши од Охрида, данас свакодневно повезујемо градове широм државе и нудимо међународне линије.</target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span translate=&quot;no&quot;&gt;"/>АД Галеб<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> е регионален превозник со традиција од 1948 година. Почнувајќи од Охрид, денес секојдневно поврзуваме градови низ државата и нудиме меѓународни релации. </source>
+        <target><x id="START_TAG_SPAN"/>АД Галеб<x id="CLOSE_TAG_SPAN"/> је регионални превозник са традицијом од 1948. године. Почевши од Охрида, данас свакодневно повезујемо градове широм државе и нудимо међународне линије.</target>
       </trans-unit>
       <trans-unit id="aboutWhatWeDoTitle">
         <source>Што нудиме</source>
@@ -328,8 +328,8 @@
         <target>Контактирајте нас</target>
       </trans-unit>
       <trans-unit id="contactPageIntro">
-        <source>За информации за линии, термини и цени, јавете се или пишете ни. Тимот на АД Галеб е тука да ви помогне.</source>
-        <target>За информације о линијама, терминима и ценама, позовите нас или нам пишите. Тим АД Галеб је ту да вам помогне.</target>
+        <source> За информации за линии, термини и цени, јавете се или пишете ни. Тимот на <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span translate=&quot;no&quot;&gt;"/>АД Галеб<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> е тука да ви помогне. </source>
+        <target>За информације о линијама, терминима и ценама, позовите нас или нам пишите. Тим <x id="START_TAG_SPAN"/>АД Галеб<x id="CLOSE_TAG_SPAN"/> је ту да вам помогне.</target>
       </trans-unit>
       <trans-unit id="contactAddressLabel">
         <source>Адреса</source>
@@ -616,6 +616,14 @@
       <trans-unit id="aboutPhotoLakesideAlt">
         <source>Автобус на Галеб на патот покрај езерото</source>
         <target>Галебов аутобус на путу поред језера</target>
+      </trans-unit>
+      <trans-unit id="skipToContent">
+        <source>Прескокни до содржината</source>
+        <target>Прескочи на садржај</target>
+      </trans-unit>
+      <trans-unit id="contactMapIframeTitle">
+        <source>Мапа со локацијата на АД Галеб</source>
+        <target>Мапа са локацијом АД Галеб</target>
       </trans-unit>
     </body>
   </file>

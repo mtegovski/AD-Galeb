@@ -80,6 +80,7 @@
                 <div class="relative flex-1">
                   <select
                     id="from-city"
+                    name="from"
                     formControlName="fromCityId"
                     class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
                     <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
@@ -128,6 +129,7 @@
               <div class="relative">
                 <select
                   id="to-city"
+                  name="to"
                   formControlName="toCityId"
                   class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
                   <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
@@ -171,7 +173,7 @@
               </div>
             } @else if (isLocal) {
               <div class="mt-8 overflow-x-auto rounded-2xl border border-[var(--light-border-color)] bg-white shadow-lg">
-                <table class="min-w-full text-sm">
+                <table class="min-w-full text-sm tabular-nums">
                   <thead class="bg-[var(--light-background-color)] text-[var(--primary-color)] text-sm">
                   <tr>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableDeparture">Поаѓање</th>
@@ -358,7 +360,7 @@
               <!-- Desktop: full table -->
               <div
                 class="mt-8 hidden lg:block overflow-x-auto rounded-2xl border border-[var(--light-border-color)] bg-white shadow-lg">
-                <table class="min-w-full text-sm">
+                <table class="min-w-full text-sm tabular-nums">
                   <thead class="bg-[var(--light-background-color)] text-[var(--primary-color)] text-sm">
                   <tr>
                     <th class="px-4 py-3 font-semibold text-left" i18n="@@tableDeparture">Поаѓање</th>

@@ -32,8 +32,10 @@
           <span class="relative block">
             <select
               class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
+              #fromSelect
+              name="from"
               [value]="from()"
-              (change)="from.set($any($event.target).value)">
+              (change)="from.set($any($event.target).value); searchError.set(null)">
               <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
               @for (c of cities; track c.id) {
                 <option [value]="c.id" [selected]="c.id === from()">{{ translateCity(c.id, locale) }}</option>
@@ -57,8 +59,10 @@
           <span class="relative block">
             <select
               class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
+              #toSelect
+              name="to"
               [value]="to()"
-              (change)="to.set($any($event.target).value)">
+              (change)="to.set($any($event.target).value); searchError.set(null)">
               <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
               @for (c of cities; track c.id) {
                 <option [value]="c.id" [selected]="c.id === to()">{{ translateCity(c.id, locale) }}</option>
@@ -70,11 +74,24 @@
 
         <button
           type="submit"
-          [disabled]="!canSearch"
-          class="col-span-2 row-start-3 inline-flex h-12 items-center justify-center gap-2 rounded-xl sm:col-span-1 sm:col-start-4 sm:row-start-1 bg-[var(--accent-color)] px-6 font-bold text-white shadow-lg transition hover:bg-[var(--primary-color)] cursor-pointer disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-[var(--accent-color)]">
+          class="col-span-2 row-start-3 inline-flex h-12 items-center justify-center gap-2 rounded-xl sm:col-span-1 sm:col-start-4 sm:row-start-1 bg-[var(--accent-color)] px-6 font-bold text-white shadow-lg transition hover:bg-[var(--primary-color)] cursor-pointer">
           <i class="fas fa-magnifying-glass"></i>
           <span i18n="@@heroShowTimetable">Прикажи возен ред</span>
         </button>
+
+        <!-- Shown when the search is started with a city missing or the same city twice -->
+        @if (searchError()) {
+          <p role="alert" class="col-span-2 row-start-4 flex items-center gap-2 text-sm font-medium text-[var(--dark-text-color)] sm:col-span-4 sm:row-start-2">
+            <i class="fas fa-circle-info text-[var(--primary-color)]"></i>
+            @if (searchError() === 'missing') {
+              <span i18n="@@chooseCitiesPrompt">Изберете од каде и до каде патувате за да ги видите поаѓањата.</span>
+            } @else {
+              <span i18n="@@chooseTwoDifferentCities">
+                Ве молиме изберете два различни града.
+              </span>
+            }
+          </p>
+        }
       </form>
 
       <div class="flex flex-col sm:flex-row gap-4 mb-6">
@@ -89,7 +106,7 @@
   </div>
 
   <div class="absolute bottom-0 left-0 right-0 z-5">
-    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-16 sm:h-24">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-16 sm:h-24">
       <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="white"></path>
     </svg>
   </div>

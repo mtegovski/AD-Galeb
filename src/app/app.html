@@ -1,5 +1,13 @@
 <div class="[font-family:var(--font-family-body)]">
+  <!-- First Tab stop: lets keyboard users jump past the header -->
+  <a
+    href="#main-content"
+    (click)="skipToMain($event)"
+    class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:text-[var(--primary-color)] focus:shadow-lg"
+    i18n="@@skipToContent">Прескокни до содржината</a>
   <app-site-header></app-site-header>
-  <router-outlet></router-outlet>
+  <main #main id="main-content" tabindex="-1" class="outline-none shadow-none">
+    <router-outlet></router-outlet>
+  </main>
   <app-site-footer></app-site-footer>
 </div>
