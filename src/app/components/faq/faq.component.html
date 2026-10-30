@@ -1,4 +1,4 @@
-﻿<section class="min-h-screen py-20 bg-gradient-to-br from-white to-[var(--light-background-color)]">
+﻿<section class="min-h-screen py-20 bg-gradient-to-br from-[var(--page-color)] to-[var(--light-background-color)]">
   <div class="container mx-auto px-4 max-w-3xl">
 
     <div class="text-center mb-14">
@@ -24,7 +24,7 @@
           <button
             type="button"
             class="w-full flex items-center gap-4 px-6 py-5 text-left transition-colors duration-200 cursor-pointer"
-            [style.background]="faq.open ? 'color-mix(in srgb, var(--primary-color) 6%, white)' : 'white'"
+            [style.background]="faq.open ? 'color-mix(in srgb, var(--primary-color) 6%, var(--surface-color))' : 'var(--surface-color)'"
             (click)="toggle($index)"
             [attr.aria-expanded]="faq.open"
             [attr.aria-controls]="'faq-answer-' + $index">

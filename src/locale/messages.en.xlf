@@ -625,6 +625,10 @@
         <source>Мапа со локацијата на АД Галеб</source>
         <target>Map showing the location of AD Galeb</target>
       </trans-unit>
+      <trans-unit id="darkModeToggle">
+        <source>Темен режим</source>
+        <target>Dark mode</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

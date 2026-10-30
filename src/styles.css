@@ -2,6 +2,9 @@
 
 @import "tailwindcss";
 
+/* dark: utilities apply while <html> has the "dark" class (set by the theme script / ThemeService) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --accent-color: #29b6f6;
   --accent2-color: #0288d1;
@@ -28,6 +31,23 @@
   --primary-button-hover-text-color: #ffffff;
   --secondary-button-hover-bg-color: #e3f2fd;
   --secondary-button-hover-text-color: #1e88e5;
+
+  /* Page and card backgrounds */
+  --page-color: #ffffff;
+  --surface-color: #ffffff;
+  color-scheme: light;
+}
+
+/* Dark mode: the same company blues on darker surfaces */
+:root.dark {
+  --page-color: #0f1724;
+  --surface-color: #162131;
+  --dark-text-color: #e6edf5;
+  --gray-text-color: #9aa8b8;
+  --light-background-color: #1c2b40;
+  --medium-background-color: #24364f;
+  --light-border-color: #2a3a50;
+  color-scheme: dark;
 }
 
 /* Headings and timetable times use Nunito; body text stays Open Sans */

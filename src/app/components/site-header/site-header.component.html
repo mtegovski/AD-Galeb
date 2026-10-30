@@ -1,6 +1,6 @@
 ﻿<header
   id="global-header"
-  class="group sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm transition-shadow duration-300 data-scrolled:shadow-md"
+  class="group sticky top-0 z-50 bg-[var(--surface-color)]/95 backdrop-blur shadow-sm transition-shadow duration-300 data-scrolled:shadow-md"
   [attr.data-scrolled]="isScrolled() ? '' : null">
   <div
     class="container mx-auto flex h-16 items-center justify-between gap-4 px-4 lg:h-24">
@@ -12,7 +12,7 @@
         priority
         alt="АД Галеб"
         translate="no"
-        class="h-12 w-auto origin-left transition-transform duration-300 lg:h-20 lg:group-data-scrolled:scale-[0.7]">
+        class="h-12 w-auto origin-left transition-transform duration-300 lg:h-20 lg:group-data-scrolled:scale-[0.7] dark:rounded-lg dark:bg-white dark:px-2 dark:py-1">
     </a>
 
     <!-- Desktop navigation -->
@@ -40,6 +40,17 @@
     </nav>
 
     <div class="flex items-center gap-3 lg:gap-5">
+      <!-- Light / dark mode (desktop; on phones it is in the menu) -->
+      <button
+        type="button"
+        class="hidden lg:flex h-10 w-10 items-center justify-center rounded-full text-[var(--dark-text-color)] transition-colors hover:bg-[var(--light-background-color)] cursor-pointer"
+        (click)="theme.toggle()"
+        [attr.aria-pressed]="theme.isDark()"
+        aria-label="Темен режим"
+        i18n-aria-label="@@darkModeToggle">
+        <i class="fas" [class.fa-moon]="!theme.isDark()" [class.fa-sun]="theme.isDark()"></i>
+      </button>
+
       <!-- Desktop language dropdown -->
       <div #languageMenu class="relative hidden lg:block">
         <button
@@ -62,7 +73,7 @@
         </button>
 
         <div
-          class="absolute right-0 mt-2 w-48 overflow-hidden rounded-2xl border border-[var(--primary-color)]/10 bg-white py-2 shadow-xl z-50"
+          class="absolute right-0 mt-2 w-48 overflow-hidden rounded-2xl border border-[var(--primary-color)]/10 bg-[var(--surface-color)] py-2 shadow-xl z-50"
           [class.hidden]="!isLanguageMenuOpen()"
           role="menu">
           @for (locale of locales; track locale.code) {
@@ -124,7 +135,7 @@
 <div
   #menuPanel
   id="mobile-menu"
-  class="absolute inset-y-0 right-0 flex w-80 max-w-[85vw] flex-col bg-white shadow-2xl transition-transform duration-300 ease-out"
+  class="absolute inset-y-0 right-0 flex w-80 max-w-[85vw] flex-col bg-[var(--surface-color)] shadow-2xl transition-transform duration-300 ease-out"
   [class.translate-x-full]="!isMobileMenuOpen()"
   [attr.inert]="isMobileMenuOpen() ? null : ''"
   role="dialog"
@@ -138,7 +149,7 @@
       height="200"
       alt="АД Галеб"
         translate="no"
-      class="h-9 w-auto">
+      class="h-9 w-auto dark:rounded-md dark:bg-white dark:px-1.5 dark:py-0.5">
     <button
       #menuCloseButton
       type="button"
@@ -178,6 +189,25 @@
   </nav>
 
   <div class="space-y-4 border-t border-[var(--light-border-color)] px-5 py-5">
+    <button
+      type="button"
+      class="flex w-full items-center justify-between rounded-xl border border-[var(--light-border-color)] px-4 py-3 text-sm font-semibold text-[var(--dark-text-color)] transition-colors cursor-pointer"
+      (click)="theme.toggle()"
+      [attr.aria-pressed]="theme.isDark()">
+      <span class="flex items-center gap-3">
+        <i class="fas" [class.fa-moon]="!theme.isDark()" [class.fa-sun]="theme.isDark()"></i>
+        <span i18n="@@darkModeToggle">Темен режим</span>
+      </span>
+      <span
+        class="relative h-6 w-11 rounded-full transition-colors"
+        [style.background-color]="theme.isDark() ? 'var(--primary-color)' : 'var(--light-border-color)'"
+        aria-hidden="true">
+        <span
+          class="absolute top-1 left-1 h-4 w-4 rounded-full bg-white transition-transform"
+          [style.transform]="theme.isDark() ? 'translateX(20px)' : 'none'"></span>
+      </span>
+    </button>
+
     <div>
       <p class="mb-2 text-sm font-semibold text-[var(--gray-text-color)]" i18n="@@navLanguage">Јазик</p>
       <div class="grid grid-cols-3 gap-2" role="group" i18n-aria-label="@@navLanguage" aria-label="Јазик">

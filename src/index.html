@@ -8,6 +8,17 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <base href="/">
 
+  <script>
+    // Apply the saved or system colour theme before the page paints, so there is no white flash
+    (function () {
+      try {
+        var saved = localStorage.getItem('galeb.theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.classList.add('dark');
+      } catch (e) {}
+    })();
+  </script>
+
   <title>АД Галеб - Охрид</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BTF44VZNN"></script>
@@ -41,7 +52,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous" defer></script>
 </head>
-<body class="h-full bg-white">
+<body class="h-full bg-[var(--page-color)]">
   <app-root></app-root>
 </body>
 </html>

@@ -25,13 +25,13 @@
       </p>
 
       <form
-        class="mb-5 grid max-w-3xl grid-cols-[1fr_auto] gap-3 rounded-2xl bg-white/95 p-4 shadow-2xl backdrop-blur sm:mb-6 sm:grid-cols-[1fr_auto_1fr_auto] sm:items-end sm:p-5"
+        class="mb-5 grid max-w-3xl grid-cols-[1fr_auto] gap-3 rounded-2xl bg-[var(--surface-color)]/95 p-4 shadow-2xl backdrop-blur sm:mb-6 sm:grid-cols-[1fr_auto_1fr_auto] sm:items-end sm:p-5"
         (submit)="$event.preventDefault(); showTimetable()">
         <label class="col-start-1 row-start-1 block">
           <span class="mb-1.5 block text-sm font-semibold text-[var(--gray-text-color)]" i18n="@@fromLabel"> Од </span>
           <span class="relative block">
             <select
-              class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
+              class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-[var(--surface-color)] px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
               #fromSelect
               name="from"
               [value]="from()"
@@ -47,7 +47,7 @@
 
         <button
           type="button"
-          class="group col-start-2 row-span-2 row-start-1 inline-flex h-11 w-11 items-center self-center sm:row-span-1 sm:h-12 sm:w-12 sm:self-end justify-center rounded-full border border-[var(--light-border-color)] bg-white text-[var(--primary-color)] transition hover:bg-[var(--primary-color)] hover:text-white cursor-pointer"
+          class="group col-start-2 row-span-2 row-start-1 inline-flex h-11 w-11 items-center self-center sm:row-span-1 sm:h-12 sm:w-12 sm:self-end justify-center rounded-full border border-[var(--light-border-color)] bg-[var(--surface-color)] text-[var(--primary-color)] transition hover:bg-[var(--primary-color)] hover:text-white cursor-pointer"
           (click)="swapCities()"
           i18n-aria-label="@@switchCitiesAriaLabel"
           aria-label="Смени ги градовите">
@@ -58,7 +58,7 @@
           <span class="mb-1.5 block text-sm font-semibold text-[var(--gray-text-color)]" i18n="@@toLabel"> До </span>
           <span class="relative block">
             <select
-              class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
+              class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-[var(--surface-color)] px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
               #toSelect
               name="to"
               [value]="to()"
@@ -107,7 +107,7 @@
 
   <div class="absolute bottom-0 left-0 right-0 z-5">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-16 sm:h-24">
-      <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="white"></path>
+      <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" class="fill-[var(--page-color)]"></path>
     </svg>
   </div>
 </section>

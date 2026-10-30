@@ -3,6 +3,7 @@ import { afterNextRender, Component, ElementRef, HostListener, inject, Injector,
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { detectLocale, Locale, splitPath } from '../../utils/languages.util';
 import { TicketService } from '../../services/ticket.service';
+import { ThemeService } from '../../services/theme.service';
 import { trapTabKey } from '../../utils/focus-trap.util';
 
 interface LocaleOption {
@@ -19,6 +20,7 @@ interface LocaleOption {
 })
 export class SiteHeaderComponent {
   ticketService = inject(TicketService);
+  theme = inject(ThemeService);
   private document = inject(DOCUMENT);
   private injector = inject(Injector);
 
