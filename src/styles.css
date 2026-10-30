@@ -35,4 +35,33 @@
   h1, h2, h3, .font-heading {
     font-family: var(--font-family-heading);
   }
+
+  /* One focus ring for keyboard users only (never on mouse click or tap). The white halo
+     keeps it visible on the blue hero and footer as well as on white. */
+  :focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px #ffffff;
+  }
+
+  /* Taps act immediately instead of waiting to see whether they are a double-tap zoom */
+  a, button, select, input, label {
+    touch-action: manipulation;
+  }
+}
+
+/* Visitors who turned on "reduce motion" in their system settings get no animations.
+   Loading spinners keep turning, because they show that something is happening. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .fa-spin {
+    animation-duration: 2s !important;
+    animation-iteration-count: infinite !important;
+  }
 }
