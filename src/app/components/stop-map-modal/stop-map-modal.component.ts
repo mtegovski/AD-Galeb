@@ -1,8 +1,23 @@
-import {Component, EventEmitter, inject, Input, LOCALE_ID, OnChanges, Output, signal} from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  EventEmitter,
+  HostListener,
+  inject,
+  Input,
+  LOCALE_ID,
+  OnChanges,
+  OnDestroy,
+  Output,
+  signal,
+  viewChild
+} from '@angular/core';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 import {StopLocation} from '../trip-selector/trip-selector.models';
 import {Locale} from '../../utils/languages.util';
 import {I18nSelectPipe} from '@angular/common';
+import {trapTabKey} from '../../utils/focus-trap.util';
 
 @Component({
   selector: 'app-stop-map-modal',
@@ -12,13 +27,18 @@ import {I18nSelectPipe} from '@angular/common';
     I18nSelectPipe
   ]
 })
-export class StopMapModalComponent implements OnChanges {
+export class StopMapModalComponent implements OnChanges, AfterViewInit, OnDestroy {
   @Input() modalTitle: string = '';
   @Input() locations: StopLocation[] = [];
   @Output() closed = new EventEmitter<void>();
 
   private sanitizer = inject(DomSanitizer);
   locale = inject(LOCALE_ID) as Locale;
+
+  private panel = viewChild.required<ElementRef<HTMLElement>>('panel');
+  private closeButton = viewChild.required<ElementRef<HTMLButtonElement>>('closeButton');
+  /** The element that opened the popup (the map button); focus goes back there on close */
+  private readonly openedFrom = document.activeElement as HTMLElement | null;
 
   isMapLoading = signal(true);
   selectedLocation: StopLocation | null = null;
@@ -27,6 +47,23 @@ export class StopMapModalComponent implements OnChanges {
     'arrivalStops': $localize`:@@arrivalStops:Постојки на пристигнување`,
     'departureStops': $localize`:@@departureStops:Постојки на поаѓање`
   };
+
+  ngAfterViewInit(): void {
+    this.closeButton().nativeElement.focus();
+  }
+
+  ngOnDestroy(): void {
+    this.openedFrom?.focus();
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  onKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Escape') {
+      this.closed.emit();
+    } else if (event.key === 'Tab') {
+      trapTabKey(event, this.panel().nativeElement);
+    }
+  }
 
   ngOnChanges(): void {
     this.selectedLocation = this.locations[0] ?? null;
@@ -47,10 +84,10 @@ export class StopMapModalComponent implements OnChanges {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
-  openInGoogleMaps(): void {
-    if (!this.selectedLocation) return;
+  get googleMapsUrl(): string | null {
+    if (!this.selectedLocation) return null;
     const { lat, lng } = this.selectedLocation;
-    window.open(`https://www.google.com/maps?q=${lat},${lng}`, '_blank');
+    return `https://www.google.com/maps?q=${lat},${lng}`;
   }
 
   getStopName(loc: StopLocation): string | undefined {

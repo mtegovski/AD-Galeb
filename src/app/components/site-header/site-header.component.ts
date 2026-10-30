@@ -1,8 +1,9 @@
 ﻿import { DOCUMENT, NgOptimizedImage } from '@angular/common';
-import { Component, ElementRef, HostListener, inject, signal, viewChild } from '@angular/core';
+import { afterNextRender, Component, ElementRef, HostListener, inject, Injector, signal, viewChild } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { detectLocale, Locale, splitPath } from '../../utils/languages.util';
 import { TicketService } from '../../services/ticket.service';
+import { trapTabKey } from '../../utils/focus-trap.util';
 
 interface LocaleOption {
   code: Locale;
@@ -19,10 +20,14 @@ interface LocaleOption {
 export class SiteHeaderComponent {
   ticketService = inject(TicketService);
   private document = inject(DOCUMENT);
+  private injector = inject(Injector);
 
   isMobileMenuOpen = signal(false);
   isLanguageMenuOpen = signal(false);
   private languageMenu = viewChild<ElementRef<HTMLElement>>('languageMenu');
+  private menuButton = viewChild.required<ElementRef<HTMLButtonElement>>('menuButton');
+  private menuPanel = viewChild.required<ElementRef<HTMLElement>>('menuPanel');
+  private menuCloseButton = viewChild.required<ElementRef<HTMLButtonElement>>('menuCloseButton');
   /** The header gets slimmer once the page is scrolled */
   isScrolled = signal(false);
 
@@ -45,10 +50,16 @@ export class SiteHeaderComponent {
     this.isScrolled.set(window.scrollY > 10);
   }
 
-  @HostListener('document:keydown.escape')
-  onEscape(): void {
-    this.closeMobileMenu();
-    this.isLanguageMenuOpen.set(false);
+  @HostListener('document:keydown', ['$event'])
+  onKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Escape') {
+      this.isLanguageMenuOpen.set(false);
+      if (this.isMobileMenuOpen()) {
+        this.closeMobileMenu(true);
+      }
+    } else if (event.key === 'Tab' && this.isMobileMenuOpen()) {
+      trapTabKey(event, this.menuPanel().nativeElement);
+    }
   }
 
   /** Closes the language dropdown when clicking anywhere outside of it */
@@ -67,11 +78,21 @@ export class SiteHeaderComponent {
     this.isMobileMenuOpen.set(true);
     // Keep the page behind the menu panel from scrolling
     this.document.body.style.overflow = 'hidden';
+    // Move focus into the panel once it is rendered (it is inert while closed)
+    afterNextRender(() => this.menuCloseButton().nativeElement.focus(), {injector: this.injector});
   }
 
-  closeMobileMenu(): void {
+  /**
+   * @param restoreFocus return focus to the menu button - when the menu is dismissed
+   * (Escape, close button, tap outside), not when a link in it navigates away
+   */
+  closeMobileMenu(restoreFocus = false): void {
+    if (!this.isMobileMenuOpen()) return;
     this.isMobileMenuOpen.set(false);
     this.document.body.style.overflow = '';
+    if (restoreFocus) {
+      this.menuButton().nativeElement.focus();
+    }
   }
 
   switchLocale(next: Locale): void {

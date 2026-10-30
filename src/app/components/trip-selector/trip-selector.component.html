@@ -70,6 +70,7 @@
           <form [formGroup]="form" class="grid grid-cols-[1fr_auto] gap-3 sm:grid-cols-[1fr_auto_1fr] sm:items-end sm:gap-4">
             <div class="col-start-1 row-start-1 space-y-2">
               <label
+                for="from-city"
                 class="text-sm font-semibold text-[var(--dark-text-color)]"
                 i18n="@@fromLabel">
                 Од
@@ -78,6 +79,7 @@
               <div class="relative flex gap-2">
                 <div class="relative flex-1">
                   <select
+                    id="from-city"
                     formControlName="fromCityId"
                     class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
                     <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
@@ -117,6 +119,7 @@
 
             <div class="col-start-1 row-start-2 space-y-2 sm:col-start-3 sm:row-start-1">
               <label
+                for="to-city"
                 class="text-sm font-semibold text-[var(--dark-text-color)]"
                 i18n="@@toLabel">
                 До
@@ -124,6 +127,7 @@
 
               <div class="relative">
                 <select
+                  id="to-city"
                   formControlName="toCityId"
                   class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-white px-4 py-3 pr-10 text-[var(--dark-text-color)] shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30 focus:border-[var(--primary-color)]">
                   <option value="" disabled i18n="@@selectCityPlaceholder">Изберете град</option>
@@ -138,6 +142,13 @@
               </div>
             </div>
           </form>
+
+          <!-- Tells screen readers how many departures the current search found -->
+          <p class="sr-only" aria-live="polite">
+            @if (form.controls.fromCityId.value && form.controls.toCityId.value && form.controls.fromCityId.value !== form.controls.toCityId.value) {
+              <span i18n="@@departuresFound">{tripOptions.length, plural, =0 {Нема поаѓања од {{ cityName(form.controls.fromCityId.value) }} до {{ cityName(form.controls.toCityId.value) }}.} =1 {1 поаѓање од {{ cityName(form.controls.fromCityId.value) }} до {{ cityName(form.controls.toCityId.value) }}.} other {{{ tripOptions.length }} поаѓања од {{ cityName(form.controls.fromCityId.value) }} до {{ cityName(form.controls.toCityId.value) }}.}}</span>
+            }
+          </p>
 
           @if (!form.controls.fromCityId.value || !form.controls.toCityId.value) {
             <div

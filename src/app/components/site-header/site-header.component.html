@@ -95,6 +95,7 @@
       </button>
 
       <button
+        #menuButton
         type="button"
         class="lg:hidden -mr-2 flex h-10 w-10 items-center justify-center rounded-full text-[var(--dark-text-color)] transition-colors hover:bg-[var(--light-background-color)] cursor-pointer"
         (click)="openMobileMenu()"
@@ -115,11 +116,12 @@
   class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300"
   [class.opacity-0]="!isMobileMenuOpen()"
   [class.pointer-events-none]="!isMobileMenuOpen()"
-  (click)="closeMobileMenu()"
+  (click)="closeMobileMenu(true)"
   aria-hidden="true">
 </div>
 
 <div
+  #menuPanel
   id="mobile-menu"
   class="absolute inset-y-0 right-0 flex w-80 max-w-[85vw] flex-col bg-white shadow-2xl transition-transform duration-300 ease-out"
   [class.translate-x-full]="!isMobileMenuOpen()"
@@ -136,9 +138,10 @@
       alt="АД Галеб"
       class="h-9 w-auto">
     <button
+      #menuCloseButton
       type="button"
       class="-mr-2 flex h-10 w-10 items-center justify-center rounded-full text-[var(--dark-text-color)] transition-colors hover:bg-[var(--light-background-color)] cursor-pointer"
-      (click)="closeMobileMenu()"
+      (click)="closeMobileMenu(true)"
       aria-label="Затвори мени"
       i18n-aria-label="@@navCloseMenuAria">
       <i class="fas fa-times text-xl"></i>

@@ -597,6 +597,26 @@
         <source>{VAR_PLURAL, plural, =0 {без постојки} =1 {1 постојка} other {<x id="INTERPOLATION"/> постојки}}</source>
         <target>{VAR_PLURAL, plural, =0 {no stops} =1 {1 stop} other {<x id="INTERPOLATION"/> stops}}</target>
       </trans-unit>
+      <trans-unit id="departuresFound">
+        <source>{VAR_PLURAL, plural, =0 {Нема поаѓања од <x id="INTERPOLATION"/> до <x id="INTERPOLATION_1"/>.} =1 {1 поаѓање од <x id="INTERPOLATION"/> до <x id="INTERPOLATION_1"/>.} other {<x id="INTERPOLATION_2"/> поаѓања од <x id="INTERPOLATION"/> до <x id="INTERPOLATION_1"/>.}}</source>
+        <target>{VAR_PLURAL, plural, =0 {No departures from <x id="INTERPOLATION"/> to <x id="INTERPOLATION_1"/>.} =1 {1 departure from <x id="INTERPOLATION"/> to <x id="INTERPOLATION_1"/>.} other {<x id="INTERPOLATION_2"/> departures from <x id="INTERPOLATION"/> to <x id="INTERPOLATION_1"/>.}}</target>
+      </trans-unit>
+      <trans-unit id="aboutPhotoParkedAlt">
+        <source>Автобус на Галеб паркиран меѓу есенски дрвја</source>
+        <target>Galeb coach parked among autumn trees</target>
+      </trans-unit>
+      <trans-unit id="aboutPhotoCountryRoadAlt">
+        <source>Автобус на Галеб на селски пат во есен</source>
+        <target>Galeb coach on a country road in autumn</target>
+      </trans-unit>
+      <trans-unit id="aboutPhotoLakeViewAlt">
+        <source>Автобус на Галеб паркиран над езерото</source>
+        <target>Galeb coach parked above the lake</target>
+      </trans-unit>
+      <trans-unit id="aboutPhotoLakesideAlt">
+        <source>Автобус на Галеб на патот покрај езерото</source>
+        <target>Galeb coach on the lakeside road</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
