@@ -17,34 +17,26 @@ export class TicketService {
     const tomorrow = new Date(today);
     tomorrow.setDate(tomorrow.getDate() + 1);
 
-    // 2. Format the date to YYYY-MM-DD
-    const yyyy = tomorrow.getFullYear();
-    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
-    const dd = String(tomorrow.getDate()).padStart(2, '0');
-    const tomorrowDate = `${yyyy}-${mm}-${dd}`;
-
-    // 3. Determine language (defaults to 'en' if not 'mk')
-    let language: 'mk' | 'en' | 'sr';
+    // 2. Determine language (defaults to 'en' if not 'mk')
+    // Construct URL with the partner query parameter
+    let targetUrl;
 
     switch (currentLocale) {
       case 'mk':
-        language = 'mk';
+        targetUrl = 'https://galeb.obilet.mk/en';
         break;
       case 'en':
-        language = 'en';
+        targetUrl = 'https://galeb.obilet.mk/en';
         break;
       case 'sr':
-        language = 'sr';
+        targetUrl = 'https://galeb.obilet.mk/';
         break;
       default:
-        language = 'mk';
+        targetUrl = 'https://galeb.obilet.mk/en';
         break;
     }
 
-    // 4. Construct URL with the partner query parameter
-    const targetUrl = `https://www.obilet.com/${language}/journeys/6776-1818/${tomorrowDate}?partner=19713`;
-
-    // 5. Navigate (Opens in a new tab)
+    // 3. Navigate (Opens in a new tab)
     window.open(targetUrl, '_blank');
   }
 }

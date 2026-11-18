@@ -4,7 +4,7 @@
 
   <div class="container mx-auto px-4 relative z-10">
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <div class="inline-block bg-[var(--surface-color)] text-[var(--primary-color)] px-4 py-2 rounded-full font-semibold text-sm mb-6 shadow-md">
+      <div class="inline-block bg-[var(--surface-color)] text-[var(--primary-text-color)] px-4 py-2 rounded-full font-semibold text-sm mb-6 shadow-md">
         <i class="fas fa-map-marked-alt mr-2"></i>
         <span i18n="@@ourRoutesBadge">Нашите Релации</span>
       </div>
@@ -22,18 +22,15 @@
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-      <app-relation-card [relation]="OhridRelation" />
-      <app-relation-card [relation]="SkopjeRelation" />
-      <app-relation-card [relation]="BitolaRelation" />
-      <app-relation-card [relation]="KochaniRelation" />
-      <app-relation-card [relation]="NisRelation" />
-      <app-relation-card [relation]="BelgradeRelation" />
+      @for (relation of relations; track relation.origin + relation.destination) {
+        <app-relation-card [relation]="relation" />
+      }
     </div>
 
     <div class="text-center">
       <a
         routerLink="trips"
-        class="inline-flex items-center bg-[var(--primary-color)] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[var(--accent2-color)] transition-[background-color,box-shadow] shadow-lg hover:shadow-xl">
+        class="inline-flex items-center bg-[var(--button-color)] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-[background-color,box-shadow] shadow-lg hover:shadow-xl">
         <span i18n="@@routesCtaAllRoutes">Погледни сите релации, распоред и цени</span>
       </a>
 

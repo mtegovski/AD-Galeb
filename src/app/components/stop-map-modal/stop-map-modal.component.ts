@@ -49,10 +49,12 @@ export class StopMapModalComponent implements OnChanges, AfterViewInit, OnDestro
   };
 
   ngAfterViewInit(): void {
+    document.body.style.overflow = 'hidden';
     this.closeButton().nativeElement.focus();
   }
 
   ngOnDestroy(): void {
+    document.body.style.overflow = '';
     this.openedFrom?.focus();
   }
 

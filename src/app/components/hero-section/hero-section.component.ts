@@ -25,6 +25,8 @@ export class HeroSectionComponent {
 
   /** Why the last search attempt could not run: a city is missing, or both are the same */
   searchError = signal<'missing' | 'same' | null>(null);
+  /** Half-turns of the swap icon, so it spins once per swap */
+  swapTurns = signal(0);
   private fromSelect = viewChild.required<ElementRef<HTMLSelectElement>>('fromSelect');
   private toSelect = viewChild.required<ElementRef<HTMLSelectElement>>('toSelect');
 
@@ -36,6 +38,7 @@ export class HeroSectionComponent {
     const from = this.from();
     this.from.set(this.to());
     this.to.set(from);
+    this.swapTurns.update(n => n + 1);
     this.searchError.set(null);
   }
 

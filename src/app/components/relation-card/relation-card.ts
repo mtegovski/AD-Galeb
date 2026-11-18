@@ -1,6 +1,7 @@
 import {Component, inject, Input, LOCALE_ID} from '@angular/core';
 import {RouterLink} from '@angular/router';
 import {translateCity, translateCityInfo} from '../../utils/trip-selector.util';
+import {CITY_INFO_TRANSLATIONS} from '../../data/trip-selector.data';
 import {Locale} from '../../utils/languages.util';
 
 export interface RouteOverview {
@@ -9,6 +10,8 @@ export interface RouteOverview {
   destination: string;
   info: string;
   isInternational: boolean;
+  /** The visitor's last timetable search, shown first on the home page */
+  isLastSearch?: boolean;
 }
 
 @Component({
@@ -22,4 +25,8 @@ export class RelationCard {
   protected readonly translateCity = translateCity;
   protected readonly translateCityInfo = translateCityInfo;
   locale = inject(LOCALE_ID) as Locale;
+
+  get hasCityInfo(): boolean {
+    return !!CITY_INFO_TRANSLATIONS[this.relation.destination];
+  }
 }

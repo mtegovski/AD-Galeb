@@ -51,8 +51,14 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
   tripOptions: TripOption[] = [];
   /** The first trip that has not departed yet today (Skopje time) */
   nextTrip?: TripOption;
+  /** When a search finds nothing: whether the opposite direction has trips, and where "from" does go */
+  hasReverseTrips = false;
+  reachableCities: CityId[] = [];
   /** Trips whose stop-by-stop timeline is expanded */
   private expandedTrips = new Set<string>();
+
+  /** Half-turns of the swap icon, so it spins once per swap */
+  swapTurns = 0;
 
   mapModalLocations: StopLocation[] = [];
   mapModalOpen = false;
@@ -96,6 +102,8 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
     const from = this.form.controls.fromCityId.value;
     const to = this.form.controls.toCityId.value;
     this.expandedTrips.clear();
+    this.hasReverseTrips = false;
+    this.reachableCities = [];
 
     if (!from || !to || from === to) {
       this.tripOptions = [];
@@ -110,6 +118,19 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
       runs: this.runs,
     });
     this.nextTrip = findNextTrip(this.tripOptions);
+
+    if (this.tripOptions.length === 0) {
+      this.hasReverseTrips =
+        buildTripOptions({fromCityId: to, toCityId: from, routes: this.routes, runs: this.runs}).length > 0;
+      this.reachableCities = this.citiesReachableFrom(from);
+    }
+  }
+
+  /** Cities with at least one departure from "from", in the order of the city list */
+  private citiesReachableFrom(from: CityId): CityId[] {
+    return this.cities
+      .map(c => c.id)
+      .filter(id => id !== from && buildTripOptions({fromCityId: from, toCityId: id, routes: this.routes, runs: this.runs}).length > 0);
   }
 
   /**
@@ -149,6 +170,7 @@ export class TripSelectorComponent implements OnInit, OnDestroy {
       fromCityId: to,
       toCityId: from,
     });
+    this.swapTurns++;
   }
 
   isExpanded(trip: TripOption): boolean {

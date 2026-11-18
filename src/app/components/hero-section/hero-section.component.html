@@ -1,6 +1,8 @@
 ﻿<section class="code-section relative min-h-svh flex items-center justify-center overflow-hidden" id="smr9q6r">
   <div class="absolute inset-0 z-0">
-    <img src="assets/IMG_8949.jpeg"
+    <img src="assets/IMG_8949-1600.webp"
+         srcset="assets/IMG_8949-800.webp 800w, assets/IMG_8949-1600.webp 1600w"
+         sizes="100vw"
          class="absolute inset-0 h-full w-full object-cover object-center"
          width="1600"
          height="1067"
@@ -28,7 +30,7 @@
         class="mb-5 grid max-w-3xl grid-cols-[1fr_auto] gap-3 rounded-2xl bg-[var(--surface-color)]/95 p-4 shadow-2xl backdrop-blur sm:mb-6 sm:grid-cols-[1fr_auto_1fr_auto] sm:items-end sm:p-5"
         (submit)="$event.preventDefault(); showTimetable()">
         <label class="col-start-1 row-start-1 block">
-          <span class="mb-1.5 block text-sm font-semibold text-[var(--gray-text-color)]" i18n="@@fromLabel"> Од </span>
+          <span class="mb-1.5 block text-sm font-semibold text-[var(--dark-text-color)]" i18n="@@fromLabel"> Од </span>
           <span class="relative block">
             <select
               class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-[var(--surface-color)] px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
@@ -47,15 +49,16 @@
 
         <button
           type="button"
-          class="group col-start-2 row-span-2 row-start-1 inline-flex h-11 w-11 items-center self-center sm:row-span-1 sm:h-12 sm:w-12 sm:self-end justify-center rounded-full border border-[var(--light-border-color)] bg-[var(--surface-color)] text-[var(--primary-color)] transition hover:bg-[var(--primary-color)] hover:text-white cursor-pointer"
+          class="col-start-2 row-span-2 row-start-1 inline-flex h-11 w-11 items-center self-center sm:row-span-1 sm:h-12 sm:w-12 sm:self-end justify-center rounded-full border border-[var(--light-border-color)] bg-[var(--surface-color)] text-[var(--primary-color)] transition hover:bg-[var(--button-color)] hover:text-white cursor-pointer"
           (click)="swapCities()"
           i18n-aria-label="@@switchCitiesAriaLabel"
           aria-label="Смени ги градовите">
-          <i class="fas fa-right-left transition-transform rotate-90 sm:rotate-0 sm:group-hover:rotate-180"></i>
+          <i class="fas fa-right-left rotate-90 transition-transform duration-300 ease-out sm:rotate-0"
+             [style.transform]="'rotate(' + swapTurns() * 180 + 'deg)'"></i>
         </button>
 
         <label class="col-start-1 row-start-2 block sm:col-start-3 sm:row-start-1">
-          <span class="mb-1.5 block text-sm font-semibold text-[var(--gray-text-color)]" i18n="@@toLabel"> До </span>
+          <span class="mb-1.5 block text-sm font-semibold text-[var(--dark-text-color)]" i18n="@@toLabel"> До </span>
           <span class="relative block">
             <select
               class="w-full appearance-none rounded-xl border border-[var(--light-border-color)] bg-[var(--surface-color)] px-4 py-3 pr-10 text-[var(--dark-text-color)] focus:border-[var(--primary-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]/30"
@@ -74,14 +77,14 @@
 
         <button
           type="submit"
-          class="col-span-2 row-start-3 inline-flex h-12 items-center justify-center gap-2 rounded-xl sm:col-span-1 sm:col-start-4 sm:row-start-1 bg-[var(--accent-color)] px-6 font-bold text-white shadow-lg transition hover:bg-[var(--primary-color)] cursor-pointer">
+          class="col-span-2 row-start-3 inline-flex h-12 items-center justify-center gap-2 rounded-xl sm:col-span-1 sm:col-start-4 sm:row-start-1 bg-[var(--button-color)] px-6 font-bold text-white shadow-lg transition hover:bg-[var(--primary-button-hover-bg-color)] cursor-pointer">
           <i class="fas fa-magnifying-glass"></i>
           <span i18n="@@heroShowTimetable">Прикажи возен ред</span>
         </button>
 
         <!-- Shown when the search is started with a city missing or the same city twice -->
         @if (searchError()) {
-          <p role="alert" class="col-span-2 row-start-4 flex items-center gap-2 text-sm font-medium text-[var(--dark-text-color)] sm:col-span-4 sm:row-start-2">
+          <p role="alert" class="animate-settle-in col-span-2 row-start-4 flex items-center gap-2 text-sm font-medium text-[var(--dark-text-color)] sm:col-span-4 sm:row-start-2">
             <i class="fas fa-circle-info text-[var(--primary-color)]"></i>
             @if (searchError() === 'missing') {
               <span i18n="@@chooseCitiesPrompt">Изберете од каде и до каде патувате за да ги видите поаѓањата.</span>
@@ -97,7 +100,7 @@
       <div class="flex flex-col sm:flex-row gap-4 mb-6">
         <button
           (click)="bookTicket()"
-          class="group bg-white text-[var(--primary-color)] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[var(--primary-color)] hover:text-white transition-[color,background-color,box-shadow] shadow-2xl hover:shadow-xl text-center cursor-pointer">
+          class="group bg-white text-[var(--button-color)] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[var(--button-color)] hover:text-white transition-[color,background-color,box-shadow] shadow-2xl hover:shadow-xl text-center cursor-pointer">
           <i class="fas fa-ticket-alt mr-2"></i>
           <span i18n="@@navBookTicket">Резервирај билет</span>
         </button>

@@ -14,6 +14,14 @@
         <source>за секое патување</source>
         <target>за свако путовање</target>
       </trans-unit>
+      <trans-unit id="whyChooseHeadlineLine1">
+        <source>Зошто патниците</source>
+        <target>Зашто нас</target>
+      </trans-unit>
+      <trans-unit id="whyChooseHeadlineLine2">
+        <source>нè избираат</source>
+        <target>путници бирају</target>
+      </trans-unit>
       <trans-unit id="galebHistory">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span translate=&quot;no&quot;&gt;"/>АД Галеб<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> е еден од главните регионални превозници со седиште во прекрасниот Охрид. Основани во 1948 година, веќе повеќе од седум децении ги поврзуваме луѓето со нивните дестинации. </source>
         <target><x id="START_TAG_SPAN"/>АД Галеб<x id="CLOSE_TAG_SPAN"/> је један од водећих регионалних превозника са седиштем у прелепом Охриду. Основани 1948. године, више од седам деценија повезујемо људе са њиховим дестинацијама.</target>
@@ -38,13 +46,13 @@
         <source>дневно</source>
         <target> дневно</target>
       </trans-unit>
-      <trans-unit id="commitmentAndQualityLine1">
-        <source>Посветеност</source>
-        <target>Посвећеност</target>
+      <trans-unit id="citiesServedLine1">
+        <source>Градови</source>
+        <target>Градова</target>
       </trans-unit>
-      <trans-unit id="commitmentAndQualityLine2">
-        <source>и квалитет</source>
-        <target> и квалитет</target>
+      <trans-unit id="citiesServedLine2">
+        <source> на линиите</source>
+        <target> на нашим линијама</target>
       </trans-unit>
       <trans-unit id="learnMoreAboutUs">
         <source>Дознај повеќе за нас</source>
@@ -66,6 +74,18 @@
       <trans-unit id="internationalLineBadge">
         <source>Меѓународна линија</source>
         <target>Међународна линија</target>
+      </trans-unit>
+      <trans-unit id="lastSearchBadge">
+        <source>Последно пребарување</source>
+        <target>Последња претрага</target>
+      </trans-unit>
+      <trans-unit id="relationCardFrom">
+        <source>Од</source>
+        <target>Од</target>
+      </trans-unit>
+      <trans-unit id="lastSearchCardInfo">
+        <source>Повторно погледнете ги поаѓањата за вашата последна релација.</source>
+        <target>Поново погледајте поласке за вашу последњу релацију.</target>
       </trans-unit>
       <trans-unit id="ourRoutesBadge">
         <source>Нашите Релации</source>
@@ -175,6 +195,18 @@
         <source>Нема пронајдени патувања.</source>
         <target>Нема пронађених путовања.</target>
       </trans-unit>
+      <trans-unit id="noTripsReverseCta">
+        <source>Погледни го обратниот правец</source>
+        <target>Погледај супротан смер</target>
+      </trans-unit>
+      <trans-unit id="noTripsReachableFrom">
+        <source>Достапни дестинации од <x id="INTERPOLATION" equiv-text="{{ cityName(form.controls.fromCityId.value) }}"/>:</source>
+        <target>Доступне дестинације (полазак: <x id="INTERPOLATION"/>):</target>
+      </trans-unit>
+      <trans-unit id="stopNumberFallback">
+        <source>Постојка <x id="INTERPOLATION" equiv-text="{{ $index + 1 }}"/></source>
+        <target>Станица <x id="INTERPOLATION"/></target>
+      </trans-unit>
       <trans-unit id="tableDeparture">
         <source>Поаѓање</source>
         <target>Полазак</target>
@@ -208,12 +240,12 @@
         <target>Студентска</target>
       </trans-unit>
       <trans-unit id="tripTypeSubtrip">
-        <source>Под-релација</source>
-        <target>Подлинија</target>
+        <source>Дел од линија</source>
+        <target>Део линије</target>
       </trans-unit>
       <trans-unit id="tripTypeDirect">
-        <source>Директно</source>
-        <target>Директно</target>
+        <source>Цела линија</source>
+        <target>Цела линија</target>
       </trans-unit>
       <trans-unit id="notAvailableSlash">
         <source>/</source>

@@ -1,7 +1,7 @@
 ﻿<a
   routerLink="/trips"
   [queryParams]="{ from: relation.origin, to: relation.destination }"
-  class="group block bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent2-color)]
+  class="group block bg-gradient-to-br from-[var(--button-color)] to-[var(--primary-button-hover-bg-color)]
          rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow
          text-white relative overflow-hidden h-56">
 
@@ -13,9 +13,15 @@
     </h3>
 
     <div class="min-h-6">
-      @if (relation.isInternational) {
+      @if (relation.isLastSearch) {
         <div
-          class="inline-block bg-[var(--accent-color)] px-3 py-1 rounded-full text-xs font-bold"
+          class="inline-block bg-white px-3 py-1 rounded-full text-xs font-bold text-[var(--primary-button-hover-bg-color)]"
+          i18n="@@lastSearchBadge">
+          Последно пребарување
+        </div>
+      } @else if (relation.isInternational) {
+        <div
+          class="inline-block bg-white px-3 py-1 rounded-full text-xs font-bold text-[var(--primary-button-hover-bg-color)]"
           i18n="@@internationalLineBadge">
           Меѓународна линија
         </div>
@@ -23,11 +29,21 @@
     </div>
   </div>
 
-  <p class="mb-4 text-white/90 line-clamp-3">
-    {{ translateCityInfo(relation.destination, locale) }}
+  @if (relation.isLastSearch) {
+    <p class="-mt-3 mb-3 text-sm font-semibold">
+      <span i18n="@@relationCardFrom">Од</span> {{ translateCity(relation.origin, locale) }}
+    </p>
+  }
+
+  <p class="mb-4" [class.line-clamp-3]="!relation.isLastSearch" [class.line-clamp-2]="relation.isLastSearch">
+    @if (hasCityInfo) {
+      {{ translateCityInfo(relation.destination, locale) }}
+    } @else {
+      <ng-container i18n="@@lastSearchCardInfo">Повторно погледнете ги поаѓањата за вашата последна релација.</ng-container>
+    }
   </p>
 
-  <span class="absolute bottom-6 left-8 inline-flex items-center gap-2 text-sm font-semibold text-white/90">
+  <span class="absolute bottom-6 left-8 inline-flex items-center gap-2 text-sm font-semibold">
     <span i18n="@@relationCardCta">Погледни возен ред</span>
   </span>
 </a>

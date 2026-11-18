@@ -2,7 +2,7 @@
   <div class="container mx-auto px-4">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <div class="inline-block bg-[var(--light-background-color)] text-[var(--primary-color)] px-4 py-2 rounded-full font-semibold text-sm mb-6">
+        <div class="inline-block bg-[var(--light-background-color)] text-[var(--primary-text-on-tint-color)] px-4 py-2 rounded-full font-semibold text-sm mb-6">
           <i class="fas fa-history mr-2"></i>
           <span i18n="@@fromWhichYear">Од 1948 Година</span>
         </div>
@@ -46,16 +46,16 @@
           </div>
           <div class="text-center p-4 bg-[var(--light-background-color)] rounded-xl">
             <div class="text-3xl font-bold text-[var(--primary-color)] mb-1">
-              100%
+              18
             </div>
             <div class="text-sm text-[var(--gray-text-color)] font-medium">
-              <span i18n="@@commitmentAndQualityLine1">Посветеност</span><br>
-              <span i18n="@@commitmentAndQualityLine2">и квалитет</span>
+              <span i18n="@@citiesServedLine1">Градови</span><br>
+              <span i18n="@@citiesServedLine2"> на линиите</span>
             </div>
           </div>
         </div>
 
-        <a routerLink="about" class="inline-flex items-center text-[var(--primary-color)] font-semibold text-lg hover:text-[var(--accent2-color)] transition-colors group">
+        <a routerLink="about" class="inline-flex items-center text-[var(--primary-text-color)] font-semibold text-lg underline-offset-4 hover:underline group">
           <span i18n="@@learnMoreAboutUs">Дознај повеќе за нас</span>
         </a>
       </div>
@@ -63,44 +63,52 @@
       <div class="grid grid-cols-2 gap-4">
         <div class="space-y-4">
           <div class="relative overflow-hidden rounded-2xl shadow-xl h-64 group">
-            <img src="assets/IMG_8944.jpeg"
+            <img src="assets/IMG_8944-800.webp"
+                 srcset="assets/IMG_8944-400.webp 400w, assets/IMG_8944-800.webp 800w"
+                 sizes="(min-width: 1024px) 25vw, 50vw"
                  width="800"
                  height="533"
                  alt="Автобус на Галеб паркиран меѓу есенски дрвја"
                  i18n-alt="@@aboutPhotoParkedAlt"
-                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                  loading="lazy">
           </div>
 
           <div class="relative overflow-hidden rounded-2xl shadow-xl h-48 group">
-            <img src="assets/IMG_8945.jpeg"
+            <img src="assets/IMG_8945-800.webp"
+                 srcset="assets/IMG_8945-400.webp 400w, assets/IMG_8945-800.webp 800w"
+                 sizes="(min-width: 1024px) 25vw, 50vw"
                  width="800"
                  height="533"
                  alt="Автобус на Галеб на селски пат во есен"
                  i18n-alt="@@aboutPhotoCountryRoadAlt"
-                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                  loading="lazy">
           </div>
         </div>
 
         <div class="space-y-4 mt-8">
           <div class="relative overflow-hidden rounded-2xl shadow-xl h-48 group">
-            <img src="assets/IMG_8948.jpeg"
+            <img src="assets/IMG_8948-800.webp"
+                 srcset="assets/IMG_8948-400.webp 400w, assets/IMG_8948-800.webp 800w"
+                 sizes="(min-width: 1024px) 25vw, 50vw"
                  width="800"
                  height="533"
                  alt="Автобус на Галеб паркиран над езерото"
                  i18n-alt="@@aboutPhotoLakeViewAlt"
-                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                  loading="lazy">
           </div>
 
           <div class="relative overflow-hidden rounded-2xl shadow-xl h-64 group">
-            <img src="assets/IMG_8947.jpeg"
+            <img src="assets/IMG_8947-800.webp"
+                 srcset="assets/IMG_8947-400.webp 400w, assets/IMG_8947-800.webp 800w"
+                 sizes="(min-width: 1024px) 25vw, 50vw"
                  width="800"
                  height="533"
                  alt="Автобус на Галеб на патот покрај езерото"
                  i18n-alt="@@aboutPhotoLakesideAlt"
-                 class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                  loading="lazy">
           </div>
         </div>
